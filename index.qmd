@@ -67,6 +67,7 @@ I also provide statistical and methodological consulting services at a nominal f
 <style>
 h1 {
   margin-bottom: 0em;
+  margin-top: 0em;
 }
 </style>
 
