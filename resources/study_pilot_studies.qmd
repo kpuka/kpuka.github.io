@@ -1,0 +1,89 @@
+---
+title: 'Study Design 3: Pilot Studies'
+---
+
+Topic: Description of pilot studies and how pilot studies should be designed. 
+
+# What is a Pilot Study? 
+
+**The objective of the study will determine whether or not it is a pilot study**. Pilot studies aim to test the study methods and procedures to be used subsequently at a larger scale, and/or to search for possible effects and associations that may be worth evaluating in a subsequent larger study. They are designed to test the performance and capability of study designs, measures, procedures, recruitment criteria, and operational strategies that are under consideration for use in a subsequent study. The intent is to guide the planning of a subsequent, often larger, investigation. Consequently, the **primary objective or specific aim of pilot studies must focus on some aspect of feasibility**; otherwise it is not a pilot study, by definition. The primary objective should not be to determine statistical significance. Pilot studies can be randomized or non-randomized.
+
+The reasons for conducting pilot trials can be categorized as:
+
+-   *Process* -- Evaluate potential challenges in screening, recruitment, enrollment, retention rates, etc.
+
+-   *Resources* -- Evaluate potential time and budget problems that may occur during the main study, such as how long it would take to mail or fill out the surveys, whether use of certain equipment will be feasible, whether the data collection tools can be reliably completed.
+
+-   *Management* -- Evaluate potential human and data optimization problems, such determining capacity, do the investigators have the time to perform their tasks, will study participants overload the phone line or waiting rooms, what are the challenges at participating centers.
+
+-   *Scientific* -- evaluate treatment safety, dose levels and response, and treatment effect, variability in outcomes
+
+# Recommendations for Pilot Studies 
+
+-   The primary objective must be to evaluate some aspect of feasibility.
+
+    -   In designing the study, there should be clear feasibility objective(s), clear analytic plans, and clear criteria for what will be considered a success. For example:
+
+        -   at least 90% of patients receive the study drug within 24 hours of randomization;
+
+        -   at least 90% of necessary dose adjustments will be appropriate in response to pre-defined laboratory criteria;
+
+        -   at least 70% of all eligible patients can be recruited.
+
+-   Develop a study protocol and update it throughout the course of the pilot study. This document will serve as the basis for subsequent grants and publications.
+
+-   The sample used in the pilot may be included in the main study only if the study design has not changed and if the key features of the main study are preserved in the pilot (e.g. blinding).
+
+-   Every effort should be made to publish pilot studies. Pilot studies are often not published because of the way the results are presented, with emphasis wrongly placed on statistical significance instead of on feasibility (which is the focus of pilot studies). Emphasize the feasibility aspects of the study.
+
+    -   Reporting of pilot trials should follow the CONSORT guidelines (Eldridge et al. 2016).
+
+    -   Consider publishing in journal focused on pilot studies, such as BMC's *Pilot and Feasibility Studies* journal.
+
+# Sample Size 
+
+Sample size calculations are not required for pilot studies, however pilot studies are not exempt from the need to have a clear and well-reasoned rationale for the number of participants included. The sample size should be large enough to provide useful information about the aspects of feasibility that are being evaluated. The aim of pilot studies is not to provide definitive evidence for a treatment effect; power calculations are not a valid consideration for sample size if the objective does not include any hypothesis tests.
+
+A confidence interval (CI) approach (focused on precision) can be used if the objective is to estimate a proportion of people with a given outcome (e.g. adherence rate). For example, if a trial would be considered successful if $\geq$90% of patients adhere to the treatment; the smallest sample size required to have a confidence level of 95% that the adherence rate is within 5% of the desired adherence rate, will be at least 139 participants. This calculation is based on the formula below:
+
+$$ n = \dfrac{\rho(1 - \rho)(z^2)}{d^2} = \dfrac{0.90(1 - 0.90)(1.96^2)}{0.05^2} = 139 $$
+
+*Note: for 80%, 90% or 95% CI, the z value is equal to 1.28, 1.64, or 1.96, respectively.*
+
+You can also use an online calculator, such as that found <a href="http://statulator.com/SampleSize/ss1P.html" target="_blank"> here. </a>
+
+# Inappropriate or problematic applications of the term "pilot" 
+
+-   When applied to studies with little or no funding. Although pilot studies are often considered less important than other studies, they require just as much planning and methodological rigor; a study should not be called a pilot just because it has a small sample size or inadequate methodological rigor.
+
+-   When applied to studies with vague, poorly developed research questions and/or poor alignment of specific aims and analyses. Studies with analyses that focus on treatment efficacy may be better described as exploratory studies (pilot studies focus on feasibility outcomes).
+
+-   When the rationale is simply that the study precedes a more costly study. This is problematic because there is no assurance that the pilot study will provide valuable information needed to inform the successful design and execution of the subsequent study. The study should have clear feasibility objective(s) with a clear analytic plan.
+
+# Example of Objectives, Sample Size and Analysis Plan 
+
+Our **long-term goal** is to improve the quality of life of children with epilepsy (CWE). The **objective** of this pilot trial is to evaluate the feasibility of utilizing drug A and B as intervention for CWE. Our **central hypothesis** is that drug A and B will be successfully implemented, and that drug A will be more effective at improving CWE's severity of seizures, relative to drug B. We plan to test our central hypothesis and accomplish the overall goal of this trial by pursuing the following **specific aims**:
+
+*Primary Aim:*
+
+1.  To assess the feasibility of successfully implementing drug A as an intervention for CWE. Specifically, we will evaluate: a) Participant adherence to treatment b) Study procedures (e.g. recruitment, randomization, attrition, time to complete study procedures).
+
+The main trial would be feasible if the overall adherence rate to the medication is $\geq$80%. This information will be essential in preparing for a subsequent multi-centered trial across Canada. Feasibility outcomes will be evaluated throughout the course of the study and the specific outcomes collected and evaluated are presented in Section X.
+
+*Secondary aims* are to obtain preliminary data regarding the impact of drug A and B on:
+
+1.  Children's severity of seizures at the 6-month follow-up.
+
+All secondary outcomes (efficacy outcomes) will be evaluated two weeks before the commencement of the drug and six months after. The specific outcomes collected and evaluated are presented in Section X.
+
+**Sample Size**: This trial will be considered a success if an overall adherence rate of 80% is achieved (e.g. 20% of doses are missed). A total sample size of 62 participants is required to estimate the expected proportion with 10% absolute precision and a 95% confidence interval (Thabane et al. 2010).
+
+**Analysis Plan**: To evaluate study feasibility (Primary Aim), descriptive statistics will be used to determine the 1) participant adherence to each treatment (proportion of missed doses), 2) number of participants screened and enrolled per month, 3) proportion of screened participants eligible who enroll, 4) reasons for non-participation, 5) retention rate in treatment and waitlist control condition, 6) missing data on questionnaires, and 7) time to complete questionnaires. To evaluate the impact of the intervention on the severity of seizures (GASE score) at the 6 month follow-up (Secondary Aim), linear regression will be used to compare each groups' scores at the 6 month follow-up, while adjusting for scores at baseline. All analyses will follow the intention-to-treat principle, using two-tailed tests.
+
+# References and Further Readings
+
+Eldridge SM, et al. CONSORT 2010 statement: extension to randomised pilot and feasibility trials. BMJ 2016; 355:i5239.
+
+Lancaster GA, Thabane L. Guidelines for reporting non-randomised pilot and feasibility studies. Pilot and Feasibility Studies 2019; 5: 144.
+
+Thabane L, et al. A tutorial on pilot studies: the what, why and how. BMC Medical Research Methodology 2010; 10:1.

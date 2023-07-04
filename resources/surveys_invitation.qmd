@@ -1,0 +1,57 @@
+---
+title: 'Survey Design 1: Invitation and Follow-up'
+---
+
+Topic: Review of empirically validated methods and strategies that can improve survey participation. 
+
+This document follows the recommendations of the <a target="_blank" href="https://www.wiley.com/en-ca/Internet%2C+Phone%2C+Mail%2C+and+Mixed+Mode+Surveys%3A+The+Tailored+Design+Method%2C+4th+Edition-p-9781118921302">Tailored Design Method </a> by D.A. Dillman (2014).
+
+# Introduction
+
+A grounding principle of effective survey design involves customizing and tailoring the survey and study procedures to fit the context, considering the survey population, topic, and survey mode. What works for some studies does not work for others. The aim should be to develop a hoslistic design, focusing on all aspects of the methodology, rather than focusing on only one or two features as a means of encouraging response, ignoring other aspects. Special focus should also be given to both the response rate and nonresponse error; it is not helpful to increase response rates if doing so only brings in a certain type of respondents, thereby biasing results.
+
+The *strategies and methods described below have been empirically shown to increase response rate and quality of reporting*. Again, customize your study procedures and survey to fit your context.
+
+
+# Study Invitation
+-   Build upon previously established relationships and specify how the survey results will be useful and why the study is important. Ask for participants' help to provide insight into the problem.
+    -   Before sending the paper/online survey: contact individuals in person or via phone/mail, and provide them with a letter of information outlining the aims and importance of the study, and what participation in the study will involve. Allow time for them to evaluate the request and follow-up in person or with a phone call to answer any questions they may have.
+-   Establish trust. Trust is one of the most important issues affecting response to questionnaires.
+    -   Assure confidentiality and protection of data. Indicate how the information will be protected.
+    -   Use institutional letterhead in all communications to emphasize sponsorship by a legitimate authority (e.g. the affiliated hospital and university). The better known an organization is to a potential participant, the greater the likelihood they will respond.
+    -   Provide ways for potential participants to ask questions about the study and assess the authenticity of the survey request and ask questions about it. E.g. provide a physical address, phone number, email, website, etc.
+-   Indicating that a small number of people have an opportunity to participate can be motivational. Therefore, if possible, stress that opportunities to respond are limited (unless the study is a census, where everyone is asked) and that you request their help to solve the problem being addressed.
+-   Do not offer people an initial choice of survey mode (e.g. online or mailed paper questionnaire).
+    -   Doing so tends to decrease final response rates, perhaps because it makes the response decision more complex, and leads to individuals delaying response.
+-   If possible, do not deny the existence of benefits to the individual. Doing so denies the possibility and likelihood that some respondents enjoy completing surveys, providing answers to questions they find interesting, and/or contributing to research that may be helpful to others.
+
+
+
+# Incentives and Follow-up
+-   Send a monetary incentive along with the study survey. This is more effective than a larger incentive given upon completion of the survey, and more effective than lotteries.
+    -   An initial incentive is very effective because of reciprocity; the researcher has given something to the potential participant, who may be more willing to complete the survey in response.
+-   Personalize letters with the participants' name and use different modes of contact to create synergy and encourage responses.
+    -   For example, send a mailed request for participation in an online survey and include a link to the survey and a small gift card as an incentive. Follow this request a few days later with an e-mail containing an electronic link to the web survey. Follow-up with non-responders by sending a mailed reminder and a paper questionnaire (with a pre-stamped and pre-addressed return envelope and, possibly another monetary incentive). A few days later send a final email notification.
+    -   Note that each follow-up conveys new information and should discuss the importance of the study in different ways to spread the appeal and get participants interested in the study.
+-   Convey that others have responded. Knowing that others have completed a survey can encourage people to participate. For example, indicate "we are just waiting on a few last responses to finish the study, and would like to include yours".
+-   If possible, show the similarity of the survey request to other requests to which the person has responded. People strive to be consistent in their attitudes, beliefs, and actions. For example, when following up with the follow-up survey indicate that the participants' response to the baseline survey was very helpful and much appreciated.
+
+
+
+# Decrease the Cost of Participation
+-   Be mindful of the participant burden. Should avoid placing participants in situations where they are required to respond to long and detailed survey, with questions the respondent either does not understand or cannot answer.
+-   Reduce the burden of length. Long surveys often lead to mid-survey terminations or increased item non response (skipped items).
+-   Reduce complexity. E.g. ask for the range of income, as opposed to the exact income and from all sources which may require a significant amount of time and energy for participants to determine.
+-   Make the survey visually pleasing and informative, to help guide respondents in how to answer questions and in what order.
+-   Avoid subordinating language.
+    -   For example, *avoid* statements such as "For us to help solve the school problems in your community, it is necessary for you to complete this questionnaire." Instead ask for their assistance in helping to solve the school problems in their community.
+-   Make it as easy as possible for participants to respond (e.g. include pre-stamped and pre-addressed return envelope for hardcopy surveys).
+-   Be strategic and minimize requests to obtain personal or sensitive information. When this data is required, it may best to:
+    -   Use a self-administered survey to provide a sense of increased privacy.
+    -   Ask for this data later in the survey to allow time for trust and rapport to develop.
+    -   Provide a simple explanation for why responses to these questions are important. For example, "the next two questions will allow us to compare your health to that of other people in the study who are similar to you".
+
+
+# References and Further Readings
+
+Dillman, D. A., Smyth, J. D., & Christian, L. M. (2014). Internet, phone, mail, and mixed-mode surveys: the tailored design method. John Wiley & Sons.

@@ -1,0 +1,119 @@
+{
+  "index.qmd": {
+    "index.html": "806c4f5c"
+  },
+  "about.qmd": {
+    "about.html": "1f2d644b"
+  },
+  "pages/consulting.qmd": {
+    "consulting.html": "d674060e"
+  },
+  "pages/cv.qmd": {
+    "cv.html": "9ba031be"
+  },
+  "pages/research.qmd": {
+    "research.html": "adeb69f5"
+  },
+  "pages/resources.qmd": {
+    "resources.html": "2a72a88f"
+  },
+  "pages/talks.qmd": {
+    "talks.html": "24772492"
+  },
+  "pages/teaching.qmd": {
+    "teaching.html": "078726ec"
+  },
+  "resources/sample_size_calculator.qmd": {
+    "sample_size_calculator.html": "43f7e09c"
+  },
+  "resources/categorical_data.qmd": {
+    "categorical_data.html": "513a5df6"
+  },
+  "resources/confounding.qmd": {
+    "confounding.html": "8cc973f9"
+  },
+  "resources/data_formatting.qmd": {
+    "data_formatting.html": "9ecad72f"
+  },
+  "resources/inter_rater_reliability.qmd": {
+    "inter_rater_reliability.html": "92a41350"
+  },
+  "resources/rct_design.qmd": {
+    "rct_design.html": "c6fdce6b"
+  },
+  "resources/rct_other.qmd": {
+    "rct_other.html": "82572a4b"
+  },
+  "resources/rct_randomization.qmd": {
+    "rct_randomization.html": "d4bd32c3"
+  },
+  "resources/regression_linear.qmd": {
+    "regression_linear.html": "f7af6a35"
+  },
+  "resources/regression_logistic.qmd": {
+    "regression_logistic.html": "b34127c7"
+  },
+  "resources/regression_multilevel.qmd": {
+    "regression_multilevel.html": "27bded0f"
+  },
+  "resources/regression_survival.qmd": {
+    "regression_survival.html": "6cb0684e"
+  },
+  "resources/research_proposal.qmd": {
+    "research_proposal.html": "555c51f7"
+  },
+  "resources/stat_clin_significance.qmd": {
+    "stat_clin_significance.html": "9801b4af"
+  },
+  "resources/study_case_control.qmd": {
+    "study_case_control.html": "d1875477"
+  },
+  "resources/study_case_reports.qmd": {
+    "study_case_reports.html": "0ef5f833"
+  },
+  "resources/study_chart_review.qmd": {
+    "study_chart_review.html": "8a3788c0"
+  },
+  "resources/study_pilot_studies.qmd": {
+    "study_pilot_studies.html": "e075ced4"
+  },
+  "resources/study_systematic_reviews.qmd": {
+    "study_systematic_reviews.html": "5492a3cd"
+  },
+  "resources/surverys_invitation.qmd": {
+    "surverys_invitation.html": "a10b6e12"
+  },
+  "resources/surverys_questions.qmd": {
+    "surverys_questions.html": "9048e2dd"
+  },
+  "resources/surveys_invitation.qmd": {
+    "surveys_invitation.html": "e5c5848d"
+  },
+  "resources/surveys_questions.qmd": {
+    "surveys_questions.html": "5ea92b9a"
+  },
+  "pages/index.qmd": {
+    "index.html": "408e75d6"
+  },
+  "consulting.qmd": {
+    "consulting.html": "cfd8b1eb"
+  },
+  "cv.qmd": {
+    "cv.html": "0a6d0155"
+  },
+  "research.qmd": {
+    "research.html": "3de6b0f8"
+  },
+  "resources.qmd": {
+    "resources.html": "cbac058b"
+  },
+  "talks.qmd": {
+    "talks.html": "6a9f40e6"
+  },
+  "teaching.qmd": {
+    "teaching.html": "11ebbaf4"
+  },
+  "resources/intro_to_R.qmd": {
+    "intro_to_R.html": "cd6f9f91"
+  }
+}
