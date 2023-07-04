@@ -1,0 +1,19 @@
+﻿Variable Name   , Variable label                                           , Value labels                                                                                                              
+REGION,Region of USA,1 Northeast; 2 Midwest; 3 South; 4 West
+ AGE_P,Age (years),85 = 85+ years
+ SEX,Sex,1 = Male; 2= Female
+ R_MARITL,Marital status,1 Married - spouse in household; 2 Married - spouse not in household; 3 Married - spouse in household unknown; 4 Widowed; 5 Divorced; 6 Separated; 7 Never married; 8 Living with partner; 9 Unknown marital status
+ AHEIGHT,Height (inches),96=Not available; 97 = Refused; 98 = Not ascertained; 99= Don't know
+ AWEIGHTP,Weight (pounds),996=Not available; 997 = Refused; 998 = Not ascertained; 999= Don't know
+ ASISLEEP,Average hours of sleep,97 Refused; 98 Not ascertained; 99 Don't know
+ HYPEV,Has hypertension,1 Yes; 2 No; 7 Refused; 8 Not ascertained; 9 Don't know
+ CHLEV,Has high cholesterol,1 Yes; 2 No; 7 Refused; 8 Not ascertained; 9 Don't know
+ DIBEV1,Has diabetes,1 Yes; 2 No; 3 Borderline or prediabetes; 7 Refused; 8 Not ascertained; 9 Don't know; 
+AHSTATYR,Health status compared with 12 months ago,1 Better; 2 Worse; 3 About the same; 7 Refused; 8 Not ascertained; 9 Don't know
+ SMKSTAT2,Smoking status,1 Current every day smoker; 2 Current some day smoker; 3 Former smoker; 4 Never smoker; 5 Smoker - current status unknown; 9 Unknown if ever smoked
+ ASISAD,K6 scale -felt so sad that nothing could cheer you up?,1 ALL of the time; 2 MOST of the time; 3 SOME of the time; 4 A LITTLE of the time; 5 NONE of the time; 7 Refused; 8 Not ascertained; 9 Don't know
+ ASINERV,K6 scale - felt nervous,2 ALL of the time; 2 MOST of the time; 3 SOME of the time; 4 A LITTLE of the time; 5 NONE of the time; 7 Refused; 8 Not ascertained; 9 Don't know
+ ASIRSTLS,K6 scale - felt restless or fidgety,3 ALL of the time; 2 MOST of the time; 3 SOME of the time; 4 A LITTLE of the time; 5 NONE of the time; 7 Refused; 8 Not ascertained; 9 Don't know
+ ASIHOPLS,K6 scale - felt hopeless,4 ALL of the time; 2 MOST of the time; 3 SOME of the time; 4 A LITTLE of the time; 5 NONE of the time; 7 Refused; 8 Not ascertained; 9 Don't know
+ ASIEFFRT,K6 scale - felt that everything was an effort,5 ALL of the time; 2 MOST of the time; 3 SOME of the time; 4 A LITTLE of the time; 5 NONE of the time; 7 Refused; 8 Not ascertained; 9 Don't know
+ ASIWTHLS,K6 scale - felt worthless,6 ALL of the time; 2 MOST of the time; 3 SOME of the time; 4 A LITTLE of the time; 5 NONE of the time; 7 Refused; 8 Not ascertained; 9 Don't know

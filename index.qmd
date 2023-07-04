@@ -20,7 +20,8 @@ toc: false
 
 :::{#hero-heading}
 # Klajdi Puka
-*Behavioural Scientist | PhD Epidemiology & Biostatistics*
+*Behavioural Scientist | <br>
+PhD Epidemiology & Biostatistics*
 
 I am a behavioural scientist with a passion research methods, R, and data visualization. My skills are at the intersection of behevioural science, statistics, and knowledge translation.
 

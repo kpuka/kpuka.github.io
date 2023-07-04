@@ -16,7 +16,6 @@ Below are a list of resources developed to introduce trainees to a variety of me
 ::: {.column}
 ### R
 -   [Introduction to R](/resources/intro_to_R.qmd)
--   [Introduction to Quarto](/resources/intro_to_quarto.qmd)
 :::
 :::
 

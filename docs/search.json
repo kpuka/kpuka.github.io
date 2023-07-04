@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Klajdi Puka",
     "section": "",
-    "text": "Google Scholar\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \n\n\nBehavioural Scientist | PhD Epidemiology & Biostatistics\nI am a behavioural scientist with a passion research methods, R, and data visualization. My skills are at the intersection of behevioural science, statistics, and knowledge translation.\n\nResearch Resources CV/Resume"
+    "text": "Google Scholar\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \n\n\nBehavioural Scientist |  PhD Epidemiology & Biostatistics\nI am a behavioural scientist with a passion research methods, R, and data visualization. My skills are at the intersection of behevioural science, statistics, and knowledge translation.\n\nResearch Resources CV/Resume"
   },
   {
     "objectID": "index.html#about-me",
@@ -291,7 +291,7 @@
     "href": "resources.html",
     "title": "Methodological and Statistical Resources",
     "section": "",
-    "text": "Below are a list of resources developed to introduce trainees to a variety of methodological and statistical topics. One-on-one support is also provided, for further details click here\n\n\n\nGetting Started\n\nData Formatting\nDeveloping a Research Proposal\nSample Size Calculator\n\n\n\n\nR\n\nIntroduction to R\nIntroduction to Quarto\n\n\n\n\n\n\n\nClinical Trials\n\nStudy Design\nRandomization\nOther Considerations\n\n\n\n\nOther Study Designs\n\nCase Control\nRetrospective Chart Review\nPilot Studies\nCase Reports\nSystematic Reviews\n\n\n\n\n\n\n\nRegressions\n\nLinear Regression\nLogistic Regression\nSurvival Analysis\nMultilevel (Mixed) Models\n\n\n\n\nOther Topics\n\nStatistical vs. Clinical Significance\nWorking with Categorical Data\nConfounding\nInter-rater Reliability\n\n\n\n\n\nSurvey Design\n\nInvitation and Follow-up\nDesiging Effective Questions"
+    "text": "Below are a list of resources developed to introduce trainees to a variety of methodological and statistical topics. One-on-one support is also provided, for further details click here\n\n\n\nGetting Started\n\nData Formatting\nDeveloping a Research Proposal\nSample Size Calculator\n\n\n\n\nR\n\nIntroduction to R\n\n\n\n\n\n\n\nClinical Trials\n\nStudy Design\nRandomization\nOther Considerations\n\n\n\n\nOther Study Designs\n\nCase Control\nRetrospective Chart Review\nPilot Studies\nCase Reports\nSystematic Reviews\n\n\n\n\n\n\n\nRegressions\n\nLinear Regression\nLogistic Regression\nSurvival Analysis\nMultilevel (Mixed) Models\n\n\n\n\nOther Topics\n\nStatistical vs. Clinical Significance\nWorking with Categorical Data\nConfounding\nInter-rater Reliability\n\n\n\n\n\nSurvey Design\n\nInvitation and Follow-up\nDesiging Effective Questions"
   },
   {
     "objectID": "teaching.html",
@@ -334,5 +334,180 @@
     "title": "Clinical Trials 2: Randomization",
     "section": "Stratified randomization",
     "text": "Stratified randomization\nIs used when there is a key variable measurable at the time of randomization that is considered to be strongly associated with the primary outcome (e.g. study site). It ensures that the treatment groups are balanced with respect to that variable (e.g. study site).\nA separate randomization list (created through simple or blocked randomization) is created for each stratum (e.g. for each category of the variable; e.g. for each study site). The randomization list specifies the sequence of treatment allocation, e.g. 1st patient will receive treatment, 2nd will receive treatment, 3rd will receive placebo, etc. When stratifying by $$2 variables, the number of randomization lists is the product of the number of categories. E.g. to stratify by site (4 sites) and sex (2 categories), the number of randomization lists should be 8 (i.e., 4 x 2); 1st list for site 1, males; 2nd list for site 1, females; 3rd list for site 2, males; etc."
+  },
+  {
+    "objectID": "resources/intro_to_R.html",
+    "href": "resources/intro_to_R.html",
+    "title": "Introduction to R",
+    "section": "",
+    "text": "Topic: Introduction to data wrangling and data management with R.\nR is a powerful programming language and software environment widely used for statistical computing, data analysis, and graphical visualization."
+  },
+  {
+    "objectID": "resources/intro_to_R.html#functions-and-packages",
+    "href": "resources/intro_to_R.html#functions-and-packages",
+    "title": "Introduction to R",
+    "section": "Functions and Packages",
+    "text": "Functions and Packages\n\nFunctions essential building blocks that enable you to perform specific tasks efficiently. They are like a set of instructions designed to carry out various operations, saving you from having to write complex code each time you want to perform a common task.\n\nIn R, a function is a named block of code that takes inputs (arguments) and returns outputs (results).\nFor example, mean() calculates the mean of a set of numbers, so you don’t have to write the formula to calculate the mean each time\n\nPackages, just like smartphone apps, are created by individuals/groups and extend the functionality of R by providing a a collection of functions\nTo use packages:\n\nFirst time only: install the package using install.packages(\"package_name\")\nEach time you open R: load the package using library(package_name)\n\nSometimes, different packages may use the same function name\n\nTo specify the package and function name: package_name::function_name()\n\nR’s vast collection of packages, combined with the ability to create your own functions, make it a powerful tool"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#basic-operations-and-functions",
+    "href": "resources/intro_to_R.html#basic-operations-and-functions",
+    "title": "Introduction to R",
+    "section": "Basic Operations and Functions",
+    "text": "Basic Operations and Functions\n\n\n\n\n\n\n\nOperator\nDescription\n\n\n\n\n$\nUsed to access/refer to specific elements/variables within a data frame or list\n\n\n&lt;-\n“save as”. Arrow pointing to the left - the object on the left will be defined/crehtated based on the instructions on the right\n\n\n|&gt;  %&gt;%\n“and then”, will take the output from the first function and use it as the first input of the second function. For example:  function(data, arguments) is the same as  data |&gt; function(arguments)\n\n\n( )\nUsed primarily to specify the arguments of a function\n\n\nc( )\nIs a function allowing you to combine multiple elements into a single object. It stands for ‘combine’ or ‘concatenate’\n\n\n|\nOr\n\n\n&\nAnd"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#resources-and-help-files",
+    "href": "resources/intro_to_R.html#resources-and-help-files",
+    "title": "Introduction to R",
+    "section": "Resources and Help Files",
+    "text": "Resources and Help Files\n\nHelpful books include R for Data Science and Advanced R\nMany packages also have websites, such as https://www.tidyverse.org/packages/\n\nGoogle, and more recently chatGPT, will be your best friend\n\nR has built-in help files that provide syntax, arguments, usage, and examples\n\nTo access a help file, use ? followed by the function name (e.g. ?mean)\n\n\n\n?mean"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#import-data-into-r",
+    "href": "resources/intro_to_R.html#import-data-into-r",
+    "title": "Introduction to R",
+    "section": "Import Data into R",
+    "text": "Import Data into R\n\nTo work with data, you first need to read it into R\nread.csv() opens CSV files; specify the file location/name\n\n\nnhis2018 &lt;- read.csv(\"files/intro_to_r/nhis2018_SampleAdult.csv\")\n\n  # In this example, the folder that contains the 'R Project' file, \n  # also contains a folder called 'files, within which is a folder \n  # called \"intro_to_R\" which has the CSV data filed called \n  # 'nhis2018_SampleAdult.csv'\n\n  # Use \"&lt;-\" to save the data and name it 'nhis2018'\n\nTo load other file types:\n\nR: nhis2018 &lt;- readRDS(\"data_name.R\")\nExcel: nhis2018 &lt;- read_excel(\"data_name.xlsx\") (readxl package)"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#exporting-data-from-r",
+    "href": "resources/intro_to_R.html#exporting-data-from-r",
+    "title": "Introduction to R",
+    "section": "Exporting Data from R",
+    "text": "Exporting Data from R\nUse saveRDS() to save as an R object\n\nSpecify the object to save, then the location and name of the file to be saved\n\n\nsaveRDS(nhis2018, \"files/intro_to_r/updated_nhis2018.R\")\n\n\nUse write.csv() to save as a CSV file\n\nwrite.csv(nhis2018, \"files/intro_to_r/updated_nhis2018.csv\")"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#labeling-variables",
+    "href": "resources/intro_to_R.html#labeling-variables",
+    "title": "Introduction to R",
+    "section": "Labeling Variables",
+    "text": "Labeling Variables\n\nUse factor() to create and label factors\n\nImportantly, the first level listed will be the ‘reference’ level used in statistical models\nAlternatively, use relevel() to change the reference level\n\nConsider creating a new variable for the labeled version, e.g. “variable_name.factor”\n\nThis gives two versions of the variable - one coded numerically, the other by labels\n\n\n\n\n\n# Create factor for 'sex', reference level=Female\nnhis2018$SEX.factor &lt;- factor(nhis2018$SEX,\n                              levels=c(2, 1),\n                              labels =c(\"Women\", \n                                        \"Men\"))\n\n\n\n# Change reference level of an exist factor\nnhis2018$SEX.factor &lt;- relevel(nhis2018$SEX.factor, \n                               ref = \"Men\")    \n\n\n\n\n\n\n\n\n  \n    \n      Result:\n    \n    \n  \n  \n    \n      ID\n      SEX\n      SEX.factor\n    \n  \n  \n    1\n2\nWomen\n    2\n2\nWomen\n    3\n1\nMen\n    4\n2\nWomen\n    5\n1\nMen\n    6\n1\nMen"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#clean-data-frame-overall",
+    "href": "resources/intro_to_R.html#clean-data-frame-overall",
+    "title": "Introduction to R",
+    "section": "Clean data frame (overall)",
+    "text": "Clean data frame (overall)\nThe janitor package provides several functions for cleaning and tidying data.\n\nclean_names() converts column names to a consistent format (easier to work with)\nremove_empty() removes rows and/or columns that contain only missing values\n\n\n\n\ninstall.packages(\"janitor\")\nlibrary(janitor)        \n\nnhis2018 &lt;- nhis2018 |&gt; \n  clean_names() |&gt; \n  remove_empty (\"cols\")\n\n\n# check variable names \nnames(nhis2018)\n\n\nOriginal variable names:\n\n\n [1] \"ID\"         \"REGION\"     \"AGE_P\"      \"SEX\"        \"R_MARITL\"  \n [6] \"AHEIGHT\"    \"AWEIGHTP\"   \"ASISLEEP\"   \"HYPEV\"      \"CHLEV\"     \n[11] \"DIBEV1\"     \"AHSTATYR\"   \"SMKSTAT2\"   \"ASISAD\"     \"ASINERV\"   \n[16] \"ASIRSTLS\"   \"ASIHOPLS\"   \"ASIEFFRT\"   \"ASIWTHLS\"   \"SEX.factor\"\n\n\n\nNew variable names:\n\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\n\n [1] \"id\"         \"region\"     \"age_p\"      \"sex\"        \"r_maritl\"  \n [6] \"aheight\"    \"aweightp\"   \"asisleep\"   \"hypev\"      \"chlev\"     \n[11] \"dibev1\"     \"ahstatyr\"   \"smkstat2\"   \"asisad\"     \"asinerv\"   \n[16] \"asirstls\"   \"asihopls\"   \"asieffrt\"   \"asiwthls\"   \"sex_factor\""
+  },
+  {
+    "objectID": "resources/intro_to_R.html#tidyverse-package",
+    "href": "resources/intro_to_R.html#tidyverse-package",
+    "title": "Introduction to R",
+    "section": "Tidyverse Package",
+    "text": "Tidyverse Package\n\nIs a collection of packages with tools for data manipulation, visualization, and modeling\n\n\ninstall.packages(\"tidyverse\") # Install the package (first time only)\nlibrary(tidyverse)            # Load the package (each time you load R)\n\nContains several functions that will be used throughout the workshop, including:\n\nrename() change the name of a column (aka variables)\nfilter() keeps or discards rows (aka observations)\nselect() keeps or discards columns (aka variables)\narrange()sorts data set by certain variable(s)\ncount() tallies data set by certain variable(s)\nmutate()creates new variables\nsummarize() aggregates data\n\nTypically, the first argument in these functions is the data frame, followed by the operation you want to perform"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#rename-variables",
+    "href": "resources/intro_to_R.html#rename-variables",
+    "title": "Introduction to R",
+    "section": "Rename Variables",
+    "text": "Rename Variables\n\nUse rename() to change the names of variables\nFirst argument is the data frame, followed by a list of ‘new_name = old_name’ statements\n\n\nnhis2018 &lt;- nhis2018 |&gt;\n  rename(age = age_p,\n         marital = r_maritl,\n         height_in = aheight,\n         weight_lb = aweightp,\n         sleep_hrs = asisleep,\n         health_chage = ahstatyr,\n         smoking = smkstat2)\n\n# Check\nnames(nhis2018)\n\n [1] \"id\"           \"region\"       \"age\"          \"sex\"          \"marital\"     \n [6] \"height_in\"    \"weight_lb\"    \"sleep_hrs\"    \"hypev\"        \"chlev\"       \n[11] \"dibev1\"       \"health_chage\" \"smoking\"      \"asisad\"       \"asinerv\"     \n[16] \"asirstls\"     \"asihopls\"     \"asieffrt\"     \"asiwthls\"     \"sex_factor\""
+  },
+  {
+    "objectID": "resources/intro_to_R.html#removekeep-observations",
+    "href": "resources/intro_to_R.html#removekeep-observations",
+    "title": "Introduction to R",
+    "section": "Remove/Keep observations",
+    "text": "Remove/Keep observations\nUse filter() to specify the rows (aka observations) to keep\nSpecify the data frame, followed by the conditions you want to keep:\n\n\n\n# Keep only rows where region &gt; 1\nnhis2018 &lt;- nhis2018 |&gt;\n  filter(region &gt;1)\n\n# check\ncount(nhis2018, region)  \n\n\nOld frequncy:\n\n\n\n\n\nregion\nn\n\n\n\n\n1\n72\n\n\n2\n122\n\n\n3\n190\n\n\n4\n116\n\n\n\n\n\n\n\n\nNew frequncy:\n\n\n\n\n\nregion\nn\n\n\n\n\n2\n122\n\n\n3\n190\n\n\n4\n116\n\n\n\n\n\n\n\n\n\n\nOther examples, using different operators:\n\n\n\n\n\n\n\nCode\nDescription of rows to keep\n\n\n\n\nfilter(region == 1 & sex == 1)\nregion equals 1 AND sex equals 1\n\n\nfilter(region == 1 | marital &gt;3)\nregion equals 1 OR marital greater than 3\n\n\nfilter(marital %in% c(1,3))\nmarital is equal to 1 or 3\n\n\nfilter(is.na(marital))\nmarital is missing\n\n\nfilter(marital != 3)\nmarital does not equal 3\n\n\nfilter(!is.na(marital))\nmarital is not missing"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#removekeep-variables",
+    "href": "resources/intro_to_R.html#removekeep-variables",
+    "title": "Introduction to R",
+    "section": "Remove/Keep variables",
+    "text": "Remove/Keep variables\nUse select() to specify the columns (aka variables) to keep\nSpecify the data frame, followed by the conditions you want to keep\n\n# Remove the 'sex' column (given the prefix '-')\nnhis2018 &lt;- nhis2018 |&gt;\n  select(-sex)  \n\n# Check\nhead(nhis2018, 10)\n\n\n\n\n\n\n\n\n\n\n\nid\nregion\nage\nmarital\nheight_in\nweight_lb\nsleep_hrs\nhypev\nchlev\ndibev1\nhealth_chage\nsmoking\nasisad\nasinerv\nasirstls\nasihopls\nasieffrt\nasiwthls\nsex_factor\n\n\n\n\n1\n3\n66\n1\n66\n180\n8\n2\n2\n2\n3\n4\n5\n5\n5\n5\n5\n5\nWomen\n\n\n2\n3\n18\n7\n63\n123\n7\n2\n2\n2\n3\n4\n1\n5\n5\n5\n5\n5\nWomen\n\n\n4\n4\n25\n7\n63\n110\n7\n2\n2\n2\n3\n4\n5\n5\n5\n5\n5\n5\nWomen\n\n\n5\n4\n61\n7\n72\n250\n6\n1\n1\n2\n3\n3\n5\n5\n5\n5\n5\n5\nMen\n\n\n7\n2\n22\n7\n65\n200\n7\n2\n2\n2\n3\n4\n5\n3\n4\n5\n5\n5\nWomen\n\n\n8\n3\n46\n1\n61\n150\n6\n2\n2\n2\n3\n4\n5\n5\n5\n5\n5\n5\nWomen\n\n\n9\n2\n64\n1\n67\n188\n8\n2\n2\n2\n1\n4\n4\n5\n5\n5\n5\n5\nWomen\n\n\n11\n2\n36\n1\n67\n115\n8\n2\n2\n2\n3\n4\n5\n4\n4\n5\n5\n5\nWomen\n\n\n12\n2\n38\n1\n65\n997\n8\n2\n2\n2\n3\n4\n5\n5\n5\n5\n5\n5\nWomen\n\n\n13\n3\n66\n1\n59\n120\n6\n2\n2\n2\n3\n4\n5\n5\n4\n5\n5\n5\nWomen\n\n\n\n\n\n\n\n\n\nOther examples, using different operators\n\n\n\n\n\n\n\n\nCode\nDescription of columns to keep\n\n\n\n\nselect(age, marital, sex)\nthe variables listed (in the order listed)\n\n\nselect(age:sleep_hrs)\nthe variables from age to sleep_hrs\n\n\nselect(contains(\"sleep\"))\nthe variables that contain “sleep”\n\n\nselect(starts_with(\"slee\"))\nthe variables that start with “slee”\n\n\nselect(where(is.numeric))\nthe variables which are numeric"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#move-columns",
+    "href": "resources/intro_to_R.html#move-columns",
+    "title": "Introduction to R",
+    "section": "Move columns",
+    "text": "Move columns\nUse relocate() to move columns within a data frame\nSpecify the data frame, followed by the new order of the columns\n\n# move the variable 'sex_factor' to appear before the 'age' variable \nnhis2018 &lt;- nhis2018 |&gt; \n  relocate(sex_factor, .before = age)\n\n# Check \nhead(nhis2018, 7)\n\n\n\n\n\n\n\n\n\n\n\nid\nregion\nsex_factor\nage\nmarital\nheight_in\nweight_lb\nsleep_hrs\nhypev\nchlev\ndibev1\nhealth_chage\nsmoking\nasisad\nasinerv\nasirstls\nasihopls\nasieffrt\nasiwthls\n\n\n\n\n1\n3\nWomen\n66\n1\n66\n180\n8\n2\n2\n2\n3\n4\n5\n5\n5\n5\n5\n5\n\n\n2\n3\nWomen\n18\n7\n63\n123\n7\n2\n2\n2\n3\n4\n1\n5\n5\n5\n5\n5\n\n\n4\n4\nWomen\n25\n7\n63\n110\n7\n2\n2\n2\n3\n4\n5\n5\n5\n5\n5\n5\n\n\n5\n4\nMen\n61\n7\n72\n250\n6\n1\n1\n2\n3\n3\n5\n5\n5\n5\n5\n5\n\n\n7\n2\nWomen\n22\n7\n65\n200\n7\n2\n2\n2\n3\n4\n5\n3\n4\n5\n5\n5\n\n\n8\n3\nWomen\n46\n1\n61\n150\n6\n2\n2\n2\n3\n4\n5\n5\n5\n5\n5\n5\n\n\n9\n2\nWomen\n64\n1\n67\n188\n8\n2\n2\n2\n1\n4\n4\n5\n5\n5\n5\n5\n\n\n11\n2\nWomen\n36\n1\n67\n115\n8\n2\n2\n2\n3\n4\n5\n4\n4\n5\n5\n5\n\n\n12\n2\nWomen\n38\n1\n65\n997\n8\n2\n2\n2\n3\n4\n5\n5\n5\n5\n5\n5\n\n\n13\n3\nWomen\n66\n1\n59\n120\n6\n2\n2\n2\n3\n4\n5\n5\n4\n5\n5\n5"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#simple-recoding",
+    "href": "resources/intro_to_R.html#simple-recoding",
+    "title": "Introduction to R",
+    "section": "Simple Recoding",
+    "text": "Simple Recoding\n\nUsing ifelse()\nLets calculate BMI\n\nFirst, use ifelse() to remove the values that specify the different types of missing data (see codebook)\nTemplate of ifelse(): ifelse(condition, value_if_true, value_if_false)\n\n\n\n\nnhis2018 &lt;- nhis2018 |&gt;\n  mutate(height_in = ifelse (height_in %in% c(96, 97, 98, 99), NA, height_in),\n         weight_lb = ifelse(weight_lb &gt;=996, NA, weight_lb),\n         bmi = weight_lb / height_in^2 * 703)  # this is the formula for BMI\n\n\n# Check\nnhis2018 |&gt;\n  select (id, height_in, weight_lb, bmi) |&gt;\n  head(7)  # The number indicates how many rows/observations to print\n\n# To check, you can alternatively, click on the name of the data set \n# in the 'Environment' window to see the entire data set\n\n\n\n\n\n\n\n\n  \n    \n      Result:\n    \n    \n  \n  \n    \n      id\n      height_in\n      weight_lb\n      bmi\n    \n  \n  \n    1\n66\n180\n29.04959\n    2\n63\n123\n21.78609\n    4\n63\n110\n19.48350\n    5\n72\n250\n33.90239\n    7\n65\n200\n33.27811\n    8\n61\n150\n28.33916\n    9\n67\n188\n29.44175\n  \n  \n  \n\n\n\n\n\n\n\n\nCreate/recode categorical variables\nUse cut() to categorize continuous variables\n\nSpecify the lowest value, the cut off points, and the highest value\nSubsequently, specify the labels for each category\n\nUse case_match() to manually recode any variable\n\nImportant: The order of statement matters for case_match() - the new variable will have the value associated with the first condition that is met\n\n\n\n\nnhis2018 &lt;- nhis2018 |&gt;\n mutate(bmi_category = cut(bmi, \n                           breaks=c(-Inf, 18.5, 25, 30, Inf), \n                           labels=c(\"Underweight\", \n                                    \"Healthy weight\", \n                                    \"Overweight\", \n                                    \"Obese\")),\n        \n        bmi_binary = case_match(bmi_category, \n                          c(\"Underweight\", \"Healthy weight\") ~ \"Low\",\n                          \"Overweight\" ~ \"High\",\n                          \"Obese\" ~ \"High\"))  \n\n# Check\nnhis2018 |&gt;\n  select (id, bmi, bmi_category, bmi_binary) |&gt;\n  head(12) # The number indicates how many rows/observations to print\n\n# To check, you can alternatively, click on the name of the data set \n# in the 'Environment' window to see the entire data set\n\n\n\n\n\n\n\n\n  \n    \n      Result:\n    \n    \n  \n  \n    \n      id\n      bmi\n      bmi_category\n      bmi_binary\n    \n  \n  \n    1\n29.04959\nOverweight\nHigh\n    2\n21.78609\nHealthy weight\nLow\n    4\n19.48350\nHealthy weight\nLow\n    5\n33.90239\nObese\nHigh\n    7\n33.27811\nObese\nHigh\n    8\n28.33916\nOverweight\nHigh\n    9\n29.44175\nOverweight\nHigh\n    11\n18.00958\nUnderweight\nLow\n    12\nNA\nNA\nNA\n    13\n24.23442\nHealthy weight\nLow\n    14\n29.61973\nOverweight\nHigh\n    15\n33.44723\nObese\nHigh"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#complex-recoding",
+    "href": "resources/intro_to_R.html#complex-recoding",
+    "title": "Introduction to R",
+    "section": "Complex Recoding",
+    "text": "Complex Recoding\nUse case_when() to recode using multiple conditions\n\nImportant: The order of statement matters for case_when()- the new variable will have the value associated with the first condition that is met\n\n\n\nnhis2018 &lt;- nhis2018 |&gt;\n  mutate(bmi_cateory2 = case_when (bmi &lt; 18.5 ~ \"Underweight\",\n                                  bmi &lt;25 ~ \"Healthy weight\",\n                                  bmi &lt;30 ~ \"Over weight\",\n                                  bmi&gt;=30 ~ \"Obese\",\n                                  .default  = NA),\n    \n    bmi_sex = case_when (bmi &gt; 18 & bmi &lt;25 & sex_factor == \"Men\" ~ \"Healthy Weight Men\",\n                        bmi &gt; 18 & bmi &lt;25 & sex_factor == \"Women\" ~ \"Healthy Weight Women\",\n                        sex_factor == \"Men\" & !is.na(bmi) ~ \"Not-healthy weight Men\",\n                        sex_factor == \"Women\" & !is.na(bmi) ~ \"Not-healthy weight Women\"))\n\n\n# Check by viewing the data\n# Alternative, can use frequency tables to check:\ncount(nhis2018, sex_factor, bmi_cateory2, bmi_sex)\n\n\n\n\n\n\n\n\n\n\n\n\n\nsex_factor\nbmi_cateory2\nbmi_sex\nn\n\n\n\n\nMen\nHealthy weight\nHealthy Weight Men\n46\n\n\nMen\nObese\nNot-healthy weight Men\n55\n\n\nMen\nOver weight\nNot-healthy weight Men\n81\n\n\nMen\nNA\nNA\n17\n\n\nWomen\nHealthy weight\nHealthy Weight Women\n67\n\n\nWomen\nObese\nNot-healthy weight Women\n62\n\n\nWomen\nOver weight\nNot-healthy weight Women\n66\n\n\nWomen\nUnderweight\nHealthy Weight Women\n4\n\n\nWomen\nUnderweight\nNot-healthy weight Women\n4\n\n\nWomen\nNA\nNA\n26\n\n\n\n\n\n\n\n\n This table has a row for each unique combination of the variables, and an additional column (n) which indicates the count of observations for each unique combination of the variables.\nFor example, the first row indicates that there are 46 individuals whose ‘sex_factor’ = Men, AND ‘bmi_category2’ = Health weight, AND ‘bmi_sex’ = Health Weight Men.\nUse this data to check the count for each combination, and check to ensure that all of the combinations listed align with what you would expect."
+  },
+  {
+    "objectID": "resources/intro_to_R.html#working-with-strings",
+    "href": "resources/intro_to_R.html#working-with-strings",
+    "title": "Introduction to R",
+    "section": "Working with Strings",
+    "text": "Working with Strings\nThe stringr package (part of tidyverse) provides several useful functions to work with strings:\n\nstr_detect() checks if a pattern is present in a string.\nstr_replace() replaces a pattern in a string with another string.\n\n\nnhis2018 &lt;- nhis2018 |&gt;\n  mutate(\n    # Replace hyphens (-) with comma (,) \n    marital_new = str_replace(marital, \" - \", \", \"),\n\n    # Recode based on a given pattern\n    is_married = ifelse(str_detect(marital, \"marri\"), \"Yes\", \"No\"))\n\n\n# Check \ncount(nhis2018, marital, marital_new, is_married)\n\n\n\n\n\n\n\n\n\n\n\nmarital\nmarital_new\nis_married\nn\n\n\n\n\nMarried - spouse in household\nMarried, spouse in household\nNo\n180\n\n\nMarried - spouse not in household\nMarried, spouse not in household\nNo\n9\n\n\nWidowed\nWidowed\nNo\n53\n\n\nDivorced\nDivorced\nNo\n55\n\n\nSeparated\nSeparated\nNo\n10\n\n\nNever married\nNever married\nYes\n91\n\n\nLiving with partner\nLiving with partner\nNo\n28\n\n\nUnknown marital status\nUnknown marital status\nNo\n2"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#long-to-wide",
+    "href": "resources/intro_to_R.html#long-to-wide",
+    "title": "Introduction to R",
+    "section": "Long to Wide",
+    "text": "Long to Wide\nUse pivot_wider() to transition from long to wide\n\nwide_data &lt;- long_data %&gt;%\n pivot_wider(\n   names_from = \"time\",                # the repeating event variable\n   values_from = c(\"QOL\",\"Anx\",\"Dep\")) # variable with repeated observations\n\n\n\nlong_data:\n\n\n\n\n\nID\nSex\ntime\nQOL\nAnx\nDep\n\n\n\n\n1\nM\n1\n63\n33\n59\n\n\n1\nM\n2\n74\n32\n50\n\n\n2\nM\n1\n75\n35\n53\n\n\n2\nF\n2\n76\n34\n48\n\n\n3\nM\n1\n54\n44\n51\n\n\n3\nF\n2\n76\n29\n45\n\n\n4\nF\n1\n77\n39\n47\n\n\n4\nF\n2\n58\n42\n47\n\n\n5\nM\n1\n78\n36\n48\n\n\n5\nM\n2\n84\n32\n59\n\n\n\n\n\n\n\n\nwide_data:\n\n\n\n\n\nID\nSex\nQOL_1\nQOL_2\nAnx_1\nAnx_2\nDep_1\nDep_2\n\n\n\n\n1\nM\n63\n74\n33\n32\n59\n50\n\n\n2\nM\n75\nNA\n35\nNA\n53\nNA\n\n\n2\nF\nNA\n76\nNA\n34\nNA\n48\n\n\n3\nM\n54\nNA\n44\nNA\n51\nNA\n\n\n3\nF\nNA\n76\nNA\n29\nNA\n45\n\n\n4\nF\n77\n58\n39\n42\n47\n47\n\n\n5\nM\n78\n84\n36\n32\n48\n59"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#wide-to-long",
+    "href": "resources/intro_to_R.html#wide-to-long",
+    "title": "Introduction to R",
+    "section": "Wide to Long",
+    "text": "Wide to Long\nUse pivot_longer() to transition from wide to long\nIf needed, it is easiest to rename variables to utilize a unique separator (e.g., _ or __)\n\nlong_data &lt;- wide_data %&gt;%\n  pivot_longer(\n    cols = QOL_1:Dep_2,             # variables to be transposed\n    names_to = c(\".value\", \"time\"), # specify new column names\n    names_sep = \"_\" )               # where the column name is broken up\n\n\n\nwide_data:\n\n\n\n\n\nID\nSex\nQOL_1\nQOL_2\nAnx_1\nAnx_2\nDep_1\nDep_2\n\n\n\n\n1\nM\n63\n74\n33\n32\n59\n50\n\n\n2\nM\n75\nNA\n35\nNA\n53\nNA\n\n\n2\nF\nNA\n76\nNA\n34\nNA\n48\n\n\n3\nM\n54\nNA\n44\nNA\n51\nNA\n\n\n3\nF\nNA\n76\nNA\n29\nNA\n45\n\n\n4\nF\n77\n58\n39\n42\n47\n47\n\n\n5\nM\n78\n84\n36\n32\n48\n59\n\n\n\n\n\n\n\n\nlong_data:\n\n\n\n\n\nID\nSex\ntime\nQOL\nAnx\nDep\n\n\n\n\n1\nM\n1\n63\n33\n59\n\n\n1\nM\n2\n74\n32\n50\n\n\n2\nM\n1\n75\n35\n53\n\n\n2\nM\n2\nNA\nNA\nNA\n\n\n2\nF\n1\nNA\nNA\nNA\n\n\n2\nF\n2\n76\n34\n48\n\n\n3\nM\n1\n54\n44\n51\n\n\n3\nM\n2\nNA\nNA\nNA\n\n\n3\nF\n1\nNA\nNA\nNA\n\n\n3\nF\n2\n76\n29\n45\n\n\n4\nF\n1\n77\n39\n47\n\n\n4\nF\n2\n58\n42\n47\n\n\n5\nM\n1\n78\n36\n48\n\n\n5\nM\n2\n84\n32\n59"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#same-participants-different-variables",
+    "href": "resources/intro_to_R.html#same-participants-different-variables",
+    "title": "Introduction to R",
+    "section": "Same participants, different variables:",
+    "text": "Same participants, different variables:\n\nfull_join() keeps all observations\ninner_join() keeps all observations that are in the first AND second data\nleft_join() keeps all observations in the first data\nright_join() keeps all observations in the second data\n\nTo combine &gt;2 data frames, run the function multiple times\n\nnew_data &lt;- full_join (data_1, data_2, by=\"ID\")"
+  },
+  {
+    "objectID": "resources/intro_to_R.html#different-participants-same-variables",
+    "href": "resources/intro_to_R.html#different-participants-same-variables",
+    "title": "Introduction to R",
+    "section": "Different participants, same variables",
+    "text": "Different participants, same variables\n\nColumns with the exact same names will be merged\nOthers will be retained and include missing data where appropriate\n\n\nnew_data &lt;- bind_rows (data_1, data_2)"
+  },
+  {
+    "objectID": "resources/inter_rater_reliability.html",
+    "href": "resources/inter_rater_reliability.html",
+    "title": "Inter-Rater Reliability",
+    "section": "",
+    "text": "Topic: Review of the methods to evaluate agreement between informants/raters or methods for different types of data."
+  },
+  {
+    "objectID": "resources/inter_rater_reliability.html#correlation-is-not-appropriate",
+    "href": "resources/inter_rater_reliability.html#correlation-is-not-appropriate",
+    "title": "Inter-Rater Reliability",
+    "section": "Correlation is not appropriate",
+    "text": "Correlation is not appropriate\nCorrelation measures strength of relation, not agreement. There is perfect agreement only if the points in Figure 1 lie on the diagonal line shown. There would be perfect correlation if the points lie along any straight line."
+  },
+  {
+    "objectID": "resources/inter_rater_reliability.html#graphic-assessment-of-agreement",
+    "href": "resources/inter_rater_reliability.html#graphic-assessment-of-agreement",
+    "title": "Inter-Rater Reliability",
+    "section": "Graphic Assessment of Agreement",
+    "text": "Graphic Assessment of Agreement\nUse a Bland and Altman plot, which shows the relationship between the difference in scores against their mean (e.g. Figure 2).  \nIf the difference score (d) is normally distributed, we would expect 95% of the values to lie between (d + 1.96 * SDd) and (d - 1.96 * SDd). SDd is the standard deviation of the difference score. These are the 95% limits of agreement, and define the range within which most differences between measurements will lie (these are not the same as confidence intervals).\nAs an example, the 95% limits of agreement in Figure 2 is between -30 and 30. You must use clinical judgment determine what is a clinically meaningful difference. For example if a 15-point difference on the measure is clinically meaningful, and the limits of agreement indicate that most difference scores lie between -30 to 30, then you the two measures may not be used interchangeable (since they differ so much).\nThe plot also shows the difference between scores, and whether the difference between methods/ raters is different depending on the average score of the measures."
+  },
+  {
+    "objectID": "resources/inter_rater_reliability.html#measuring-reliability-the-intraclass-correlation-coefficient-icc",
+    "href": "resources/inter_rater_reliability.html#measuring-reliability-the-intraclass-correlation-coefficient-icc",
+    "title": "Inter-Rater Reliability",
+    "section": "Measuring Reliability; The Intraclass Correlation Coefficient (ICC)",
+    "text": "Measuring Reliability; The Intraclass Correlation Coefficient (ICC)\nICC incorporates the magnitude of agreement in the IRR estimate, unlike kappa statistics (described below) which quantifies IRR based on all-or-nothing agreement.\nICC typically ranges from 0 to 1. Negative ICCs indicate systematic disagreement. Though the use of cut-off values is debated, ICC can be interpretable based on the 95% confidence interval as poor (&lt;.50), moderate (0.50 - 0.75), good (0.75 - 0.90) or excellent reliability (&gt;0.90).\nSee Hallgren (2012) for a SPSS and R tutorial for calculating ICC, and an overview of the different types of ICCs based on the nature of your study."
+  },
+  {
+    "objectID": "resources/inter_rater_reliability.html#kappa",
+    "href": "resources/inter_rater_reliability.html#kappa",
+    "title": "Inter-Rater Reliability",
+    "section": "Kappa",
+    "text": "Kappa\nWhen data are categorical, it is misleading to look at the percent agreement as a measure of agreement/reliability (e.g. agreed on 45 instances out of 50, so 90%). This does not take into account the agreement we would expect by chance even if the two ratings were unrelated. The kappa statistic measures the level of agreement between raters for a set of categorical ratings and corrects for agreement that would be expected by chance, providing a standardized index of inter-rater reliability that can be generalized across studies.\n\\[ \\kappa = \\frac{P(a) - P(e)}{1 - P(e)} \\]\nwhere, P(a) = percent agreement, and P(e) = probability of expected agreement due to chance.\nPossible values for kappa statistics range from -1 to 1:\n\n1 indicates perfect agreement\n0 indicates completely random agreement\n-1 indicates perfect disagreement\n\nThough the use of cut-off values is debated, kappa values can be interpretable as slight (&lt; 0.2), fair (0.21 - 0.40), moderate (0.41 - 0.60), good (0.61 - 0.80) and very good (&gt;.80) agreement.\nSee Hallgren (2012) for a SPSS and R tutorial for calculating kappa statistics for various scenarios (e.g. multiple raters, when observed ratings fall under one category at a much higher rate, etc.)."
   }
 ]

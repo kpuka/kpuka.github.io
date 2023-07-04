@@ -1,6 +1,5 @@
 ---
-title: 'Inter-Rater Reliability'
-subtitle: 'Evaluating Agreement Between Methods / Raters'
+title: Inter-Rater Reliability
 ---
 
 Topic: Review of the methods to evaluate agreement between informants/raters or methods for different types of data.
