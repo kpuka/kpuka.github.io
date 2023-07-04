@@ -17,7 +17,7 @@ Systematic error includes:
 # What is Confounding?
 A confounding variable (i.e. confounder) is a variable that distorts the observed relationship between the exposure and outcome. A confounder is associated with the exposure, and causally associated with the outcome. For example, if smoking effects the outcome and, if smoking is more prevalent in one group, the estimated effect of group on outcome will be biased.
 
-<br/><img src='/resources/files/confounding/confounding.JPG'><br/>
+<br>![](/resources/files/confounding/confounding.JPG)<br>
 
 There is nothing intrinsic about confounders - whether a variable is a confounder depends on the other variables in the model, the outcome of interest, and the aim of the study/analysis. To identify confounders, researchers must rely on theoretical knowledge of the subject area and/or data driven methods (see 'Multivariable adjustment' below). 
 

@@ -58,12 +58,20 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QN2NZN1QS3"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
+</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -87,10 +95,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./research.html" rel="" target="">
  <span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./talks.html" rel="" target="">
- <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./teaching.html" rel="" target="">
@@ -119,20 +123,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started">Getting Started</a></li>
-  <li><a href="#clinical-trials" id="toc-clinical-trials" class="nav-link" data-scroll-target="#clinical-trials">Clinical Trials</a></li>
-  <li><a href="#other-study-designs" id="toc-other-study-designs" class="nav-link" data-scroll-target="#other-study-designs">Other Study Designs</a></li>
-  <li><a href="#regressions" id="toc-regressions" class="nav-link" data-scroll-target="#regressions">Regressions</a></li>
-  <li><a href="#survey-design" id="toc-survey-design" class="nav-link" data-scroll-target="#survey-design">Survey Design</a></li>
-  <li><a href="#other-topics" id="toc-other-topics" class="nav-link" data-scroll-target="#other-topics">Other Topics</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -153,7 +144,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Below are a list of resources developed to introduce trainees to a variety of methodological and statistical topics.</p>
+<p>Below are a list of resources developed to introduce trainees to a variety of methodological and statistical topics. One-on-one support is also provided, for further details <a href="./consulting.html">click here</a></p>
+<div class="columns">
+<div class="column">
 <section id="getting-started" class="level3">
 <h3 class="anchored" data-anchor-id="getting-started">Getting Started</h3>
 <ul>
@@ -162,6 +155,18 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="./resources/sample_size_calculator.html">Sample Size Calculator</a></li>
 </ul>
 </section>
+</div><div class="column">
+<section id="r" class="level3">
+<h3 class="anchored" data-anchor-id="r">R</h3>
+<ul>
+<li><a href="./resources/intro_to_R.qmd">Introduction to R</a></li>
+<li><a href="./resources/intro_to_quarto.qmd">Introduction to Quarto</a></li>
+</ul>
+</section>
+</div>
+</div>
+<div class="columns">
+<div class="column">
 <section id="clinical-trials" class="level3">
 <h3 class="anchored" data-anchor-id="clinical-trials">Clinical Trials</h3>
 <ul>
@@ -170,6 +175,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="./resources/rct_other.html">Other Considerations</a></li>
 </ul>
 </section>
+</div><div class="column">
 <section id="other-study-designs" class="level3">
 <h3 class="anchored" data-anchor-id="other-study-designs">Other Study Designs</h3>
 <ul>
@@ -180,22 +186,20 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="./resources/study_systematic_reviews.html">Systematic Reviews</a></li>
 </ul>
 </section>
+</div>
+</div>
+<div class="columns">
+<div class="column">
 <section id="regressions" class="level3">
 <h3 class="anchored" data-anchor-id="regressions">Regressions</h3>
 <ul>
 <li><a href="./resources/regression_linear.html">Linear Regression</a></li>
 <li><a href="./resources/regression_logistic.html">Logistic Regression</a></li>
-<li><a href="./resources/regression_survival">Survival Analysis</a></li>
+<li><a href="./resources/regression_survival.html">Survival Analysis</a></li>
 <li><a href="./resources/regression_multilevel.html">Multilevel (Mixed) Models</a></li>
 </ul>
 </section>
-<section id="survey-design" class="level3">
-<h3 class="anchored" data-anchor-id="survey-design">Survey Design</h3>
-<ul>
-<li><a href="./resources/surveys_invitation.html">Invitation and Follow-up</a></li>
-<li><a href="./resources/surveys_questions.html">Desiging Effective Questions</a></li>
-</ul>
-</section>
+</div><div class="column">
 <section id="other-topics" class="level3">
 <h3 class="anchored" data-anchor-id="other-topics">Other Topics</h3>
 <ul>
@@ -203,6 +207,15 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="./resources/categorical_data.html">Working with Categorical Data</a></li>
 <li><a href="./resources/confounding.html">Confounding</a></li>
 <li><a href="./resources/inter_rater_reliability.html">Inter-rater Reliability</a></li>
+</ul>
+</section>
+</div>
+</div>
+<section id="survey-design" class="level3">
+<h3 class="anchored" data-anchor-id="survey-design">Survey Design</h3>
+<ul>
+<li><a href="./resources/surveys_invitation.html">Invitation and Follow-up</a></li>
+<li><a href="./resources/surveys_questions.html">Desiging Effective Questions</a></li>
 </ul>
 
 
@@ -443,6 +456,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Copyright 2023, Klajdi Puka
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

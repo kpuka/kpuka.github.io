@@ -4,12 +4,12 @@ title: 'Clinical Trials 1: Study Design'
 
 Topic: Introduction to basic concepts of clinical trials and their categorization.
 
-For more information on clinical trials, I recommend the book <a target="_blank" href="https://www.wiley.com/en-in/Statistical+Issues+in+Drug+Development%2C+3rd+Edition-p-9781119238577> Statistical Issues in Drug Development by Dr. Senn.</a>
+For more information on clinical trials, I recommend the book <a href="https://www.wiley.com/en-in/Statistical+Issues+in+Drug+Development%2C+3rd+Edition-p-9781119238577" target="_blank"> Statistical Issues in Drug Development by Dr. Senn.</a>
 
 
 # Introduction
 
-The National Institutes of Health (NIH) defines clinical trials as research studies in which $\geq$1 human participant(s) are prospectively assigned to $\geq$1 intervention(s) to evaluate the effects of the intervention(s) on health-related biomedical or behavioral outcomes. Clinical trials aim to isolate the effect of the treatment on the study outcome and provide results that are free of bias. A number of design features are used to achieve this goal, such as:
+The National Institutes of Health (NIH) defines clinical trials as research studies in which $\geq$ 1 human participant(s) are prospectively assigned to $\geq$ 1 intervention(s) to evaluate the effects of the intervention(s) on health-related biomedical or behavioral outcomes. Clinical trials aim to isolate the effect of the treatment on the study outcome and provide results that are free of bias. A number of design features are used to achieve this goal, such as:
 
 -   Randomization - patients are assigned to a treatment group by random selection.
 
@@ -25,42 +25,43 @@ When designing a clinical trial, a detailed study protocol should be created and
 
 Clinical trials involving pharmaceutical products are commonly categorized into four phases:
 
-*Phase I:* Non-randomized study; test drug in healthy volunteers (15 - 30 volunteers); aim to evaluate the pharmacokinetics/pharmacodynamics of the drug and establish safety and toxicity limits.
+-   *Phase I:* Non-randomized study; test drug in healthy volunteers (15 - 30 volunteers); aim to evaluate the pharmacokinetics/pharmacodynamics of the drug and establish safety and toxicity limits.
 
-*Phase II*: Randomized or non-randomized; test drug in patients with the disease (\<100 volunteers); 'proof of principle' stage and aim to evaluate dose-response relationship.
+-   *Phase II*: Randomized or non-randomized; test drug in patients with the disease (\<100 volunteers); 'proof of principle' stage and aim to evaluate dose-response relationship.
 
-*Phase III*: Randomized study; test drug against placebo (100s - 1000s of volunteers). Drug tested in a controlled fashion against a placebo or standard therapy.
+-   *Phase III*: Randomized study; test drug against placebo (100s - 1000s of volunteers). Drug tested in a controlled fashion against a placebo or standard therapy.
 
-*Phase IV*: Non-randomized surveillance study; test drug while in the marketplace; important to gather additional safety information from a larger group of patients, over the long-term.
+-   *Phase IV*: Non-randomized surveillance study; test drug while in the marketplace; important to gather additional safety information from a larger group of patients, over the long-term.
 
 
 # Trial Design
 
 ## Parallel-group trial
-Patients randomized to treatment group and followed simultaneously to determine the effect of each treatment 
-<br/><img src='/resources/files/rct1-study-design/parallel.jpg'>  <br/>
+Patients randomized to treatment group and followed simultaneously to determine the effect of each treatment. 
+
+<br><br>![](/resources/files/rct1-study-design/parallel.jpg)  <br><br>
 
 
 ## Crossover trial
 Patients receive a sequence of different treatments. Each person serves as their own control. There must be a sufficient time gap ('washout period') between different treatment phases.
-<img src="/resources/files/rct1-study-design/crossover.JPG"/> <br/> 
+<br><br>![](/resources/files/rct1-study-design/crossover.JPG) <br><br>
 
 
 ## Factorial trials
 Evaluate the effect of more than one treatment. Allows assessment of potential interaction among the treatments. 
-<img src="/resources/files/rct1-study-design/factorial.JPG"/> <br/> 
+<br><br>![](/resources/files/rct1-study-design/factorial.JPG) <br><br> 
 
 
 ## Cluster Randomized Trials
 Intact groups (i.e. clusters) are randomized to different interventions, and outcomes are typically measured on individuals within those clusters. Clustered trials are discussed in further detail below. 
   - Example: randomizing of the entire community or hospital to different interventions. 
-<img src="/resources/files/rct1-study-design/cluster-rct.jpg"/> <br/> 
+<br><br>![](/resources/files/rct1-study-design/cluster-rct.jpg) <br><br> 
 
 
 ## Individually-randomized group treatment trials
 This is a type of clustered trial, whereby individuals are individually randomized to different interventions, with groups (i.e. clusters) formed after randomization, and outcomes are typically measured on individuals within those clusters. Clustered trials are discussed in further detail below. 
   - Example: psychological intervention that is delivered in a group setting. 
-<img src="/resources/files/rct1-study-design/indiv-rand-cluster.jpg"/> <br/>
+<br><br>![](/resources/files/rct1-study-design/indiv-rand-cluster.jpg) <br><br>
 
 
 
@@ -79,9 +80,9 @@ Equivalence and non-inferiority trials require that the investigator predefine t
 
 Two treatments are said to be 'equivalent' when the confidence interval (CI) of the difference score between treatments is within (i.e. does not exceed) the -$\\Delta\$ and +$\\Delta\$. Non-inferiority trials are one-sided and only evaluate whether the CI exceeds -$\\Delta\$; if the lower bound is above the margin, the new treatment is deemed non-inferior and the trial is a 'success'.
 
-<img src="/resources/files/rct1-study-design/non-inferiority.jpg"/><br>
+<br><br>![](/resources/files/rct1-study-design/non-inferiority.jpg)<br><br>
 
-For a review of the methods used to define the non-inferiority margin ($\\Delta\$), see Althunian et al. 2017
+For a review of the methods used to define the non-inferiority margin ( $\Delta$ ), see Althunian et al. 2017
 
 
 

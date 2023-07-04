@@ -85,6 +85,8 @@ RR are appropriate for randomized controlled trials, cohort studies, case-cohort
 
 Example: Impact of doubling the control group on the OR and RR.
 
+::: columns
+::: {.column width="45%"}
 Scenario 1: 
 
 |            | Case    | Control | Total |
@@ -95,9 +97,13 @@ Scenario 1:
 OR = (59/48) / (122/190) = 1.91.
 
 RR = (59/181) / (48/238) = 1.68.
+:::
 
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
 
-
+::: {.column width="45%"}
 Scenario 2 (Control group doubled): 
 
 |            | Case    | Control | Total |
@@ -109,7 +115,8 @@ OR = (59/48) / (244/380) = 1.91.
 
 RR = (59/303) / (48/428)= 1.77.
 
-
+:::
+:::
 
 Notice that when the size of the control is doubled, the OR remains unchanged, but the RR changes. 
 

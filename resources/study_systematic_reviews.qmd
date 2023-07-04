@@ -68,37 +68,37 @@ Tables and figures help to present details and results of included studies in a 
 # Step-by-step guide to conducting the search
 
 1. Visit your institution's library, and navigate to the Databases list:
-<img src="/resources/files/systematic_reviews/systematic_reviews1.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews1.JPG) <br> 
 
 2. Find and utilize different databases, e.g. MEDLINE (Ovid) 
-<img src="/resources/files/systematic_reviews/systematic_reviews2.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews2.JPG) <br> 
 
 3. Begin your search, inserting one set of keywords/MeSH terms at a time, and combine with AND / OR.
-<img src="/resources/files/systematic_reviews/systematic_reviews3.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews3.JPG) <br> 
 
 4. Now search for the corresponding MeSH terms. Can also visit PubMed to search their list of MeSH terms and search for those directly. 
-<img src="/resources/files/systematic_reviews/systematic_reviews4.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews4.JPG) <br> 
 
 5. Select the appropriate MeSH terms. Select explode if you'd like to include all subheadings of the MeSH term. Then click continue. 
-<img src="/resources/files/systematic_reviews/systematic_reviews5.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews5.JPG) <br> 
 
 6. Now, combine the searches from the keywords and MeSH terms; select the boxes and press "OR".
-<img src="/resources/files/systematic_reviews/systematic_reviews6.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews6.JPG) <br> 
 
 7. New search results appear. 
-<img src="/resources/files/systematic_reviews/systematic_reviews7.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews7.JPG) <br> 
 
 8. Repeat the process to search for additional sets of keywords and MeSH terms. Then combine the results of the different sets of searches using "AND".
-<img src="/resources/files/systematic_reviews/systematic_reviews8.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews8.JPG) <br> 
 
 9. This is your final search result. A total of 676 articles were identified and must be screened. 
-<img src="/resources/files/systematic_reviews/systematic_reviews9.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews9.JPG) <br> 
 
 10. You can additionally add more criteria, such as language or year restraints. Additional limit options are available by clicking "additional limits". Caution should be taken for certain limits (based on sex, age groups, study design etc.) as these limits can be wrong and incorrectly exclude studies that are eligible. 
-<img src="/resources/files/systematic_reviews/systematic_reviews10.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews10.JPG) <br> 
 
 11. Updated search now includes 504 articles. These articles appear below and can be exported so they could be entered into systematic screening programs (e.g. Covidence) to facilitate the screening process.
-<img src="/resources/files/systematic_reviews/systematic_reviews11.JPG"/> <br/> 
+![](/resources/files/systematic_reviews/systematic_reviews11.JPG) <br> 
 
 12. Repeat the process using different databases, e.g. EMBASE, CINAHL. 
 

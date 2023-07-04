@@ -14,7 +14,7 @@ A p-value of .04 means that, if the null hypothesis is true (i.e. groups are equ
 
 If the p-value is less than 0.05, the observed results are unlikely if the null hypothesis were true. You can conclude statistically significant results; i.e. null hypothesis is not true; i.e. groups are different.
 
-If the p-value is high ($\geq$0.05), you **cannot** conclude that there is no difference between the groups, or that the intervention doesn't improve outcome, etc. You can only conclude that your experience did not prove or find a difference. Failure to prove a treatment is effective is not the same as proving it ineffective.
+If the p-value is high ($\geq$ 0.05), you **cannot** conclude that there is no difference between the groups, or that the intervention doesn't improve outcome, etc. You can only conclude that your experience did not prove or find a difference. Failure to prove a treatment is effective is not the same as proving it ineffective.
 
 Importantly, p-values are dependent on sample size and *provide virtually no information about the strength of the evidence supporting or refuting the null hypothesis*.
 

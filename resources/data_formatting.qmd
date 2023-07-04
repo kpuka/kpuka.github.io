@@ -23,7 +23,9 @@ Before sending any data to a statistician, review each point below and check off
 **_Emulate the example dataset and data dictionary below as closely as possible._**
   
 ## The Data File
-**An Example of a Dataset** <br/><img src='/resources/files/data-formatting/data-example.png'>
+**An Example of a Dataset** <br/>
+![](/resources/files/data-formatting/data-example.png)
+
 
 **Important features to follow:**
 
@@ -46,7 +48,9 @@ Before sending any data to a statistician, review each point below and check off
         Note that these all have spaces and/or special characters.
 
 ## The Data Dictionary
-Sometimes, column names cannot explain the variable completely. **You should always include a separate document/spreadsheet outlining the interpretation of the variables** in greater detail. This is called a data dictionary (sometimes referred to as a codebook). Shown below is such a document:<br/><img src='/resources/files/data-formatting/codebook-example.png'><br/>
+Sometimes, column names cannot explain the variable completely. **You should always include a separate document/spreadsheet outlining the interpretation of the variables** in greater detail. This is called a data dictionary (sometimes referred to as a codebook). Shown below is such a document:<br/>
+
+![](/resources/files/data-formatting/codebook-example.png) <br>
 
 -   Each column in the data set is listed and given a description. This is an ideal place to indicate units in which the measurements are made.
 

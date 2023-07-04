@@ -58,11 +58,19 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QN2NZN1QS3"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
+</script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -83,12 +91,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../research.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks.html" rel="" target="">
- <span class="menu-text">Talks</span></a>
+    <a class="nav-link" href="../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../teaching.html" rel="" target="">
@@ -266,35 +274,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
- <span class="menu-text">Survey Design</span></a>
+ <span class="menu-text">Other Topics</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/surveys_invitation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Invitation and Follow-up</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/surveys_questions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Designing Effective Questions</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
- <span class="menu-text">Other Topics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resources/stat_clin_significance.html" class="sidebar-item-text sidebar-link">
@@ -317,6 +302,29 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../resources/inter_rater_reliability.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inter-rater Reliability</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">Survey Design</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/surveys_invitation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Invitation and Follow-up</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/surveys_questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Designing Effective Questions</span></a>
   </div>
 </li>
       </ul>
@@ -432,6 +440,8 @@ ul.task-list li input[type="checkbox"] {
 <p>The OR will approximate the RR when the prevalence of disease/outcome is low (i.e.&nbsp;&lt;10%). If &gt; 10%, then ORs that are less than 1.0 underestimate the RR, and ORs that are greater than 1.0 overestimate the RR (OR will be more extreme than RR).</p>
 <p>RR are appropriate for randomized controlled trials, cohort studies, case-cohort studies, or nested case-control studies. <strong>RRs are not appropriate for traditional case-control studies</strong>. The reason is related to how risk and odds are defined; calculation of risk requires the use of “people at risk” as the denominator. In retrospective (traditional case-control) studies, the total number of exposed people is not available, therefore RR cannot be calculated and OR must be used. Case-control studies are not based on the population, the researcher chooses how many controls to include in the study and this will impact RR but not OR (see example below).</p>
 <p>Example: Impact of doubling the control group on the OR and RR.</p>
+<div class="columns">
+<div class="column" style="width:45%;">
 <p>Scenario 1:</p>
 <table class="table">
 <thead>
@@ -459,6 +469,9 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>OR = (59/48) / (122/190) = 1.91.</p>
 <p>RR = (59/181) / (48/238) = 1.68.</p>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
 <p>Scenario 2 (Control group doubled):</p>
 <table class="table">
 <thead>
@@ -486,6 +499,8 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>OR = (59/48) / (244/380) = 1.91.</p>
 <p>RR = (59/303) / (48/428)= 1.77.</p>
+</div>
+</div>
 <p>Notice that when the size of the control is doubled, the OR remains unchanged, but the RR changes.</p>
 </section>
 <section id="categorizing-continuous-variables" class="level1">
@@ -739,6 +754,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Copyright 2023, Klajdi Puka
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

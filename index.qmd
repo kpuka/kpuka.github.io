@@ -40,7 +40,7 @@ I am a Behavioural Scientist working in government, and an Adjunct Professor in 
 
 Previously, I have worked as a Scientist with the Centre for Addiction and Mental Health and as a statistician for Western University. I have also completed a PhD in Epidemiology and Biostatistics. Through these experiences I have worked closely with a broad range of stakeholders, providing scientific expertise, critically apprising and synthesizing information, and clearly explaining technical concepts. I have advanced knowledge of clinical and epidemiological research methods and biostatistics, and importantly, I have developed excellent communication skills. Lastly, I have also built key relationships with multidisciplinary stakeholders and provided leadership by setting and overseeing the attainment of project goals, and managing competing interests, priorities and deadlines.
 
-I also provide statistical and methodological consulting services at a nominal fee; for more information, click here [here](pages/consulting.qmd). 
+I also provide statistical and methodological consulting services at a nominal fee; for more information, click here [here](consulting.qmd). 
 
 
 <!-- CSS Style for buttons --->

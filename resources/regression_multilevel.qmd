@@ -12,11 +12,11 @@ Multilevel models are needed to analyze data that has a hierarchical or clustere
 # When Are Multilevel Models Used?
 A common assumption of 'standard' statistical methods (e.g. t-tests, ANOVAs, regressions) is that observations (e.g. patients) are independent of each other. This assumption is violated when observations (e.g. patients) have a 'hierarchy', 'clustered', or 'nested' structure (as shown in the figure below) because the observations are correlated. For example, the figure below shows a 'three-level' data structure, whereby patients are nested within clinics, and clinics are nested within regions. Patients treated in the same clinic may be more alike with each other compared to patients seen in other clinics and are therefore positively correlated. Likewise, clinics in the same region may be more alike compared to clinics in different regions.
 
-<br/><img src='/resources/files/regressions/multilevel/MixedModels1.JPG'>  <br/>
+<br>![](/resources/files/regressions/multilevel/MixedModels1.JPG)<br>
 
 Multilevel data structures also arise in longitudinal studies where multiple observations of individuals are made over time (as shown in the figure below). The observations from the same individual are more alike than observations from another patient, and are therefore correlated. 
 
-<br/><img src='/resources/files/regressions/multilevel/MixedModels2.JPG'>  <br/>
+<br>![](/resources/files/regressions/multilevel/MixedModels2.JPG)<br>
 
 
 # What are Multilevel Models?

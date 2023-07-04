@@ -9,6 +9,7 @@ Topic: Description of pilot studies and how pilot studies should be designed.
 A case report is a research design that provides an in-depth description and analysis of a 'case'. Case reports can be very diverse and encompass an individual (e.g. a patient), a social group, institutions (e.g. a hospital), or an event.
 
 Case reports play an important role in evidence generation, in clinical practice, and in raising awareness of understudied or poorly understood phenomena. They can be prospective or retrospective and are often used to investigate "why" or "how" questions. There are three types of case study designs: 
+
 -   Explanatory - investigates cause-and-effect relationships
 -   Exploratory - identifies hypothesis or research questions, or assesses the practicability of research protocols 
 -   Descriptive - provides an in depth description of a case
