@@ -118,5 +118,8 @@
   },
   "resources/intro_to_quarto.qmd": {
     "intro_to_quarto.html": "cbd94bce"
+  },
+  "404.qmd": {
+    "404.html": "fad2e2b8"
   }
 }
