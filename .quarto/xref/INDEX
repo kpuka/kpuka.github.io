@@ -115,5 +115,8 @@
   },
   "resources/intro_to_R.qmd": {
     "intro_to_R.html": "cd6f9f91"
+  },
+  "resources/intro_to_quarto.qmd": {
+    "intro_to_quarto.html": "cbd94bce"
   }
 }
