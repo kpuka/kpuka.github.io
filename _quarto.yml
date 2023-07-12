@@ -4,7 +4,7 @@ project:
 
 format:
   html:
-    theme: [lumen, mystylesc.scss]
+    theme: [lumen, mystyle.scss]
     toc: true
 
 website:
@@ -14,7 +14,7 @@ website:
     search: true
     left:
       - text: "About"
-        file: "index.qmd"
+        file: index.qmd
       - text: "Research"
         file: research.qmd
       - text: "Teaching"
