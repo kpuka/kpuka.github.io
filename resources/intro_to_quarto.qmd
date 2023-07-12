@@ -622,7 +622,6 @@ HTML becomes even more powerful when you combine it with CSS (Cascading Style Sh
 <style>
     .my_custom-section {
         background-color: #e32424;
-        color: white;
         padding: 10px;
     }
 </style>
@@ -631,7 +630,6 @@ HTML becomes even more powerful when you combine it with CSS (Cascading Style Sh
 <style>
     .my_custom-section {
         background-color: #e32424;
-        color: white;
         padding: 10px;
     }
 </style>
