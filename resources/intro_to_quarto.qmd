@@ -217,26 +217,26 @@ There are five types of callouts: `note`, `warning`, `important`, `tip`, and `ca
 #### Quarto Syntax (Input)  {.unnumbered}
 ```{verbatim}
 
-:::{.callout-note}
+::: {.callout-note}
 This is a callout block of the type "note".
 :::
 
-:::{.callout-caution collapse="true"}
+::: {.callout-caution collapse="true"}
 Callouts can be collapsible. 
 :::
 
-:::{.callout-important}
+::: {.callout-important}
 # My heading
 The first heading used within the callout 
 is used as the callout heading.
 :::
 
-:::{.callout-tip icon=false}
+::: {.callout-tip icon=false}
 The icon can also be hidden, like this. 
 :::
 
 
-:::{.callout}
+::: {.callout}
 This is a simpler callout, without 
 specifying the "type". 
 :::
@@ -246,28 +246,28 @@ specifying the "type".
 
 ::: {.column}
 #### Formatted Output  {.unnumbered}
-:::{.callout-note}
+::: {.callout-note}
 This is a callout block of the type "note".
 :::
 
-:::{.callout-caution collapse="true"}
+::: {.callout-caution collapse="true"}
 Callouts can be collapsible. 
 :::
 
 <br>
 
-:::{.callout-important}
+::: {.callout-important}
 # My heading
 The first heading used within the callout is used as the callout heading.
 :::
 
-:::{.callout-tip icon=false}
+::: {.callout-tip icon=false}
 The icon can also be hidden, like this. 
 :::
 
 <br>
 
-:::{.callout}
+::: {.callout}
 This is a simpler callout, without specifying the "type". 
 :::
 
@@ -678,7 +678,7 @@ For example:
 
 To create a custom theme or modify an existing, you will need to create a text file with an ending of ".scss"; this file will list your specifications. 
 
-:::{.callout-tip}
+::: {.callout-tip}
 ### SASS: Syntactically Awesome Style Sheets 
 SASS files have the ".scss" extension. These files extend the functionality of CSS by allowing for a more organized and modular stylesheets, making it easier to manage and maintain your styles.
 :::
