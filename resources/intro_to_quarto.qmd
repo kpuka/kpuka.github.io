@@ -10,20 +10,32 @@ Quarto enables you to weave together content and executable code into a finished
 
 Quarto is the next generation of R Markdown, and is able to render most existing R Markdown (Rmd) files without modification. Most of the information presented below will work both in Quarto and Markdown. Syntax that is common to both will be noted as ‘Syntax (Input)’, whereas syntax specific to Quarto will be noted as ‘Quarto Syntax (Input)’.
 
-# Getting Started
+This introduction will focus on creating an HTML file using the RStudio environment. 
 
-To get started, open RStudio and go to: File -> New File -> Quarto Document. 
-![](files/intro_to_quarto/open_quarto.png)
+
+
+# RStudio Introduction
+
+To get started, open RStudio and create a Quarto Document: 
+
+![](files/intro_to_quarto/RStudio1.jpg)
 
 <br>
-In RStudio, you can click "Render" to generate the final document. You can also highlight code and click "Run" to execute specific lines of code. You can also view the file using the 'Source' view, which uses the raw syntax (used throughout this tutorial), or use the 'Visual' view, which uses a point and click interface for formatting. 
 
-![](files/intro_to_quarto/open_quarto2.png)
+This will create a file with temporary content to help get you started. 
+
+![](files/intro_to_quarto/RStudio2.jpg)
+<br>
+
+The **script editor** is where you write and edit your content. You can view the content using the **Source** view, which uses the raw syntax (used throughout this tutorial), or use the **Visual** view, which uses a point and click interface for formatting (similar to Microsoft Word). 
+
+All of the scripts provided below in this tutorial should be entered into the ‘Script Editor’. Clicking **Render** will generate the formatted document. You can also highlight code and click **Run** to execute specific lines of code. 
+
+The **console** is where you see the output of any statistical code. The **environment panel** displays information about the variables and objects in your current R session, while the **files panel** allows you to navigate your computer’s file system and manage your R projects.
 
 
 
-
-# Document-Wide Settings
+# Output Settings
 
 Each quarto file starts with a set of code, called the YAML which is fenced within `---`. The YAML specifics the metadata and document-wide settings. For example, for a HTML document the YAML may be:
 
@@ -77,14 +89,14 @@ The following syntax works with Quarto and its predecessor Markdown. In addition
 ::: {.column width="50%"}
 #### Syntax (Input)  {.unnumbered}
 ```{verbatim}
-# Heading 1
 
+# Heading 1
 
 
 ## Heading 2
 
-
 ### Heading 3
+
 
 
 
@@ -109,11 +121,14 @@ Clickable link: <https://google.com>
 
 
 
+
 |            | Manual   | Table    |
 |------------|----------|----------|
 | Variable 1 | 11       | 21       |
 | Variable 2 | 12       | 22       |
 | Variable 3 | 12       | 23       |
+  
+  
 ```
 :::
 
@@ -217,26 +232,26 @@ There are five types of callouts: `note`, `warning`, `important`, `tip`, and `ca
 #### Quarto Syntax (Input)  {.unnumbered}
 ```{verbatim}
 
-::: {.callout-note}
+:::{.callout-note}
 This is a callout block of the type "note".
 :::
 
-::: {.callout-caution collapse="true"}
+:::{.callout-caution collapse="true"}
 Callouts can be collapsible. 
 :::
 
-::: {.callout-important}
+:::{.callout-important}
 # My heading
 The first heading used within the callout 
 is used as the callout heading.
 :::
 
-::: {.callout-tip icon=false}
+:::{.callout-tip icon=false}
 The icon can also be hidden, like this. 
 :::
 
 
-::: {.callout}
+:::{.callout}
 This is a simpler callout, without 
 specifying the "type". 
 :::
@@ -246,28 +261,28 @@ specifying the "type".
 
 ::: {.column}
 #### Formatted Output  {.unnumbered}
-::: {.callout-note}
+:::{.callout-note}
 This is a callout block of the type "note".
 :::
 
-::: {.callout-caution collapse="true"}
+:::{.callout-caution collapse="true"}
 Callouts can be collapsible. 
 :::
 
 <br>
 
-::: {.callout-important}
+:::{.callout-important}
 # My heading
 The first heading used within the callout is used as the callout heading.
 :::
 
-::: {.callout-tip icon=false}
+:::{.callout-tip icon=false}
 The icon can also be hidden, like this. 
 :::
 
 <br>
 
-::: {.callout}
+:::{.callout}
 This is a simpler callout, without specifying the "type". 
 :::
 
@@ -276,7 +291,7 @@ This is a simpler callout, without specifying the "type".
 
 <br>
 
-Sections can also be collapsed using HTML code, as shown below in @sec-html_folding.
+An alternative method of collapsing sections is presented in @sec-html_folding and uses HTML code.
 
 
 
@@ -622,6 +637,7 @@ HTML becomes even more powerful when you combine it with CSS (Cascading Style Sh
 <style>
     .my_custom-section {
         background-color: #e32424;
+        color: white;
         padding: 10px;
     }
 </style>
@@ -630,6 +646,7 @@ HTML becomes even more powerful when you combine it with CSS (Cascading Style Sh
 <style>
     .my_custom-section {
         background-color: #e32424;
+        color: white;
         padding: 10px;
     }
 </style>
@@ -678,14 +695,14 @@ For example:
 
 To create a custom theme or modify an existing, you will need to create a text file with an ending of ".scss"; this file will list your specifications. 
 
-::: {.callout-tip}
+:::{.callout-tip}
 ### SASS: Syntactically Awesome Style Sheets 
 SASS files have the ".scss" extension. These files extend the functionality of CSS by allowing for a more organized and modular stylesheets, making it easier to manage and maintain your styles.
 :::
 
 Create the '.scss' file by creating a new text file while still in RStudio; here we name it 'mytheme.scss':
 
-![](files/intro_to_quarto/newfile.png)
+![](files/intro_to_quarto/newfile.jpg){width=70%}
 
 
 Reference the file created in the YAML of your Quarto document; multiple theme files can be used:
@@ -723,7 +740,7 @@ The advantage of SASS over CSS is that we can define colors or settings, to be u
 
 This becomes more powerful when combined with the pre-specified themes and settings of Quarto. Quarto has predefined SASS variables that can be changed and modified to adjust the appearance of your report. The available variables can be found <a href="https://quarto.org/docs/output-formats/html-themes.html#sass-variables" target="_blank">here</a>. If the variables listed there are not enough, the complete list can be found <a href="https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss" target="_blank">here</a>; use the search function to identify variables that seem like they may change the feature you are interested in. 
 
-Once you have idenfied the variable, you can specify the value; the general form is: `$variable_name: value;`. Comments begin with a `\\`. 
+Once you have idenfied the variable, you can specify the value; the general form is: `$variable_name: value;`. Comments begin with a `//`. 
 
 For example:
 

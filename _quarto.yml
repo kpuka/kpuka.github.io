@@ -9,6 +9,7 @@ format:
 
 website:
   title: "Klajdi Puka, PhD"
+  site-url: https://kpuka.ca
   navbar:
     background: primary
     search: true

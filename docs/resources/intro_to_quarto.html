@@ -376,8 +376,8 @@ gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"> <span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"> <span class="header-section-number">2</span> Getting Started</a></li>
-  <li><a href="#document-wide-settings" id="toc-document-wide-settings" class="nav-link" data-scroll-target="#document-wide-settings"> <span class="header-section-number">3</span> Document-Wide Settings</a></li>
+  <li><a href="#rstudio-introduction" id="toc-rstudio-introduction" class="nav-link" data-scroll-target="#rstudio-introduction"> <span class="header-section-number">2</span> RStudio Introduction</a></li>
+  <li><a href="#output-settings" id="toc-output-settings" class="nav-link" data-scroll-target="#output-settings"> <span class="header-section-number">3</span> Output Settings</a></li>
   <li><a href="#formatting-basics" id="toc-formatting-basics" class="nav-link" data-scroll-target="#formatting-basics"> <span class="header-section-number">4</span> Formatting Basics</a></li>
   <li><a href="#organization" id="toc-organization" class="nav-link" data-scroll-target="#organization"> <span class="header-section-number">5</span> Organization</a>
   <ul class="collapse">
@@ -432,15 +432,21 @@ gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
 <p>Quarto enables you to weave together content and executable code into a finished document. Quarto is a multi-language program, supporting multiple types of inputs languages (e.g., R, python, HTML), input software (e.g., RStudio, VScode, plain text), and outputs/documents (e.g., HTML document, presentation slides, PDFs, word documents).</p>
 <p>Quarto is the next generation of R Markdown, and is able to render most existing R Markdown (Rmd) files without modification. Most of the information presented below will work both in Quarto and Markdown. Syntax that is common to both will be noted as ‘Syntax (Input)’, whereas syntax specific to Quarto will be noted as ‘Quarto Syntax (Input)’.</p>
+<p>This introduction will focus on creating an HTML file using the RStudio environment.</p>
 </section>
-<section id="getting-started" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Getting Started</h1>
-<p>To get started, open RStudio and go to: File -&gt; New File -&gt; Quarto Document. <img src="files/intro_to_quarto/open_quarto.png" class="img-fluid"></p>
-<p><br> In RStudio, you can click “Render” to generate the final document. You can also highlight code and click “Run” to execute specific lines of code. You can also view the file using the ‘Source’ view, which uses the raw syntax (used throughout this tutorial), or use the ‘Visual’ view, which uses a point and click interface for formatting.</p>
-<p><img src="files/intro_to_quarto/open_quarto2.png" class="img-fluid"></p>
+<section id="rstudio-introduction" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> RStudio Introduction</h1>
+<p>To get started, open RStudio and create a Quarto Document:</p>
+<p><img src="files/intro_to_quarto/RStudio1.jpg" class="img-fluid"></p>
+<p><br></p>
+<p>This will create a file with temporary content to help get you started.</p>
+<p><img src="files/intro_to_quarto/RStudio2.jpg" class="img-fluid"> <br></p>
+<p>The <strong>script editor</strong> is where you write and edit your content. You can view the content using the <strong>Source</strong> view, which uses the raw syntax (used throughout this tutorial), or use the <strong>Visual</strong> view, which uses a point and click interface for formatting (similar to Microsoft Word).</p>
+<p>All of the scripts provided below in this tutorial should be entered into the ‘Script Editor’. Clicking <strong>Render</strong> will generate the formatted document. You can also highlight code and click <strong>Run</strong> to execute specific lines of code.</p>
+<p>The <strong>console</strong> is where you see the output of any statistical code. The <strong>environment panel</strong> displays information about the variables and objects in your current R session, while the <strong>files panel</strong> allows you to navigate your computer’s file system and manage your R projects.</p>
 </section>
-<section id="document-wide-settings" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Document-Wide Settings</h1>
+<section id="output-settings" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Output Settings</h1>
 <p>Each quarto file starts with a set of code, called the YAML which is fenced within <code>---</code>. The YAML specifics the metadata and document-wide settings. For example, for a HTML document the YAML may be:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -483,14 +489,14 @@ gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
 <div class="column" style="width:50%;">
 <section id="syntax-input-1" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="syntax-input-1">Syntax (Input)</h4>
-<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a># Heading 1</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a># Heading 1</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>## Heading 2</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>### Heading 3</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>### Heading 3</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
@@ -515,11 +521,14 @@ gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
 <span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>|            | Manual   | Table    |</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>|------------|----------|----------|</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>| Variable 1 | 11       | 21       |</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>| Variable 2 | 12       | 22       |</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>| Variable 3 | 12       | 23       |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>|            | Manual   | Table    |</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>|------------|----------|----------|</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>| Variable 1 | 11       | 21       |</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>| Variable 2 | 12       | 22       |</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>| Variable 3 | 12       | 23       |</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </div><div class="column" style="width:50%;">
 <section id="formatted-output" class="level4 unnumbered">
@@ -627,26 +636,26 @@ gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
 <section id="quarto-syntax-input-1" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="quarto-syntax-input-1">Quarto Syntax (Input)</h4>
 <div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>This is a callout block of the type "note".</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>::: {.callout-caution collapse="true"}</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>:::{.callout-caution collapse="true"}</span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>Callouts can be collapsible. </span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a># My heading</span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>The first heading used within the callout </span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>is used as the callout heading.</span>
 <span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip icon=false}</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip icon=false}</span>
 <span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>The icon can also be hidden, like this. </span>
 <span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>::: {.callout}</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>:::{.callout}</span>
 <span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>This is a simpler callout, without </span>
 <span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>specifying the "type". </span>
 <span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -725,7 +734,7 @@ Tip
 </div>
 </div>
 <p><br></p>
-<p>Sections can also be collapsed using HTML code, as shown below in <a href="#sec-html_folding">Section&nbsp;8.5.2</a>.</p>
+<p>An alternative method of collapsing sections is presented in <a href="#sec-html_folding">Section&nbsp;8.5.2</a> and uses HTML code.</p>
 </section>
 <section id="tabsets" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="tabsets"><span class="header-section-number">5.3</span> Tabsets</h2>
@@ -868,12 +877,12 @@ Tip
 <div class="cell-output-display">
 <div id="tbl-demographics" class="anchored">
 
-<div id="pcqeystkpy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="lepodsaarv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#pcqeystkpy .gt_table {
+#lepodsaarv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -898,7 +907,7 @@ Tip
   border-left-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_heading {
+#lepodsaarv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -910,12 +919,12 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_caption {
+#lepodsaarv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#pcqeystkpy .gt_title {
+#lepodsaarv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -927,7 +936,7 @@ Tip
   border-bottom-width: 0;
 }
 
-#pcqeystkpy .gt_subtitle {
+#lepodsaarv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -939,13 +948,13 @@ Tip
   border-top-width: 0;
 }
 
-#pcqeystkpy .gt_bottom_border {
+#lepodsaarv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_col_headings {
+#lepodsaarv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -960,7 +969,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_col_heading {
+#lepodsaarv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -980,7 +989,7 @@ Tip
   overflow-x: hidden;
 }
 
-#pcqeystkpy .gt_column_spanner_outer {
+#lepodsaarv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -992,15 +1001,15 @@ Tip
   padding-right: 4px;
 }
 
-#pcqeystkpy .gt_column_spanner_outer:first-child {
+#lepodsaarv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pcqeystkpy .gt_column_spanner_outer:last-child {
+#lepodsaarv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pcqeystkpy .gt_column_spanner {
+#lepodsaarv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1012,7 +1021,7 @@ Tip
   width: 100%;
 }
 
-#pcqeystkpy .gt_group_heading {
+#lepodsaarv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1038,7 +1047,7 @@ Tip
   text-align: left;
 }
 
-#pcqeystkpy .gt_empty_group_heading {
+#lepodsaarv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1053,15 +1062,15 @@ Tip
   vertical-align: middle;
 }
 
-#pcqeystkpy .gt_from_md > :first-child {
+#lepodsaarv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pcqeystkpy .gt_from_md > :last-child {
+#lepodsaarv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pcqeystkpy .gt_row {
+#lepodsaarv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1080,7 +1089,7 @@ Tip
   overflow-x: hidden;
 }
 
-#pcqeystkpy .gt_stub {
+#lepodsaarv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1093,7 +1102,7 @@ Tip
   padding-right: 5px;
 }
 
-#pcqeystkpy .gt_stub_row_group {
+#lepodsaarv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1107,11 +1116,11 @@ Tip
   vertical-align: top;
 }
 
-#pcqeystkpy .gt_row_group_first td {
+#lepodsaarv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pcqeystkpy .gt_summary_row {
+#lepodsaarv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1121,16 +1130,16 @@ Tip
   padding-right: 5px;
 }
 
-#pcqeystkpy .gt_first_summary_row {
+#lepodsaarv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_first_summary_row.thick {
+#lepodsaarv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pcqeystkpy .gt_last_summary_row {
+#lepodsaarv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1140,7 +1149,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_grand_summary_row {
+#lepodsaarv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1150,7 +1159,7 @@ Tip
   padding-right: 5px;
 }
 
-#pcqeystkpy .gt_first_grand_summary_row {
+#lepodsaarv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1160,11 +1169,11 @@ Tip
   border-top-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_striped {
+#lepodsaarv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pcqeystkpy .gt_table_body {
+#lepodsaarv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1173,7 +1182,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_footnotes {
+#lepodsaarv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1187,7 +1196,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_footnote {
+#lepodsaarv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1196,7 +1205,7 @@ Tip
   padding-right: 5px;
 }
 
-#pcqeystkpy .gt_sourcenotes {
+#lepodsaarv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1210,7 +1219,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#pcqeystkpy .gt_sourcenote {
+#lepodsaarv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1218,64 +1227,64 @@ Tip
   padding-right: 5px;
 }
 
-#pcqeystkpy .gt_left {
+#lepodsaarv .gt_left {
   text-align: left;
 }
 
-#pcqeystkpy .gt_center {
+#lepodsaarv .gt_center {
   text-align: center;
 }
 
-#pcqeystkpy .gt_right {
+#lepodsaarv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pcqeystkpy .gt_font_normal {
+#lepodsaarv .gt_font_normal {
   font-weight: normal;
 }
 
-#pcqeystkpy .gt_font_bold {
+#lepodsaarv .gt_font_bold {
   font-weight: bold;
 }
 
-#pcqeystkpy .gt_font_italic {
+#lepodsaarv .gt_font_italic {
   font-style: italic;
 }
 
-#pcqeystkpy .gt_super {
+#lepodsaarv .gt_super {
   font-size: 65%;
 }
 
-#pcqeystkpy .gt_footnote_marks {
+#lepodsaarv .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#pcqeystkpy .gt_asterisk {
+#lepodsaarv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pcqeystkpy .gt_indent_1 {
+#lepodsaarv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#pcqeystkpy .gt_indent_2 {
+#lepodsaarv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#pcqeystkpy .gt_indent_3 {
+#lepodsaarv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#pcqeystkpy .gt_indent_4 {
+#lepodsaarv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#pcqeystkpy .gt_indent_5 {
+#lepodsaarv .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1367,12 +1376,12 @@ Tip
 <div class="cell-output-display">
 <div id="tbl-demographics." class="anchored">
 
-<div id="cgdocthapo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ijmehwygoa" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#cgdocthapo .gt_table {
+#ijmehwygoa .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1397,7 +1406,7 @@ Tip
   border-left-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_heading {
+#ijmehwygoa .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1409,12 +1418,12 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_caption {
+#ijmehwygoa .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#cgdocthapo .gt_title {
+#ijmehwygoa .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1426,7 +1435,7 @@ Tip
   border-bottom-width: 0;
 }
 
-#cgdocthapo .gt_subtitle {
+#ijmehwygoa .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1438,13 +1447,13 @@ Tip
   border-top-width: 0;
 }
 
-#cgdocthapo .gt_bottom_border {
+#ijmehwygoa .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_col_headings {
+#ijmehwygoa .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1459,7 +1468,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_col_heading {
+#ijmehwygoa .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1479,7 +1488,7 @@ Tip
   overflow-x: hidden;
 }
 
-#cgdocthapo .gt_column_spanner_outer {
+#ijmehwygoa .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1491,15 +1500,15 @@ Tip
   padding-right: 4px;
 }
 
-#cgdocthapo .gt_column_spanner_outer:first-child {
+#ijmehwygoa .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cgdocthapo .gt_column_spanner_outer:last-child {
+#ijmehwygoa .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cgdocthapo .gt_column_spanner {
+#ijmehwygoa .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1511,7 +1520,7 @@ Tip
   width: 100%;
 }
 
-#cgdocthapo .gt_group_heading {
+#ijmehwygoa .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1537,7 +1546,7 @@ Tip
   text-align: left;
 }
 
-#cgdocthapo .gt_empty_group_heading {
+#ijmehwygoa .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1552,15 +1561,15 @@ Tip
   vertical-align: middle;
 }
 
-#cgdocthapo .gt_from_md > :first-child {
+#ijmehwygoa .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cgdocthapo .gt_from_md > :last-child {
+#ijmehwygoa .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cgdocthapo .gt_row {
+#ijmehwygoa .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1579,7 +1588,7 @@ Tip
   overflow-x: hidden;
 }
 
-#cgdocthapo .gt_stub {
+#ijmehwygoa .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1592,7 +1601,7 @@ Tip
   padding-right: 5px;
 }
 
-#cgdocthapo .gt_stub_row_group {
+#ijmehwygoa .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1606,11 +1615,11 @@ Tip
   vertical-align: top;
 }
 
-#cgdocthapo .gt_row_group_first td {
+#ijmehwygoa .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cgdocthapo .gt_summary_row {
+#ijmehwygoa .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1620,16 +1629,16 @@ Tip
   padding-right: 5px;
 }
 
-#cgdocthapo .gt_first_summary_row {
+#ijmehwygoa .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_first_summary_row.thick {
+#ijmehwygoa .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cgdocthapo .gt_last_summary_row {
+#ijmehwygoa .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1639,7 +1648,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_grand_summary_row {
+#ijmehwygoa .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1649,7 +1658,7 @@ Tip
   padding-right: 5px;
 }
 
-#cgdocthapo .gt_first_grand_summary_row {
+#ijmehwygoa .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1659,11 +1668,11 @@ Tip
   border-top-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_striped {
+#ijmehwygoa .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cgdocthapo .gt_table_body {
+#ijmehwygoa .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1672,7 +1681,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_footnotes {
+#ijmehwygoa .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1686,7 +1695,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_footnote {
+#ijmehwygoa .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1695,7 +1704,7 @@ Tip
   padding-right: 5px;
 }
 
-#cgdocthapo .gt_sourcenotes {
+#ijmehwygoa .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1709,7 +1718,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#cgdocthapo .gt_sourcenote {
+#ijmehwygoa .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1717,64 +1726,64 @@ Tip
   padding-right: 5px;
 }
 
-#cgdocthapo .gt_left {
+#ijmehwygoa .gt_left {
   text-align: left;
 }
 
-#cgdocthapo .gt_center {
+#ijmehwygoa .gt_center {
   text-align: center;
 }
 
-#cgdocthapo .gt_right {
+#ijmehwygoa .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cgdocthapo .gt_font_normal {
+#ijmehwygoa .gt_font_normal {
   font-weight: normal;
 }
 
-#cgdocthapo .gt_font_bold {
+#ijmehwygoa .gt_font_bold {
   font-weight: bold;
 }
 
-#cgdocthapo .gt_font_italic {
+#ijmehwygoa .gt_font_italic {
   font-style: italic;
 }
 
-#cgdocthapo .gt_super {
+#ijmehwygoa .gt_super {
   font-size: 65%;
 }
 
-#cgdocthapo .gt_footnote_marks {
+#ijmehwygoa .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#cgdocthapo .gt_asterisk {
+#ijmehwygoa .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cgdocthapo .gt_indent_1 {
+#ijmehwygoa .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cgdocthapo .gt_indent_2 {
+#ijmehwygoa .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cgdocthapo .gt_indent_3 {
+#ijmehwygoa .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cgdocthapo .gt_indent_4 {
+#ijmehwygoa .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cgdocthapo .gt_indent_5 {
+#ijmehwygoa .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1953,12 +1962,14 @@ Tip
 <div class="sourceCode" id="cb24"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>&lt;style&gt;</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    .my_custom-section {</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>        background-color: #e32424;</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>        padding: 10px;</span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>&lt;/style&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>        color: white;</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        padding: 10px;</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>&lt;/style&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <style>
     .my_custom-section {
         background-color: #e32424;
+        color: white;
         padding: 10px;
     }
 </style>
@@ -2006,7 +2017,7 @@ SASS: Syntactically Awesome Style Sheets
 </div>
 </div>
 <p>Create the ‘.scss’ file by creating a new text file while still in RStudio; here we name it ‘mytheme.scss’:</p>
-<p><img src="files/intro_to_quarto/newfile.png" class="img-fluid"></p>
+<p><img src="files/intro_to_quarto/newfile.jpg" class="img-fluid" style="width:70.0%"></p>
 <p>Reference the file created in the YAML of your Quarto document; multiple theme files can be used:</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>title: My Report</span>
@@ -2029,7 +2040,7 @@ SASS: Syntactically Awesome Style Sheets
 <span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The advantage of SASS over CSS is that we can define colors or settings, to be used later. In the example above, we have assigned hex color <code>#1F3169</code> the variable label of <code>blue</code>; this label can then be referred to in other sections of the code. In this example, we are using CSS to create a new class (like we did earlier), but here we specify the color as <code>blue</code>.</p>
 <p>This becomes more powerful when combined with the pre-specified themes and settings of Quarto. Quarto has predefined SASS variables that can be changed and modified to adjust the appearance of your report. The available variables can be found <a href="https://quarto.org/docs/output-formats/html-themes.html#sass-variables" target="_blank">here</a>. If the variables listed there are not enough, the complete list can be found <a href="https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss" target="_blank">here</a>; use the search function to identify variables that seem like they may change the feature you are interested in.</p>
-<p>Once you have idenfied the variable, you can specify the value; the general form is: <code>$variable_name: value;</code>. Comments begin with a <code>\\</code>.</p>
+<p>Once you have idenfied the variable, you can specify the value; the general form is: <code>$variable_name: value;</code>. Comments begin with a <code>//</code>.</p>
 <p>For example:</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>/*-- scss:defaults --*/</span>
