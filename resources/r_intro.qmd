@@ -14,7 +14,7 @@ To use R, launch RStudio. RStudio provides a user-friendly interface for working
 
 For each project, you should use "R Projects", a self-contained directory that holds all the files, data, R scripts, and other resources related to a particular data analysis task or research project. Follow the steps below to create an R Project. 
 
-![](files/intro_to_r/RStudio1.png)
+![](files/r_intro/RStudio1.png)
 
 :::{.callout-important}
 Upon creating an 'R Project', a folder will be created in the location that was specified; this folder should contain all of the files needed for your analyses (e.g., the data and R scripts/code). 
@@ -24,12 +24,12 @@ In that folder, a ".Rproj" file will also be created (in this example, called "M
 
 <br>
 Next, lets create an R script; this will be the file that will contain your R code.
-![](files/intro_to_r/RStudio2.png){width=80%}
+![](files/r_intro/RStudio2.png){width=80%}
 
 
 <br>
 Now, lets examine RStudio and its different components. 
-![](files/intro_to_r/RStudio3.png)
+![](files/r_intro/RStudio3.png)
 
 
 The **script editor** is where you write and edit your R code. The **console** is where you see the output of your commands and interact with R directly. The **environment panel** displays information about the variables and objects in your current R session, while the **files panel** allows you to navigate your computer's file system and manage your R projects. 
@@ -97,13 +97,13 @@ To run/execute the code, highlight the portion of code you would like to execute
 
 # Create subset of data from the full NHIS 2018 Sample Adult file
 # set.seed(111)
-# nhis2018 <- read.csv("data_intro_to_r/nhis_2018_SampleAdult_complete.csv") %>%
+# nhis2018 <- read.csv("r_intro/nhis_2018_SampleAdult_complete.csv") %>%
 #   sample_n(500) %>%
 #   mutate(ID= 1:500) %>%
 #   select(ID, REGION, AGE_P, SEX, R_MARITL, AHEIGHT, AWEIGHTP, ASISLEEP, HYPEV, CHLEV, DIBEV1,
 #          AHSTATYR, SMKSTAT2, ASISAD, ASINERV, ASIRSTLS, ASIHOPLS, ASIEFFRT, ASIWTHLS)
 # 
-# write.csv(nhis2018, "data_intro_to_r/nhis2018_sampleadult.csv", row.names = FALSE)
+# write.csv(nhis2018, "r_intro/nhis2018_sampleadult.csv", row.names = FALSE)
 
 ```
 
@@ -111,8 +111,8 @@ Will be using publicly available data from the 2018 US National Health Interview
 
 -   This is an annual, cross-sectional survey of the US population; full data and details available <a href="https://www.cdc.gov/nchs/nhis/nhis_2018_data_release.html" target=_"blank"> here</a>
 -   We will use a subset of the data from the "Sample Adult Interview":
-    -   To download this data, <a href="files/intro_to_r/nhis2018_SampleAdult.csv" target="_blank">click here</a>
-    -   To download the codebook, <a href="files/intro_to_r/nhis_codebook.csv" target="_blank">click here</a> 
+    -   To download this data, <a href="files/r_intro/nhis2018_SampleAdult.csv" target="_blank">click here</a>
+    -   To download the codebook, <a href="files/r_intro/nhis_codebook.csv" target="_blank">click here</a> 
     
 
 :::{.callout-tip collapse="true"}
@@ -123,7 +123,7 @@ Will be using publicly available data from the 2018 US National Health Interview
 #| code-fold: true
 library(knitr)
 library(kableExtra)
-read.csv("files/intro_to_r/nhis2018_SampleAdult.csv") |> 
+read.csv("files/r_intro/nhis2018_SampleAdult.csv") |> 
   kable() |> kable_styling(font_size = 12)|>
   scroll_box(height = "500px")
 
@@ -135,7 +135,7 @@ read.csv("files/intro_to_r/nhis2018_SampleAdult.csv") |>
 ```{r}
 #| echo: false
 
-read.csv("files/intro_to_r/nhis_codebook.csv") |> 
+read.csv("files/r_intro/nhis_codebook.csv") |> 
   kable() |> kable_styling(font_size = 14) |>
   scroll_box(height = "500px")
 
@@ -153,7 +153,7 @@ read.csv("files/intro_to_r/nhis_codebook.csv") |>
 
 ```{r}
 #| echo: false
-nhis2018 <- read.csv("files/intro_to_r/nhis2018_SampleAdult.csv")
+nhis2018 <- read.csv("files/r_intro/nhis2018_SampleAdult.csv")
 ```
 
 ```{r}
@@ -1129,7 +1129,7 @@ library(tidyverse)  # data wrangling
 library(skimr)      # descriptive statistics
 
 # Load data
-nhis2018 <- read.csv("data_intro_to_r/nhis2018_SampleAdult.csv") |>
+nhis2018 <- read.csv("r_intro/nhis2018_SampleAdult.csv") |>
   clean_names() |> 
   remove_empty ("cols")
 
@@ -1153,7 +1153,7 @@ nhis2018_clean <- nhis2018 |>
 
 
 # Save clean version of data
-saveRDS(nhis2018, "data_intro_to_r/nhis2018_clean.R")
+saveRDS(nhis2018, "r_intro/nhis2018_clean.R")
 
 ```
   
@@ -1169,7 +1169,7 @@ library(tidyverse)  # data wrangling
 library(skimr)      # descriptive statistics
 
 # Load data
-data_clean <- readRDS("data_intro_to_r/nhis2018_clean.R")
+data_clean <- readRDS("r_intro/nhis2018_clean.R")
 
 
 # Descriptive statistics --------------------------------------------------------

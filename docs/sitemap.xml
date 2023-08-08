@@ -2,118 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kpuka.ca/consulting.html</loc>
-    <lastmod>2023-07-25T03:47:42.817Z</lastmod>
+    <lastmod>2023-08-08T18:35:45.184Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/cv.html</loc>
-    <lastmod>2023-07-25T03:47:43.423Z</lastmod>
+    <lastmod>2023-08-08T18:35:45.716Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/index.html</loc>
-    <lastmod>2023-07-25T03:47:43.979Z</lastmod>
+    <lastmod>2023-08-08T18:35:46.273Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/research.html</loc>
-    <lastmod>2023-07-25T03:47:44.531Z</lastmod>
+    <lastmod>2023-08-08T18:35:46.840Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/categorical_data.html</loc>
-    <lastmod>2023-07-25T03:47:45.224Z</lastmod>
+    <lastmod>2023-08-08T18:35:47.423Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/confounding.html</loc>
-    <lastmod>2023-07-25T03:47:45.699Z</lastmod>
+    <lastmod>2023-08-08T18:35:47.948Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/data_formatting.html</loc>
-    <lastmod>2023-07-25T03:47:46.178Z</lastmod>
+    <lastmod>2023-08-08T18:35:48.466Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/inter_rater_reliability.html</loc>
-    <lastmod>2023-07-25T03:47:46.667Z</lastmod>
+    <lastmod>2023-08-08T18:35:49.053Z</lastmod>
   </url>
   <url>
-    <loc>https://kpuka.ca/resources/intro_to_quarto.html</loc>
-    <lastmod>2023-07-25T03:48:08.512Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpuka.ca/resources/intro_to_R.html</loc>
-    <lastmod>2023-07-25T03:49:16.494Z</lastmod>
+    <loc>https://kpuka.ca/resources/quarto_intro.html</loc>
+    <lastmod>2023-08-08T18:36:05.078Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/rct_design.html</loc>
-    <lastmod>2023-07-25T03:49:17.117Z</lastmod>
+    <lastmod>2023-08-08T18:36:05.625Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/rct_other.html</loc>
-    <lastmod>2023-07-25T03:49:17.674Z</lastmod>
+    <lastmod>2023-08-08T18:36:06.205Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/rct_randomization.html</loc>
-    <lastmod>2023-07-25T03:49:18.641Z</lastmod>
+    <lastmod>2023-08-08T18:36:06.968Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/regression_linear.html</loc>
-    <lastmod>2023-07-25T03:49:19.612Z</lastmod>
+    <lastmod>2023-08-08T18:36:07.539Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/regression_logistic.html</loc>
-    <lastmod>2023-07-25T03:49:20.775Z</lastmod>
+    <lastmod>2023-08-08T18:36:08.044Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/regression_multilevel.html</loc>
-    <lastmod>2023-07-25T03:49:21.878Z</lastmod>
+    <lastmod>2023-08-08T18:36:08.526Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/regression_survival.html</loc>
-    <lastmod>2023-07-25T03:49:23.094Z</lastmod>
+    <lastmod>2023-08-08T18:36:09.062Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/research_proposal.html</loc>
-    <lastmod>2023-07-25T03:49:24.345Z</lastmod>
+    <lastmod>2023-08-08T18:36:09.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpuka.ca/resources/r_intro.html</loc>
+    <lastmod>2023-08-08T18:37:02.700Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/sample_size_calculator.html</loc>
-    <lastmod>2023-07-25T03:49:25.314Z</lastmod>
+    <lastmod>2023-08-08T18:37:03.242Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/stat_clin_significance.html</loc>
-    <lastmod>2023-07-25T03:49:26.209Z</lastmod>
+    <lastmod>2023-08-08T18:37:03.754Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/study_case_control.html</loc>
-    <lastmod>2023-07-25T03:49:27.145Z</lastmod>
+    <lastmod>2023-08-08T18:37:04.294Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/study_case_reports.html</loc>
-    <lastmod>2023-07-25T03:49:27.727Z</lastmod>
+    <lastmod>2023-08-08T18:37:04.771Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/study_chart_review.html</loc>
-    <lastmod>2023-07-25T03:49:28.385Z</lastmod>
+    <lastmod>2023-08-08T18:37:05.269Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/study_pilot_studies.html</loc>
-    <lastmod>2023-07-25T03:49:29.222Z</lastmod>
+    <lastmod>2023-08-08T18:37:05.828Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/study_systematic_reviews.html</loc>
-    <lastmod>2023-07-25T03:49:30.223Z</lastmod>
+    <lastmod>2023-08-08T18:37:06.349Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/surveys_invitation.html</loc>
-    <lastmod>2023-07-25T03:49:31.532Z</lastmod>
+    <lastmod>2023-08-08T18:37:06.864Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources/surveys_questions.html</loc>
-    <lastmod>2023-07-25T03:49:32.961Z</lastmod>
+    <lastmod>2023-08-08T18:37:07.397Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/resources.html</loc>
-    <lastmod>2023-07-25T03:49:34.080Z</lastmod>
+    <lastmod>2023-08-08T18:37:07.854Z</lastmod>
   </url>
   <url>
     <loc>https://kpuka.ca/teaching.html</loc>
-    <lastmod>2023-07-25T03:49:35.135Z</lastmod>
+    <lastmod>2023-08-08T18:37:08.291Z</lastmod>
   </url>
 </urlset>

@@ -121,5 +121,12 @@
   },
   "404.qmd": {
     "404.html": "fad2e2b8"
+  },
+  "resources/quarto_intro.qmd": {
+    "quarto_intro.html": "bb51d7e5"
+  },
+  "resources/quarto_powerpoint.qmd": {
+    "quarto_powerpoint.html": "0e7e158c",
+    "quarto_powerpoint.pptx": "0b9ccaa4"
   }
 }

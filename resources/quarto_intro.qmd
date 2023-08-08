@@ -18,13 +18,13 @@ This introduction will focus on creating an HTML file using the RStudio environm
 
 To get started, open RStudio and create a Quarto Document: 
 
-![](files/intro_to_quarto/RStudio1.jpg)
+![](files/quarto_intro/RStudio1.jpg)
 
 <br>
 
 This will create a file with temporary content to help get you started. 
 
-![](files/intro_to_quarto/RStudio2.jpg)
+![](files/quarto_intro/RStudio2.jpg)
 <br>
 
 The **script editor** is where you write and edit your content. You can view the content using the **Source** view, which uses the raw syntax (used throughout this tutorial), or use the **Visual** view, which uses a point and click interface for formatting (similar to Microsoft Word). 
@@ -176,15 +176,15 @@ To get properly formatted tables, using an online table generator may be helpful
 
 ## Columns
 
-To create and work with columns, use `:::`. Like brackets, these are used to indicate the start and end the content to be placed in columns. 
+To create and work with columns, use `:::` or `::::`. Like brackets, these are used to indicate the start and end the content to be placed in columns. 
 
 Here's an example:
 
-::: columns
+:::: columns
 ::: {.column}
 #### Quarto Syntax (Input) {.unnumbered}
 ```{verbatim}
-::: columns
+:::: columns
 ::: {.column}
 Content of column 1
 :::
@@ -192,22 +192,22 @@ Content of column 1
 ::: {.column}
 Content of column 2
 :::
-:::
+::::
 ```
 :::
 
 ::: {.column}
 #### Explanation {.unnumbered}
-`::: columns` indicates that what comes next should be presented in columns. 
+`:::: columns` indicates that what comes next should be presented in columns. 
 
 `::: {.column}` indicates that what comes next are the content of column 1.
 
 `:::` indicates the end of the content of column 1
 
-The very last `:::` indicates the end of the columns.
+The very last `::::` indicates the end of the columns.
 
 :::
-:::
+::::
 
 Additional arguments can be added within the curly brackets:
 
@@ -217,6 +217,89 @@ Additional arguments can be added within the curly brackets:
 -   Multiple arguments can be integrated together: `::: {.column width="40%; font-size: 60%;" .fragment}` 
                                                         
 Most of this document is created using columns, such that the code is specified but not run in column 1, and in column 2 the code is repeated and implemented. 
+
+
+## Layouts
+
+Similar to columns, custom 'layouts' can also be used to create columns or a more complex organization of the output.
+
+To create two columns, each taking up 50% of the page, you can use either one of the following: 
+
+:::: {layout="[45, -10, 45]"}
+::: {#Method1}
+Specify number of equally-sized columns
+```{verbatim}
+:::: {layout-ncol=2}
+::: {#first-column}
+Content of column 1
+:::
+    
+::: {#Second-column}
+Content of column 2
+:::
+::::
+```
+:::
+
+::: {#Method2}
+Manually specify proportion of each column
+```{verbatim}
+:::: {layout="[50, 50]"}
+::: {#first-column}
+Content of column 1
+:::
+    
+::: {#Second-column}
+Content of column 2
+:::
+::::
+```
+:::
+::::
+The id attributes (#first-column and #second-column) are optional, but aid readability.
+
+
+Layouts are powerful because they can create complex organizations; for example: 
+
+:::: {layout-ncol=2}
+
+:::{#Code}
+```{verbatim}
+:::: {layout="[[45, -10, 45], [100]]"}
+:::{#Output1}
+Content 1
+:::
+
+:::{#Output2}
+Content 2
+:::
+        
+:::{#Output3}
+Content 2
+:::
+::::
+```
+:::
+
+:::{#Explanation}
+This example will organize the three pieces of output in the following ways:
+
+-   Output1 will show in the first row and take up 45% of the page width
+-   Output2 will show in the first row and take up 45% of the page width
+-   The `-10` defined the amount of empty space between Output1 and Output2
+-   Output3 will show in the second row, and take up 100% of the page width
+:::
+::::
+
+Notably, these layout options can also be integrated within the code chunk. For example:
+
+```{verbatim}
+
+#| layout-ncol: 2
+
+#| layout: [50, 50]
+
+```
 
 
 ## Callout Blocks
@@ -676,7 +759,7 @@ Quarto uses  Bootstrap themes, with details available <a href="https://bootswatc
 
 For example: 
 
-![](files/intro_to_quarto/Bootswatch example.jpg)
+![](files/quarto_intro/Bootswatch example.jpg)
 
 ```{verbatim}
 <div class="alert alert-warning">
@@ -702,7 +785,7 @@ SASS files have the ".scss" extension. These files extend the functionality of C
 
 Create the '.scss' file by creating a new text file while still in RStudio; here we name it 'mytheme.scss':
 
-![](files/intro_to_quarto/newfile.jpg){width=70%}
+![](files/quarto_intro/newfile.jpg){width=70%}
 
 
 Reference the file created in the YAML of your Quarto document; multiple theme files can be used:
