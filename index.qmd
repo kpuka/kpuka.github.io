@@ -23,7 +23,7 @@ toc: false
 *Behavioural Scientist | <br>
 PhD Epidemiology & Biostatistics*
 
-I am a behavioural scientist with a passion research methods, R, and data visualization. My skills are at the intersection of behevioural science, statistics, and knowledge translation.
+I am a behavioural scientist with a passion for research methods, R, and data visualization. My skills are at the intersection of behevioural science, research methods, and statistics.
 
 <div class="button-container">
   <a href="/research.html" class="btn btn-primary">Research</a>
