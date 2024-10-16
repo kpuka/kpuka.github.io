@@ -1,0 +1,108 @@
+---
+title: 'Sample Size Calculator'
+---
+
+# Introduction 
+
+Sample size calculations form an important part of the study design, but the formula and implementation of sample size calculations can be complex and intimidating. The sample size calculator below was designed guide researchers through the process of calculating a sample size using a simple to use and informative interface. 
+
+The sample size calculator is based on the formula described by <a target="_blank" href="https://link.springer.com/book/10.1007/978-1-4614-1353-0">Vittinghoff et al. (2012)</a>. The calculations are based on [Linear Regression](/resources/regression_linear.qmd) for continuous outcomes, [Logistic Regression](/resources/regression_logistic.qmd) for binary outcomes, Poisson Regression for count data as the outcome, and [Cox Models (Survival Analyses)](/resources/regression_survival.qmd) for time-to-event outcomes. 
+
+# Sample Size Calculator
+<iframe height="1050" width="100%" frameborder="no" src="https://kpuka.shinyapps.io/samplesize/"> </iframe>
+
+
+
+ 
+# Examples 
+The examples below are based on the examples described by <a href="https://link.springer.com/book/10.1007/978-1-4614-1353-0" target="_blank">Vittinghoff et al. (2012) </a>
+
+## Example 1: Continuous Outcome
+
+Estimate the sample size for a randomized trial with equal allocation to treatment and placebo to assess the effect of a new lipid-lowering agent on LDL levels. From pilot data, the standard deviation for LDL is expected to be 38 mg/dL, and it is hypothesized that the treatment will lower average LDL levels about 40 mg/dL. Because this is a clinical trial, it is unlikely that we will need to adjust for covariates. The sample size must provide 80% power in a two-sided test with $\alpha$ of 5%. 
+
+*Enter the following in the sample size calculator above:*
+
+- *Type of outcome variable:* Continuous
+- *Type of independent variable:* Binary
+- *Minimum detectable effect:* 40
+- *Standard deviation of the outcome:* 38
+- *Proportion of participants in group of interest:* 0.5
+- *Multiple correlation:* 0
+- *False positive rate:* 0.05
+- *Statistical power:* 0.80
+- *Anticipated attrition rate:* 0
+
+**Total sample size required: 28**
+
+
+
+
+
+## Example 2: Binary Outcome
+
+Estimate the sample size for a observational study comparing the incidence of an adverse postsurgical outcome from a new technique. From past studies, we expect that the incidence is 15% and 5% for the two techniques. We also expect to have an equal proportion of patients in both groups, 10% attrition, and we will not be adjusting for any other variables (i.e., multiple correlation = 0). Lastly, we assume 80% power in a two-sided test with $\alpha$ of 5%. 
+
+To solve, we must first convert the proportions into an [odds ratio (OR)](/resources/categorical_data.qmd):
+$$ OR = \frac{\text{Odds in new group}}{\text{Odds in old group}} = \frac{0.05/0.95}{0.15/0.85} = 0.30 $$
+
+Additionally, given that two groups will be the same size, the marginal prevalence of adverse events is 10%.
+
+*Enter the following in the sample size calculator above:*
+
+- *Type of outcome variable:* Binary
+- *Type of independent variable:* Binary
+- *Minimum detectable odds ratio:* 0.30 
+- *Marginal probability of outcome:* 0.10
+- *Proportion of participants in group of interest:* 0.5
+- *Multiple correlation:* 0.0
+- *False positive rate:* 0.05
+- *Statistical power:* 0.80
+- *Anticipated attrition rate:* 0.10
+
+**Total sample size required: 267**
+
+
+
+
+
+## Example 3: Time-to-event Outcome
+
+Estimate the sample size providing 80% power in a two-sided test with $\alpha$ of 5% to detect an effect of bilirubin levels on survival. We hypothesize that the hazard ratio per mg/dL increase in bilirubin will be 1.15, adjusting for the effects of hepatomegaly, edema, and spiders. Past studies suggest an estimated 15% cumulative mortality over the study period, the standard deviation of bilirubin is 4.5 mg/dL, and the other variables adjusted for in the model are estimated to account for 20% of the variance in bilirubin. Lastly, assume that 10% of participants will be lost to follow-up. 
+
+*Enter the following in the sample size calculator above:*
+
+- *Type of outcome variable:* Time-to-event
+- *Type of independent variable:* Continuous
+- *Minimum detectable hazard ratio:* 1.15 
+- *Proportion of uncensored observation:* 0.15
+- *Standard deviation of the outcome:* 4.5
+- *Multiple correlation:* 0.20
+- *False positive rate:* 0.05
+- *Statistical power:* 0.80
+- *Anticipated attrition rate:* 0.10
+
+**Total sample size required: 184**
+
+
+ 
+## Example 4: Count data as Outcome
+
+Estimate the sample size for a randomized trial to assess the effectiveness of a behavioral intervention for reducing syringe sharing among drug users. Equal numbers will be allocated to the intervention and wait-list control. Because of randomization, we can assume that the multiple correlation is 0 (no variables are associated with the group assignment). From pilot data, we estimate that the an average of 7.5 syringes are shared among drug users, and the ratio of variance to the mean of the outcome is 30. We hypothesize that the intervention will reduce the frequency of sharing by 50% (i.e., rate ratio = 0.50). In this case we require power of 90% in a two-sided test with $\alpha$ of 5%, and we estimate that 15% of participants will be lost to follow-up. 
+ 
+*Enter the following in the sample size calculator above:*
+
+- *Type of outcome variable:* Count data
+- *Type of independent variable:* Binary
+- *Minimum detectable rate ratio:* 0.50
+- *Marginal mean of the outcome:* 7.5
+- *Dispersion*: 30
+- *Proportion of participants in group of interest:* 0.5
+- *Multiple correlation:* 0.0
+- *False positive rate:* 0.05
+- *Statistical power:* 0.9
+- *Anticipated attrition rate:* 0.15
+
+**Total sample size required: 412**
+ 
+ 

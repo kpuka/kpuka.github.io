@@ -1,0 +1,154 @@
+---
+title: 'Working with Categorical Data'
+---
+
+Topic: The use and interpretations of risk difference (RD), relative risk (RR) and odds ratio (OR) are discussed. Categorization of continuous data is also briefly discussed.
+
+
+# Introduction
+The relationship between a binary outcome (e.g. yes vs. no) and other variables may be expressed through risk difference, relative risk and odds ratio. The choice of which effect measure to use is informed by study objectives and study design. These measures are described below and should always be reported with confidence intervals.Logistic regression, a frequently used method to identify the covariates associated with a binary outcome yields odds ratios.
+
+
+'Risk' refers to the probability of having a disease or some outcome. For example, the risks that a single throw of a fair die will produce a six (for example) are 1 to 6, or 1/6.
+
+$$Risk = \frac{\text{number of people with disease/outome}}{\text{total number of people}}$$
+
+
+
+'Odds' refers to the probability that the event of interest occurs to the probability that it does not. For example, the odds that a single throw of a fair die will produce a six (for example) are 1 to 5, or 1/5.
+
+$$Odds = \frac{\text{number of people with disease/outome}}{\text{number of people without disease/outome}} $$
+
+
+
+**Example:**
+
+|         | Disease | No Disease | Total  |
+|---------|---------|------------|--------|
+| Group A | 141     | 420        | 561    |
+| Group B | 928     | 13,525     | 14,453 |
+| Total   | 1,063   | 13,945     | 15,522 |
+
+
+Risk of disease in Group A is 141/561 = 0.25; the odds are 141/420 = 0.33.
+
+Risk of disease in Group B is 928/14,453 = 0.064; the odds are 928/13,525 = 0.069.
+
+This example will continue to be used below. 
+
+
+
+# Risk Difference
+Risk Difference (RD) is the difference between risks:
+
+$$ RD = {\text{Risk of Group A}} - {\text{Risk of Group B}} = \frac{141}{561} -  \frac{928}{14,453} = 0.187 $$
+
+
+**Interpretation:** Can convert into a fraction 18.7% = 187/1,000. Patients in Group A had 187 additional cases of disease per 1000 people, compared to patients in Group B. 
+
+Alternatively, can report as **number needed to treat (NNT)**. NNT = 1 / RD = 1 / 0.187 = 5.34.
+Need to treat 5.34 persons with treatment received by Group A to prevent 1 case of the disease. 
+
+
+# Relative Risk
+Relative Risk (RR) is the ratio of risks: 
+
+$$RR = \frac{\text{Risk of Group A}}{\text{Risk of Group B}} = \frac{141/561}{928/14,453} = 3.91 $$
+
+**Interpretation:** The risk of disease is 3.91 times higher in Group A, relative to Group B. 
+
+Alternatively, can indicate that the risk of disease is 291% (i.e. [3.91 - 1.00] x100%) higher in Group A, relative to Group B.
+
+If the RR is less than 1, (for example RR = 0.256), can indicate that the risk of disease in Group A is 74.4% ([1.00 - 0.256] x 100%) lower, relative to group B.
+
+**RR of 1.0 indicates no association**. If the 95% Confidence Interval (CI) of the RR does **not** include the value of 1, this indicates that the difference between groups is statistically significant at p<.05. 
+
+
+
+# Odds Ratio
+Odds Ratio (OR) is the ratio of the odds: 
+
+$$ OR = \frac{\text{Odds of Group A}}{\text{Odds of Group B}} = \frac{141/420}{928/13,525} = 4.89 $$
+
+**Interpretation**: Similar to RR, but must specify "odds": The *odds* of disease are 4.89 times higher in Group A, relative to Group B. 
+
+
+
+# Relative Risk (RR) vs. Odds Ratio (OR)
+
+**ORs and RRs are not equivalent**. Interpretation of RRs is more intuitive and may be preferred.
+
+The OR will approximate the RR when the prevalence of disease/outcome is low (i.e. <10%). If > 10%, then ORs that are less than 1.0 underestimate the RR, and ORs that are greater than 1.0 overestimate the RR (OR will be more extreme than RR).
+
+RR are appropriate for randomized controlled trials, cohort studies, case-cohort studies, or nested case-control studies. **RRs are not appropriate for traditional case-control studies**. The reason is related to how risk and odds are defined; calculation of risk requires the use of "people at risk" as the denominator. In retrospective (traditional case-control) studies, the total number of exposed people is not available, therefore RR cannot be calculated and OR must be used. Case-control studies are not based on the population, the researcher chooses how many controls to include in the study and this will impact RR but not OR (see example below). 
+
+
+Example: Impact of doubling the control group on the OR and RR.
+
+::: columns
+::: {.column width="45%"}
+Scenario 1: 
+
+|            | Case    | Control | Total |
+|------------|---------|---------|-------|
+| Exposed    | 59      | **122** | 181   |
+| Unexposed  | 48      | **190** | 238   |
+
+OR = (59/48) / (122/190) = 1.91.
+
+RR = (59/181) / (48/238) = 1.68.
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+Scenario 2 (Control group doubled): 
+
+|            | Case    | Control | Total |
+|------------|---------|---------|-------|
+| Exposed    | 59      | **244** | 303   |
+| Unexposed  | 48      | **380** | 428   |
+
+OR = (59/48) / (244/380) = 1.91.
+
+RR = (59/303) / (48/428)= 1.77.
+
+:::
+:::
+
+Notice that when the size of the control is doubled, the OR remains unchanged, but the RR changes. 
+
+
+
+# Categorizing Continuous Variables
+**Perceived advantage:** simplifies the statistical analysis and leads to easier interpretation and presentation of results
+
+**Disadvantages:** A lot of information is lost - variation in the variable is ignored. That is, individuals close to but on opposite sides of the cut point are characterized as being very different rather than very similar Therefore, statistical power to detect a relationship is reduced. Dichotomizing by a median split reduces power by the same amount as would discarding a third of the data!
+
+Therefore, categorizing continuous data is generally discouraged. Although it is not advisable, it may be ideal when there is an underlying dichotomy in the variable, that truly differentiates individuals on different sides of the cut point. 
+
+If continuous data is categorized, where should the cut off points be? 
+-  Use recognized cut points if they exist, for example define 'overwight' as a BMI >25. 
+- Adopt cut points used in previous studies
+-  Using the sample median makes it hard to compare studies. This is because the median value is dependent on the sample, and will be different for every study.
+- Do not perform several analyses and choose that which gives the most convincing result
+
+
+
+
+# References and Further readings
+
+Altman DG, Royston P. (2006). The cost of dichotomising continuous variables. BMJ, 2006332(7549):1080.
+
+Tripepi, G., Jager, K. J., Dekker, F. W., Wanner, C., & Zoccali, C. (2007). Measures of effect: relative risks, odds ratios, risk difference, and 'number needed to treat'. Kidney international, 72(7), 789-791.
+
+Bland, J. M., & Altman, D. G. (2000). The odds ratio. BMJ, 320(7247), 1468.
+
+
+
+
+
+
+

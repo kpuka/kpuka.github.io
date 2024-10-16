@@ -1,0 +1,61 @@
+---
+title: Methodological and Statistical Resources
+toc: false
+---
+
+Below are a list of resources developed to introduce trainees to a variety of methodological and statistical topics. One-on-one support is also provided, for further details [click here](consulting.qmd)
+
+::: columns
+::: {.column}
+### Getting Started
+-   [Data Formatting](/resources/data_formatting.qmd)
+-   [Developing a Research Proposal](/resources/research_proposal.qmd)
+-   [Sample Size Calculator](/resources/sample_size_calculator.qmd)
+:::
+
+::: {.column}
+### R
+-   [Introduction to R](/resources/r_intro.qmd)
+-   [Introduction to Quarto](/resources/quarto_intro.qmd)
+:::
+:::
+
+::: columns
+::: {.column}
+### Clinical Trials
+-   [Study Design](/resources/rct_design.qmd)
+-   [Randomization](/resources/rct_randomization.qmd)
+-   [Other Considerations](/resources/rct_other.qmd)
+:::
+::: {.column}
+### Other Study Designs
+-   [Case Control](/resources/study_case_control.qmd)
+-   [Retrospective Chart Review](/resources/study_chart_review.qmd)
+-   [Pilot Studies](/resources/study_pilot_studies.qmd)
+-   [Case Reports](/resources/study_case_reports.qmd)
+-   [Systematic Reviews](/resources/study_systematic_reviews.qmd)
+:::
+:::
+
+::: columns
+::: {.column}
+### Regressions
+-   [Linear Regression](/resources/regression_linear.qmd)
+-   [Logistic Regression](/resources/regression_logistic.qmd)
+-   [Survival Analysis](/resources/regression_survival.qmd)
+-   [Multilevel (Mixed) Models](/resources/regression_multilevel.qmd)
+:::
+
+::: {.column}
+### Other Topics
+-   [Statistical vs. Clinical Significance](/resources/stat_clin_significance.qmd)
+-   [Working with Categorical Data](/resources/categorical_data.qmd)
+-   [Confounding](/resources/confounding.qmd)
+-   [Inter-rater Reliability](/resources/inter_rater_reliability.qmd)
+:::
+:::
+
+### Survey Design
+-   [Invitation and Follow-up](/resources/surveys_invitation.qmd)
+-   [Desiging Effective Questions](/resources/surveys_questions.qmd)
+

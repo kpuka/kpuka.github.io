@@ -1,0 +1,104 @@
+---
+title: 'Study Design 1: Case Control'
+---
+
+Topic: Review of case-control study designs, and methodological considerations.
+
+# Introduction
+
+Case-control studies are observational studies comparing the frequency of past exposure between cases and controls (exposure refers to the primary variable of interest (e.g., exposure to asbestos). Controls must be selected **independent of exposure status**. The advantage of case-control studies is that they are quick, inexpensive, and easy relative to other study designs. Notably, although case-studies are easier to do, they are also easier to do wrong. Additionally, with case-control studies you are unable to compute measures of disease frequency (i.e., cannot estimate prevalence of outcome/disease), and it is also difficult to establish temporality (cause and effect relationship). Case-control studies are particularly appropriate for 1) investigating outbreaks, and 2) studying rare diseases/outcomes.
+
+The general process involved in creating a case-controlled study, and important topics to consider are outlined below
+
+# General Procedure
+
+1.  Identify cases (individuals with disease/outcome of interest)
+    -   Use a clear case definition and explicitly indicate how sample was selected
+
+```{=html}
+<!-- -->
+```
+2.  Define the *study base* from which cases arose
+    -   *Study base* -- the (hypothetical) population that gives rise to the cases.
+    -   Are the controls an unbiased sample of the study base that generated the cases?
+        -   If each case **had not** developed the disease, would they still be included in the population?
+    -   If each control **had** developed the disease, would they have been included as a case?
+        -   Controls should provide an unbiased sample of the exposure distribution in the study base
+
+```{=html}
+<!-- -->
+```
+3.  Sample controls from study base
+    -   Traditional, case-cohort, or nested case-control (discussed below)
+    -   Controls must be selected **independent of exposure status**
+
+```{=html}
+<!-- -->
+```
+4.  Ascertain exposure status for cases and controls using comparable methods
+    -   Exposure and outcome should be measured in the same way for cases and controls
+
+```{=html}
+<!-- -->
+```
+5.  Calculate measures of effect to compare the odds of exposure between cases and controls
+    -   Calculate odds ratio (OR) and adjustment for confounders; typically using Mental-Haenszel method or logistic regression
+
+# Common Biases to Consider
+
+-   Bias (i.e. a systematic error) is not influenced by sample size; it remains a problem for large samples
+-   **Selection bias** -- error in procedures used to select people into the study or retain them in analysis, e.g.:
+    -   Survival bias -- only cases that survive long enough are included
+    -   Exclusion bias -- controls with conditions related to the exposure are excluded, whereas cases with the conditions as comorbidities are kept in the study
+    -   Detection bias -- if exposure influences the diagnosis of the disease
+-   **Information bias** -- error in measurement resulting in different quality of information between groups, e.g.:
+    -   Interview bias -- systematic error due to interviewer's subconscious or conscious gathering of selective data or influencing patient response
+    -   Recall bias -- systematic error due to differences in accuracy or completeness of past events or experiences; knowledge of outcome/disease may result in differential recall of past events
+-   All biases listed above are diminished for case-cohort and nested case-control studies, because cases and controls are selected and their exposure status evaluated at baseline, prior to the development of the disease/outcome of interest
+
+# Methods for Sampling Controls
+
+## Traditional Case-Control
+
+-   Cases and controls are selected at the time of the study
+    -   The disease/outcome occurred sometime in the past for cases
+    -   Controls are selected from the study base that gave rise to cases
+    -   Potential survival bias -- only cases that survive long enough are included in the study
+-   Depending on case definition and data source, both incident and prevalent cases may be included
+-   The calculated odds ratio (OR) approximates the relative risk or rate ratio (RR) if the rare disease assumption is met (i.e. if the prevalence of disease/outcome is \<10%)
+
+## Case-Cohort
+
+-   This is a case-control study within a cohort study
+-   Begin with a cohort, and measure baseline characteristics
+-   Participants are followed over time, and those that develop the outcome become your cases
+-   Controls are selected as a random sample of the total cohort at baseline
+    -   Because controls come from baseline period, survival bias is removed
+    -   Control group may include individuals who become cases during the later follow-up periods
+-   Advantages:
+    -   Save on costs/resources; e.g. analyze blood sample of a handful of controls instead of the thousands of blood samples collected and frozen at baseline
+    -   Selection bias diminished since cases and controls are selected from the same (defined) source cohort and exposure is assessed before the disease/outcome occurs
+    -   The OR approximates the RR, even if the rate disease assumption is not met
+
+## Nested case-control
+
+-   Similar to case-cohort study, with one difference: controls are a random sample of the individuals remaining in the cohort *at the time each case occurs*
+    -   Is a variant of case-cohort that matches cases and controls on time; is equivalent to matching cases and controls on duration of follow-up
+    -   Cases occurring later in the follow-up are eligible to be controls for earlier cases
+-   Considered gold standard of case-control designs
+-   The OR approximates the RR, even if the rate disease assumption is not met
+
+# Should you Match Controls to Cases?
+
+-   Matching increases efficiency (i.e. it can provide precise estimates with a smaller sample than would be required otherwise) because it ensures a similar number of cases and controls across the strata of a confounder (e.g. will have same numbers of males/females for cases and controls)
+-   Matching variable(s) should be associated with the exposure and outcome; if not, efficiency is worsened
+-   Matching violates the rule that controls be selected independently of exposure (because we would typically match on variables closely associated with exposure/outcome)
+-   Matching does not control for confounding; in fact, it can induce confounding because it makes controls more similar to cases on the exposure of interest
+    -   A matched design will (almost always) require controlling for the matching factors in the analysis
+-   May need to utilize analyses specific to matched design studies; e.g. conditional logistic regression
+    -   The main reason for using conditional (rather than the standard) logistic regression is that when the analysis strata are very small, problems of sparse data will occur with standard methods
+-   Overall, matching may introduce bias and if it does, it is extremely difficult to salvage the study
+
+# References and Further Readings
+
+Szklo M, Nieto FJ, & Miller D (2007). Epidemiology: beyond the basics, 3rded. Jones & Bartlett Learning. Pearce N. (2016). Analysis of matched case-control studies. BMJ, 352, i969.

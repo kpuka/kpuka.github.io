@@ -1,0 +1,16 @@
+/*-- scss:defaults --*/
+
+// Defaults of Lumen theme are available at: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/themes/lumen.scss
+
+// Color
+$primary: #0c5b7a ; 
+$light: #e6eef1;
+
+h1, h2, h3, h4, h5, h6 {   /* Change the font color for all headings (h1 to h6) */
+  color: #444;
+}
+
+p {                       /* Change the font color/size for all paragraphs */
+  color: #444;
+  font-size: 115%;
+}

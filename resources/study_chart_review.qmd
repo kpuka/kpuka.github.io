@@ -1,0 +1,107 @@
+---
+title: 'Study Design 2: Retrospective Chart Review'
+---
+
+Topic: Review of best practices and the steps involved in conducting a retrospective chart review.
+
+
+# Introduction
+
+-   Retrospective chart review research uses pre-recorded patient data (e.g. from patient charts) to answer one or more research questions. An important limitation to keep in mind is that the information was not originally collected for research purposes.
+
+-   Standardization is key to ensuring that the study data is of sound quality. A detailed study protocol and data collection form should be developed prior to the commencement of the study and data collection.
+
+-   A research ethics board (REB) application will be required and approval must be obtained prior to data collection. Individual participant consent is not likely required in these cases.
+
+-   This study design is typically used to evaluate incidence, prevalence, clinical course/prognosis, determinants/outcomes of health service use, adherence to guidelines or standards of practice, etc.
+
+# Define and Articulate the Research Question
+
+-   Clearly state your research question. Is your research goal to describe, associate, predict, or compare?
+
+    -   Define the **PICO**: <br>
+            P = Patient/Problem; <br>
+            I = Intervention; <br>
+            C = Comparison; <br>
+            O = Outcome <br>
+
+-   You may need to narrow your focus to what can be accomplished by the study with the given data.
+
+    -   It is also important to consider whether the database will have the information that will be needed to answer your research question, and that it is not missing for a large number of patients.
+
+-   Conduct a literature review to evaluate how similar questions have been addressed in the past and to ensure the research question has not been sufficiently evaluated.
+
+-   Explicitly define the inclusion and exclusion criteria. Exclusion criteria may include substantive missing data, presence of comorbidities, etc.
+
+# Devise the Sampling Strategy *a priori*
+
+-   Random sampling -- the gold standard, whereby each medical record has an equal opportunity of being selected. Enumerate a list of all patients meeting certain criteria, and sample at random.
+
+    -   E.g. generate a random number for each person in Excel, then sort, then select the first XX people
+
+-   Convenience sampling -- most common, whereby the researcher utilizes the medical information at their disposal. This method may be prone to sampling bias and limits generalizability.
+
+    -   This includes selecting all patients within a given timespan, which is acceptable if the timespan is long enough to include seasonal and other variations over time that may be relevant.
+
+-   Systematic sampling -- whereby every *k*-th medical record is collected. This is not truly random and therefore may induce selection bias.
+
+-   Conduct a sample size calculation to ensure the project is feasible for your research question.
+
+# Operationalize Variables
+
+-   Create a 'data dictionary' -- an appendix of variable operationalization (e.g. variable labels, definitions) and how they should be coded.
+
+-   Operationalizing refers to "translating a construct into its manifestation".
+
+    -   E.g. you may be interested in pain or high blood pressure-- how will these be measured/defined?
+
+-   Operationalization requires literature review to identify how others have operationalized the variable in the past; it is often better to adopt an existing, validated approach, as opposed to creating one.
+
+# Develop a Standardized Procedure and Data Collection Form
+
+-   Create detailed and specific guidelines for data collection and coding to minimize interpretation of the data to be collected, and specify how discrepancies would be reconciled.
+
+    -   Provide detailed instructions for recording potentially ambiguous information. For example, specify the categories of certain variable (e.g. never smokes, sometime smokes, etc.), and provide examples of descriptions of data that would fit into each category.
+
+-   Create a standardized data collection form (DCF).
+
+    -   Design a DCF to follow the data flow/organization from the perspective of the data collectors.
+        -   If multiple data sources are used, separate DCFs may be helpful.
+
+    -   Limit the amount of manual entry for numbers or text to minimize errors.
+
+    -   Limit the use of skip patterns; if used, make instructions salient (e.g. highlight, use graphics).
+
+    -   Specify instructions for dealing with missing data; it is advisable that you distinguish between not completed, missing, or not applicable.
+
+-   Use paper or electronic forms; paper forms are easier to fill out so errors might be reduced, whereas electronic forms may save time and reduce transcription errors.
+
+    -   REDCap (free, from Lawson) is a great electronic form. If using Excel, you should use the "data validation" feature to restrict the data that can be entered and to create drop down lists.
+
+# Train and Monitor Data Collectors
+
+-   Ideally, the data collectors will be blinded to the purpose of the study and research questions; this would significantly reduce reviewer bias.
+
+-   Training for the collection of data should include a careful review of the variables, procedure, and DCF.
+
+    -   Data collectors should review/code several patient records for practice, which should be carefully verified by the researcher; any discrepancy should be discussed, and any issues clarified.
+
+-   Schedule recurrent meetings to monitor progress and to discuss/clarify any new issues or scenarios.
+
+-   Can apply the 100-20 rule: 100% of the data are checked for 20% of the participants, and 20% of the most essential data are checked in 100% of the participants.
+
+-   The study can be further strengthened by assessing/reporting intra-rater and inter-rater reliability to describe the coding consistency within and between raters, respectively (e.g. Cohen's kappa, ICC)
+
+# Pilot Test the Process and Forms
+
+-   **Pilot testing is essential** to assess the study design, procedures and its feasibility, and highlight the frequency that key variables of interest are missing from patient records.
+
+    -   The pilot sample should be randomly sampled and consist of 10% of the target sample size.
+
+
+# References and Further Readings
+Matt V, Matthew H. The retrospective chart review: important methodological considerations. Journal of educational evaluation for health professions. 2013;10.
+
+Jansen AC, et al. Guidelines were developed for data collection from medical records for use in retrospective analyses. Journal of clinical epidemiology. 2005;58(3):269-74.
+
+For more on PICO: <https://researchguides.uic.edu/c.php?g=252338&p=3954402>

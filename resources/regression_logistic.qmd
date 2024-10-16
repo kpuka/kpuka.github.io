@@ -1,0 +1,89 @@
+---
+title: 'Regressions 2: Logistic Regression'
+---
+
+Topic: Review of logistic regression and interpretation of results.
+
+# Introduction 
+This document extends the concepts of [Linear Regression](/resources/regression_linear.qmd) to binary outcomes. Binary outcomes have two states (e.g. alive or dead; yes or no) and are summarized using proportions. Logistic regression is an extension of simply comparing proportions, to allow for the adjustment of other independent variables. The results are presented as odds ratio (OR).
+
+
+
+# Review of Odds Ratio
+See the [Working with Categorical Data](/resources/categorical_data.qmd) for more details.
+
+Brieftly, the odds ratio (OR) is the ratio of the odds: 
+
+$$ Odds = \frac{\text{number of people with disease/outome}}{\text{number of people without disease/outome}} $$
+
+$$ Odds Ratio (OR) = \frac{\text{Odds of Group A}}{\text{Odds of Group B}} $$
+
+**Interpretation of OR**: If OR = 4.89, we say that the odds of disease/outcome is 4.89 times higher in Group  A, relative to Group B. Alternatively, can indicate that the odds are 389% (i.e. [4.89 - 1.00] x100%)  higher in Group  A, relative to Group B.
+
+An OR of 1.0 indicates no association. If the 95% CI of the OR does not include the value of 1, this indicates that the difference between groups is statistically significant at p<.05.
+
+
+# Why not use Linear Regression
+Recall, in linear regression there is a continuous outcome variable (Y), the expected value or mean of which is assumed to be linearly related to the predictor/covariate (X). For a binary outcome, if its values are coded as 1 = 'event occurs' and 0 = 'event does not occur', the mean value is equivalent to the probability (p) that the event occurs. In principle, we could therefore use the linear regression technique to model the mean of the binary outcome; but we would run into some problems:
+1.	Probabilities must lie between 0 and 1, but the linear regression function can take on any real number; i.e., predicted probability can be that are greater than 1 or less than 0.
+2.	Probabilities generally exhibit nonlinear, S-shaped, relationships with covariates (see Figure example); i.e., the rate of change in the probability reduces (in absolute terms) as its value approaches zero or one. 
+
+One solution is to transform the probabilities to a scale that can take on any real number. This can be achieved using the logit or 'log odds' transformation. If p is the probability of the outcome, the logit transformation is defined as:
+
+$$ logit(p) = log_e(odds) = log_e(\frac{p}{1-p}) $$
+
+A logistic regression uses these transformed probabilities in the model. Note that statistical software does this transformation automatically; it is discussed here to provide users with a better understanding of what the statistical software is doing.
+
+
+
+# Logistic Regression
+In the simplest case, we have one predictor variable (x) (e.g. group, defined as treatment [coded as 1] or control [coded as 0]). Similarly to linear regression, the logistic regression model can be written as 
+
+$$ logit(p) = β_0 + (β_1)(X) $$
+
+β<sub>0</sub> = the log of the odds of the outcome occurring when x = 0 (e.g. the control group).
+
+β<sub>1</sub> = the log of the odds of the outcome occurring when x increases by 1 (e.g. the treatment group).
+
+Exponentiating β (anti-loge) yields the odds ratio  (i.e.: e<sup>β</sup> = OR; e^β = OR) 
+
+
+The real value of logistic regression comes when we want to adjust for covariates (confounders). Covariates can be binary, categorical, or continuous; outcome must be binary. As with linear regression, multiple covariates (e.g. x<sub>1</sub>, x<sub>2</sub>) are specified by adding additional terms:     
+
+$$ logit(p) = β_0 + (β_1)(X_1)+ (β_2)(X_2)$$
+
+e^β<sub>1</sub> = the OR associated with increasing X<sub>1</sub> by 1 unit, while all other variables (e.g. X<sub>2</sub>) stay the same.
+
+e^β<sub>2</sub> = the OR associated with increasing X<sub>2</sub> by 1 unit, while all other variables (e.g. X<sub>1</sub>) stay the same.
+
+The model also produces a measure of statistical precision of the estimated coefficient (β) - the standard error, which are used to create the 95% confidence intervals.
+
+
+# Assumptions and Other Considerations
+Logistic model assumes that:
+- The outcome is a binary variable
+- There is a linear relationship between the logit of the outcome and each predictor/covariate
+- There are no influential values (extreme values or outliers) in continuous predictors/covariates. 
+- There is no multicolinearity (high correlations between predictors/covariates)
+
+The selection of variables methods described in the Linear Regression resource can be extrapolated and applied to logistic regression as well.
+
+
+# Odds Ratio (OR) vs. Relative Risk (RR)
+It is important to note that OR estimates the 'odds' of an event occurring - i.e. the probability of the event occurring divided by the probability of the event not occurring. OR does not describe the 'risk' of the event occurring - i.e. the  probability of the occurrence of the event; this is described by the RR.
+
+Often, researchers are interested in talking about the risk associated with a predictor/covariate, but may utilize logistic regression (and calculate the OR). Although risk and odds seem similar, there are important differences:
+- The OR will approximate the RR only when the prevalence of outcome is low (i.e. <10%). Otherwise, the OR will greatly exaggerate the RR
+- With case-control data, only OR can be calculated.
+- With cohort studies, when data is available on the entire population/cohort, the RR may be calculated using different models (e.g. modified Poisson regression).
+
+See [Working with Categorical Data](/resources/categorical_data.qmd) for a greater explanation.
+
+# References and Further Readings
+
+Wiest MM, Lee KJ, Carlin JB. Statistics for clinicians: An introduction to logistic regression. Journal of paediatrics and child health. 2015 Jul;51(7):670-3.
+
+Kim HY. Statistical notes for clinical researchers: logistic regression. Restor Dent Endod. 2017;42(4):342-348.
+
+
+

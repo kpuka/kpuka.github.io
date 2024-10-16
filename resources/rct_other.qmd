@@ -1,0 +1,112 @@
+---
+title: 'Clinical Trials 3: Other Considerations'
+---
+
+Topic: Review of important considerations for clinical trials are outlined, including intention to treat principle; baseline comparisons and p-values; covariate adjustment; analyses of pre-post data, missing data, and interim events.
+
+For more information on clinical trials, I recommend the book <a target="_blank" href="https://www.wiley.com/en-in/Statistical+Issues+in+Drug+Development%2C+3rd+Edition-p-9781119238577"> Statistical Issues in Drug Development by Dr. Senn.</a>
+
+
+# Intention to Treat Principle (ITT)
+
+## What is ITT?
+
+The Intention to Treat (ITT) principle is a cornerstone in the interpretation of randomized controlled trials (RCT). Aims to provide unbiased results and preserve the integrity of the randomization. Following ITT, participants are analyzed as members of the treatment group to which they were randomized, regardless of their adherence to, or whether they received the intended treatment
+
+Eliminating study participants who were randomized but not treated or moving participants between treatment groups according to the treatment they received would violate the ITT principle. ITT ignores noncompliance, protocol deviations, withdrawal, and anything that happens after randomization. It follows the principle of "once randomized, always analyzed". 
+
+Because all patients must be analyzed under the ITT principle, it is essential that all patients be followed up and their primary outcomes determined, even those who withdraw from treatment. Following the ITT principle will not eliminate bias associated with missing outcome data.
+
+
+## Why is ITT used?
+
+It preserves the integrity of the randomization process. 
+
+Any deviations from strict ITT leads to the potential for bias and should be avoided. Participant adherence to a protocol may be related to the outcome. Effectiveness of a therapy is not simply determined by its pure biological effect, but also by the physician's ability to administer, or patient's ability to adhere to, the intended treatment. The true effect of a treatment is a combination of these factors. Following the ITT principle allows for an unbiased estimate of the effect of selecting one treatment over another.
+
+Poor treatment adherence may result in lower estimates of treatment efficacy and a loss of study power, however, these estimates are clinically relevant because real-world effectiveness is limited by the ability of patients and clinicians to adhere to a treatment.
+
+## Alternatives to ITT
+
+**Per protocol analysis**: includes only study participants who completed the trial without any major deviations from the study protocol (specific definition varies between studies).
+
+**Modified ITT**: deviates from the ITT approach by eliminating patients or reassigning patients to a study group other than the group to which they were randomized (specific definition varies between studies). 
+
+Both these methods may lead to clinically misleading results. Studies following modified ITT are more likely to find significant results than those following a strict ITT.
+
+## ITT Caveats to Consider 
+
+For [Non-inferiority trials](/resources/rct_design.qmd) both ITT and per-protocol analyses should be conducted and reported. Non-inferiority trials are designed to demonstrate that an experimental treatment is no worse than an established one. Patients randomized to the established therapy may not adhere to treatment, and fail treatment due to non-adherence. In this case, established treatment appears less efficacious, and new treatment may incorrectly appear non-inferior to established treatment.
+
+When evaluating safety; generally conducted according to treatment actually received, even though this may overestimate the burden of adverse effects likely to be seen in clinical practice.
+
+
+# Baseline Comparisons
+
+Randomization does not necessarily produce groups that are similar in important factors, therefore comparison of baseline characteristics of the two treatment groups should be made. Measures of variability should be reported (e.g. standard deviation, interquartile range, range). 
+
+**For randomized controlled trials (RCTs) the assessment of similarity should be based on the prognostic strength of the variables and the magnitude of the imbalance. Hypothesis tests (e.g. chi-square, t-tests) p-values and are *not* a valid way of comparing groups.** As per the CONSORT guidelines: *"Such significance tests assess the probability that observed baseline differences could have occurred by chance; however, we already know that any differences are caused by chance. Tests of baseline differences are not necessarily wrong, just illogical. Such hypothesis testing is superfluous and can mislead investigators and their readers. Rather, comparisons at baseline should be based on consideration of the prognostic strength of the variables measured and the size of any chance imbalances that have occurred*." (Moher et al., 2010, page 17). Furthermore, groups can never be shown to be identical, only absence of "significant" differences can be demonstrated. **Therefore, p-values should not be presented in Table 1** (e.g. patient characteristics table) of RCTs.
+
+If there are large differences in the magnitude of important variables at baseline, the analysis plan should be modified to additionally report on analyses of regression modeling that control for that variable. The primary analyses should not adjust for that variable. Also, if that variable was very important, then randomization should have been stratified based on that variable, and/or the analyses plan should have pre-specified that analyses would adjust for that variable (see *Covariate Adjustment* below). 
+
+
+# Covariate Adjustment 
+
+If stratified randomization was used, the analysis should adjust for the stratifying variable. Failure to do so will result in an over estimation of the p value (lead to type II error -- e.g. a 'false negatives'). 
+
+If there is concern that a key prognostic factor is imbalanced between groups at baseline, the investigator may control for that variable in the analysis to minimize the effect of the imbalance. Recommendation is to present both the unadjusted (pre-planned analysis) and adjusted analysis.
+
+Investigators may also choose *a priori* that they will control for key prognostic covariates. Doing so reduces the variance in the test statistic and can result in increased statistical power. These covariates should be specified in the protocol and controlled for in the primary analyses.
+
+Covariates should be measured at baseline. Any variable measured at/after the intervention should be considered as a response variable (except for certain unmodifiable factors such as age, sex, or race).
+
+
+# Analyses of Pre-Post Data 
+
+For an RCT the research question is (or should be): for patients with the same pre-score, will those given the intervention have a better scores at follow-up? The researcher has several options to analyze data collected before and after an intervention:
+
+1.  Compare the change score between the groups.
+
+2.  Use a repeated-measures design utilizing data from both time points (e.g. repeated measures analysis of variance (ANOVA)).
+
+3.  Use a regression where the outcome is the post-score, and the pre-score is used as a covariate. **This option is recommended.**
+
+The third option should be used because it reduces the error variance and eliminates systematic bias, e.g. takes into account regression toward the mean. This method also directly answers the research question. Alternatively, one may use the change score (instead of post-score) as the outcome variable and the pre-score as a covariate, and this would yield the same result, though the interpretation is different. You would get an estimate of the mean change score expected with the intervention vs control, which is not necessarily the question of interest in an RCT.
+
+If missing data is an issue, more sophisticated methods such as repeated measures linear mixed models (described below) may be the preferable choice to utilize all available data.
+
+
+# Missing Data 
+
+Many of the methods for dealing with missing data assume that the data are missing at random; that the probability of data missing does not depend on what its value would have been. If the amount of missing data is substantial, there may be no method capable of rescuing the trial.
+
+"Last observation carried forward", though common is not an appropriate method and may lead to bias. This method requires the very strong and unverifiable assumption that all future observations, if they were available, would remain constant.
+
+Multiple imputation may be a viable option. With this method, regression methods are used to estimate various potential values for the missing data, then the standard analysis is conducted for each imputed dataset, then the results of the various imputations are combined.
+
+Repeated mixed models, a more sophisticated method, may be another option as it utilizes all available data and imputation is not needed. This option also allows for more flexibility in modeling the data.
+
+
+# Interim Events 
+
+Investigators need to be alert to any event occurring after the baseline evaluation but before the intervention has started. E.g. if patient had the outcome after baseline evaluation but before the intervention. If such events occur before randomization (i.e. assignment to treatment or control group) investigators can exclude the participant from the study. If such events occur after randomization (even if it is before the start of the intervention), participants should be kept in the study and the event counted in the analysis. Removal of such participants may bias the outcome and violates the intention-to-treat principle
+
+
+# References and Further Readings
+
+Altman DG, Dore CJ. Randomisation and baseline comparison in clinical trials. Lancet 1990; 335: 149-153.
+
+Friedman LM, et al. Fundamentals of clinical trials, 5th ed. New York: Springer; 2015.
+
+Gupta SK. Intention-to-treat concept: a review. Perspectives in clinical research. 2011;2(3), 109.
+
+Kent DM, Trikalinos TA, Hill MD. Are unadjusted analyses of clinical trials inappropriately biased toward the null? Stroke 2009; 40(3): 672-673
+
+McCoy CE. Understanding the Intention-to-treat Principle in Randomized Controlled Trials. West J Emerg Med. 2017;18(6):1075-1078
+
+Moher D. et al. (2010). CONSORT 2010 explanation and elaboration: Updated guidelines for reporting parallel group randomised trial. BMJ 340:c869.
+
+Senn SJ. Testing for baseline balance in clinical trials. Stat Med 1994; 13: 1715-1726.
+
+Vickers AJ, Altman DG. Analysing controlled trials with baseline and follow up measurements. Bmj. 2001 Nov 10;323(7321):1123-4.
+ 

@@ -1,0 +1,54 @@
+---
+title: 'Study Design 4: Case Reports'
+---
+
+Topic: Description of pilot studies and how pilot studies should be designed.
+
+# Introduction
+
+A case report is a research design that provides an in-depth description and analysis of a 'case'. Case reports can be very diverse and encompass an individual (e.g. a patient), a social group, institutions (e.g. a hospital), or an event.
+
+Case reports play an important role in evidence generation, in clinical practice, and in raising awareness of understudied or poorly understood phenomena. They can be prospective or retrospective and are often used to investigate "why" or "how" questions. There are three types of case study designs: 
+
+-   Explanatory - investigates cause-and-effect relationships
+-   Exploratory - identifies hypothesis or research questions, or assesses the practicability of research protocols 
+-   Descriptive - provides an in depth description of a case
+
+Reporting guidelines have been developed by the Equator Network and should be followed (the CARE guidelines): <http://www.equator-network.org/reporting-guidelines/care/>
+
+# Getting Started
+
+-   Identify the interesting aspects of the case and learning points to highlight.
+
+-   Review the literature to determine what is known and refine the objectives of the case report.
+
+-   The research objective/hypotheses should be formulated prior to data collection. This will help with the identification and collection of supporting evidence.
+
+-   Critically evaluate the quality of the available data and identify potential biases or potential errors.
+
+-   A number of journals provide guidance documents on how to draft a case report (see Further Readings below).
+
+
+# Ethics Approval
+
+Obtaining patient's consent to publish the case report is very important, and it may also be a journal requirement. In reporting results, care should be taken to maintain the confidentiality of the case.
+
+
+# Data Collection
+
+Methods typically used include interviews, observation, and archived records. Before data collection begins, authors should have a method/protocol in place to accurately collect, store, organize, and access the data while maintaining patient confidentiality. Whenever possible, data should always be acquired from multiple sources, increasing the credibility of available evidence.
+
+
+# Analysis and Reporting
+
+There are no "recipes" to help guide analyses, which will largely depend on the case, the research question, and the researchers' ability to critically evaluate the evidence. The report should demonstrate critical thinking and logical reasoning and provide a clear and compelling story, highlighting the main learning points. Why a case study design is the preferred method for the research question should also be discussed. Lastly, consider sharing the results and interpretation with the case(s) to evaluate the accuracy of the data.
+
+Caution should be taken in generalizing results of case reports because they have the potential to allow for over- or mis-interpretation.
+
+# References and Further Readings
+
+BMJ Case Reports. Instructions for Authors. <https://casereports.bmj.com/pages/authors/>
+
+Hancock D R & Algozzine R (2006). Doing case study research: A practical guide for beginning researchers. New York: Teachers College Press.
+
+Jackevicius C. The Value of Case Reports. The Canadian journal of hospital pharmacy. 2018 Nov;71(6):345. Stokes V, Fertleman C. Writing a case report in 10 steps. BMJ. 2015 May 27;350: h2693.

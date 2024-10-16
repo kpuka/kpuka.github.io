@@ -1,19 +1,103 @@
 project:
   type: website
-
-website:
-  title: "kpuka.github.io"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  output-dir: docs
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [lumen, mystyle.scss]
     toc: true
 
+website:
+  title: "Klajdi Puka, PhD"
+  site-url: https://kpuka.ca
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "About"
+        file: index.qmd
+      - text: "Research"
+        file: research.qmd
+      - text: "Teaching"
+        file: teaching.qmd
+      - text: "Consulting Services"
+        file: consulting.qmd
+      - text: "Resources"
+        file: resources.qmd
+      - text: "CV/Resume"
+        file: cv.qmd
+  page-footer: 
+    background: light
+    left:
+      - "Copyright 2023, Klajdi Puka"
+  google-analytics: "G-QN2NZN1QS3"
 
 
+
+  sidebar: 
+    - title: "Resources"
+      style: docked
+      background: light
+      contents: 
+        - section: "Getting Started"
+          contents:
+            - text: "Data Formatting"
+              file: resources/data_formatting.qmd
+            - text: "Research Proposal"
+              file: resources/research_proposal.qmd
+            - text: "Sample Size Calculator"
+              file: resources/sample_size_calculator.qmd
+        - section: "R"
+          contents: 
+            - text: "Introduction to R"
+              file: resources/r_intro.qmd
+            - text: "Introduction to Quarto"
+              file: resources/quarto_intro.qmd
+        - section: "Clinical Trials"
+          contents:
+            - text: "Study Design"
+              file: resources/rct_design.qmd
+            - text: "Randomization"
+              file: resources/rct_randomization.qmd
+            - text: "Other Considerators"
+              file: resources/rct_other.qmd
+        - section: " Other Study Designs"
+          contents:
+            - text: "Case Control"
+              file: resources/study_case_control.qmd
+            - text: "Chart Review"
+              file: resources/study_chart_review.qmd
+            - text: "Pilot Studies"
+              file: resources/study_pilot_studies.qmd
+            - text: "Case Reports"
+              file: resources/study_case_reports.qmd
+            - text: "Systematic Reviews"
+              file: resources/study_systematic_reviews.qmd
+        - section: "Regressions"
+          contents:
+            - text: "Linear Regression"
+              file: resources/regression_linear.qmd
+            - text: "Logistic Regression"
+              file: resources/regression_logistic.qmd
+            - text: "Survival Analyses"
+              file: resources/regression_survival.qmd
+            - text: "Multilevel Models"
+              file: resources/regression_multilevel.qmd
+        - section: "Other Topics"
+          contents:
+            - text: "Statistical vs Clicical Significance"
+              file: resources/stat_clin_significance.qmd
+            - text: "Confounding"
+              file: resources/confounding.qmd
+            - text: "Categorical Data"
+              file: resources/categorical_data.qmd
+            - text: "Inter-rater Reliability"
+              file: resources/inter_rater_reliability.qmd
+        - section: "Survey Design"
+          contents:
+            - text: "Invitation and Follow-up"
+              file: resources/surveys_invitation.qmd
+            - text: "Designing Effective Questions"
+              file: resources/surveys_questions.qmd
+
+    - title: "Resources"
