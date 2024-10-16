@@ -1,0 +1,2802 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Introduction to Quarto – Klajdi Puka, PhD</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QN2NZN1QS3"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
+</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Klajdi Puka, PhD</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../consulting.html"> 
+<span class="menu-text">Consulting Services</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv.html"> 
+<span class="menu-text">CV/Resume</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/r_intro.html">R</a></li><li class="breadcrumb-item"><a href="../resources/quarto_intro.html">Introduction to Quarto</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Getting Started</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/data_formatting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Formatting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/research_proposal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research Proposal</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/sample_size_calculator.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Size Calculator</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/r_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/quarto_intro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Introduction to Quarto</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Clinical Trials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/rct_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/rct_randomization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Randomization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/rct_other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other Considerators</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Other Study Designs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/study_case_control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Case Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/study_chart_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chart Review</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/study_pilot_studies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pilot Studies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/study_case_reports.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Case Reports</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/study_systematic_reviews.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Systematic Reviews</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regressions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/regression_linear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Linear Regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/regression_logistic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Logistic Regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/regression_survival.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Survival Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/regression_multilevel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multilevel Models</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Other Topics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/stat_clin_significance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistical vs Clicical Significance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/confounding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Confounding</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/categorical_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Categorical Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/inter_rater_reliability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inter-rater Reliability</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Survey Design</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/surveys_invitation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Invitation and Follow-up</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources/surveys_questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Designing Effective Questions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#rstudio-introduction" id="toc-rstudio-introduction" class="nav-link" data-scroll-target="#rstudio-introduction"><span class="header-section-number">2</span> RStudio Introduction</a></li>
+  <li><a href="#output-settings" id="toc-output-settings" class="nav-link" data-scroll-target="#output-settings"><span class="header-section-number">3</span> Output Settings</a></li>
+  <li><a href="#formatting-basics" id="toc-formatting-basics" class="nav-link" data-scroll-target="#formatting-basics"><span class="header-section-number">4</span> Formatting Basics</a></li>
+  <li><a href="#organization" id="toc-organization" class="nav-link" data-scroll-target="#organization"><span class="header-section-number">5</span> Organization</a>
+  <ul class="collapse">
+  <li><a href="#columns" id="toc-columns" class="nav-link" data-scroll-target="#columns"><span class="header-section-number">5.1</span> Columns</a></li>
+  <li><a href="#layouts" id="toc-layouts" class="nav-link" data-scroll-target="#layouts"><span class="header-section-number">5.2</span> Layouts</a></li>
+  <li><a href="#callout-blocks" id="toc-callout-blocks" class="nav-link" data-scroll-target="#callout-blocks"><span class="header-section-number">5.3</span> Callout Blocks</a></li>
+  <li><a href="#tabsets" id="toc-tabsets" class="nav-link" data-scroll-target="#tabsets"><span class="header-section-number">5.4</span> Tabsets</a></li>
+  </ul></li>
+  <li><a href="#integrating-statistical-code" id="toc-integrating-statistical-code" class="nav-link" data-scroll-target="#integrating-statistical-code"><span class="header-section-number">6</span> Integrating Statistical Code</a>
+  <ul class="collapse">
+  <li><a href="#execution-options" id="toc-execution-options" class="nav-link" data-scroll-target="#execution-options"><span class="header-section-number">6.1</span> Execution Options</a></li>
+  <li><a href="#formating-the-report-and-results" id="toc-formating-the-report-and-results" class="nav-link" data-scroll-target="#formating-the-report-and-results"><span class="header-section-number">6.2</span> Formating the Report and Results</a></li>
+  <li><a href="#example-of-analyses-and-report" id="toc-example-of-analyses-and-report" class="nav-link" data-scroll-target="#example-of-analyses-and-report"><span class="header-section-number">6.3</span> Example of Analyses and Report</a></li>
+  </ul></li>
+  <li><a href="#parameterized-reports" id="toc-parameterized-reports" class="nav-link" data-scroll-target="#parameterized-reports"><span class="header-section-number">7</span> Parameterized Reports</a></li>
+  <li><a href="#html-theming" id="toc-html-theming" class="nav-link" data-scroll-target="#html-theming"><span class="header-section-number">8</span> HTML Theming</a>
+  <ul class="collapse">
+  <li><a href="#html-basics" id="toc-html-basics" class="nav-link" data-scroll-target="#html-basics"><span class="header-section-number">8.1</span> HTML Basics</a></li>
+  <li><a href="#css-basics" id="toc-css-basics" class="nav-link" data-scroll-target="#css-basics"><span class="header-section-number">8.2</span> CSS Basics</a></li>
+  <li><a href="#pre-set-themes" id="toc-pre-set-themes" class="nav-link" data-scroll-target="#pre-set-themes"><span class="header-section-number">8.3</span> Pre-set Themes</a></li>
+  <li><a href="#custom-themes" id="toc-custom-themes" class="nav-link" data-scroll-target="#custom-themes"><span class="header-section-number">8.4</span> Custom Themes</a></li>
+  <li><a href="#other-formatting-examples" id="toc-other-formatting-examples" class="nav-link" data-scroll-target="#other-formatting-examples"><span class="header-section-number">8.5</span> Other Formatting Examples</a>
+  <ul class="collapse">
+  <li><a href="#watermmark" id="toc-watermmark" class="nav-link" data-scroll-target="#watermmark"><span class="header-section-number">8.5.1</span> Watermmark</a></li>
+  <li><a href="#sec-html_folding" id="toc-sec-html_folding" class="nav-link" data-scroll-target="#sec-html_folding"><span class="header-section-number">8.5.2</span> Collapsible Sections</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting"><span class="header-section-number">8.6</span> Troubleshooting</a></li>
+  </ul></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><span class="header-section-number">9</span> Additional Resources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/r_intro.html">R</a></li><li class="breadcrumb-item"><a href="../resources/quarto_intro.html">Introduction to Quarto</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Introduction to Quarto</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>Quarto enables you to weave together content and executable code into a finished document. Quarto is a multi-language program, supporting multiple types of inputs languages (e.g., R, python, HTML), input software (e.g., RStudio, VScode, plain text), and outputs/documents (e.g., HTML document, presentation slides, PDFs, word documents).</p>
+<p>Quarto is the next generation of R Markdown, and is able to render most existing R Markdown (Rmd) files without modification. Most of the information presented below will work both in Quarto and Markdown. Syntax that is common to both will be noted as ‘Syntax (Input)’, whereas syntax specific to Quarto will be noted as ‘Quarto Syntax (Input)’.</p>
+<p>This introduction will focus on creating an HTML file using the RStudio environment.</p>
+</section>
+<section id="rstudio-introduction" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> RStudio Introduction</h1>
+<p>To get started, open RStudio and create a Quarto Document:</p>
+<p><img src="files/quarto_intro/RStudio1.jpg" class="img-fluid"></p>
+<p><br></p>
+<p>This will create a file with temporary content to help get you started.</p>
+<p><img src="files/quarto_intro/RStudio2.jpg" class="img-fluid"> <br></p>
+<p>The <strong>script editor</strong> is where you write and edit your content. You can view the content using the <strong>Source</strong> view, which uses the raw syntax (used throughout this tutorial), or use the <strong>Visual</strong> view, which uses a point and click interface for formatting (similar to Microsoft Word).</p>
+<p>All of the scripts provided below in this tutorial should be entered into the ‘Script Editor’. Clicking <strong>Render</strong> will generate the formatted document. You can also highlight code and click <strong>Run</strong> to execute specific lines of code.</p>
+<p>The <strong>console</strong> is where you see the output of any statistical code. The <strong>environment panel</strong> displays information about the variables and objects in your current R session, while the <strong>files panel</strong> allows you to navigate your computer’s file system and manage your R projects.</p>
+</section>
+<section id="output-settings" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Output Settings</h1>
+<p>Each quarto file starts with a set of code, called the YAML which is fenced within <code>---</code>. The YAML specifics the metadata and document-wide settings. For example, for a HTML document the YAML may be:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="syntax-input" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="syntax-input">Syntax (Input)</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title: Introduction to Quarto</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>subtitle: My subtitle</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>author: Klajdi Puka</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>date: last-modified</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>format: </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    self-contained: true</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>execute:</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  echo: true</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  warning: false</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>toc: true</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>number-sections: true</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>editor_options: </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  chunk_output_type: console</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="explanation" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="explanation">Explanation</h4>
+<p><code>format</code> specifies the type of output file to generate. Here it is an HTML file.</p>
+<p><code>self-contained: true</code> specifies that the HTML file generated should be standalone file.</p>
+<p><code>echo: true</code> enables the printing of code (only output is displayed), unless otherwise specified.</p>
+<p><code>warning: false</code> disables the printing of warning messages.</p>
+<p><code>toc: true</code> specifies that the table of contents should be shown; automatically generated based on the headings.</p>
+<p><code>chunk_output_type: console</code> specifies that when executing the code in RStudio (i.e., when you “run” the code, instead of “render”), the outcput in RStudio should be displayed in the “console” (where it typically appears when using R)</p>
+</section>
+</div>
+</div>
+</section>
+<section id="formatting-basics" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Formatting Basics</h1>
+<p>The following syntax works with Quarto and its predecessor Markdown. In addition to this code, RStudio has a ‘visual’ editor which provides a point-and-click interface to format the document.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="syntax-input-1" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="syntax-input-1">Syntax (Input)</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a># Heading 1</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>## Heading 2</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>### Heading 3</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>Bold text like **this** or __this__</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>Italicize text like *this* or _this_</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>Clickable link: &lt;https://google.com&gt;</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>[Hyperlink](google.com) </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>-   Bullet point (nordered lists)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>-   Hyphen, follwed by 'tab'</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>1.    Ordered list</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>2.    Number, period, then 'tab'</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>|            | Manual   | Table    |</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>|------------|----------|----------|</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>| Variable 1 | 11       | 21       |</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>| Variable 2 | 12       | 22       |</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>| Variable 3 | 12       | 23       |</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="formatted-output" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="formatted-output">Formatted Output</h4>
+</section>
+<section id="heading-1" class="level1 unnumbered">
+<h1 class="unnumbered">Heading 1</h1>
+<section id="heading-2" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="heading-2">Heading 2</h2>
+<section id="heading-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="heading-3">Heading 3</h3>
+<p><br><br> Bold text like <strong>this</strong> or <strong>this</strong></p>
+<p>Italicize text like <em>this</em> or <em>this</em></p>
+<p><br><br> Clickable link: <a href="https://google.com" class="uri">https://google.com</a></p>
+<p><a href="google.com">Hyperlink</a></p>
+<p><br></p>
+<ul>
+<li>Bullet point (nordered lists)</li>
+<li>Hyphen, followed by ‘tab’</li>
+</ul>
+<ol type="1">
+<li>Ordered list</li>
+<li>Number, period, then ‘tab’</li>
+</ol>
+<p><br></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Manual</th>
+<th>Table</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Variable 1</td>
+<td>11</td>
+<td>21</td>
+</tr>
+<tr class="even">
+<td>Variable 2</td>
+<td>12</td>
+<td>22</td>
+</tr>
+<tr class="odd">
+<td>Variable 3</td>
+<td>12</td>
+<td>23</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+</div>
+</div>
+<p>To get properly formatted tables, using an online table generator may be helpful, such as <a href="https://www.tablesgenerator.com/markdown_tables" target="”_blank”">this webpage.</a>.</p>
+</section>
+<section id="organization" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Organization</h1>
+<section id="columns" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="columns"><span class="header-section-number">5.1</span> Columns</h2>
+<p>To create and work with columns, use <code>:::</code> or <code>::::</code>. Like brackets, these are used to indicate the start and end the content to be placed in columns.</p>
+<p>Here’s an example:</p>
+<div class="columns">
+<div class="column">
+<section id="quarto-syntax-input" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="quarto-syntax-input">Quarto Syntax (Input)</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>:::: columns</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>::: {.column}</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Content of column 1</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>::: {.column}</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>Content of column 2</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</div><div class="column">
+<section id="explanation-1" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="explanation-1">Explanation</h4>
+<p><code>:::: columns</code> indicates that what comes next should be presented in columns.</p>
+<p><code>::: {.column}</code> indicates that what comes next are the content of column 1.</p>
+<p><code>:::</code> indicates the end of the content of column 1</p>
+<p>The very last <code>::::</code> indicates the end of the columns.</p>
+</section>
+</div>
+</div>
+<p>Additional arguments can be added within the curly brackets:</p>
+<ul>
+<li><code>::: {.column width="40%"}</code> indicates that the column should take up 40% of the screen</li>
+<li><code>::: {.column font-size: "60%"}</code> indicates that the content within the column should be a different size font</li>
+<li><code>::: {.column .fragment}</code> (for presentations) indicates that the content of the column should appear after a click</li>
+<li>Multiple arguments can be integrated together: <code>::: {.column width="40%; font-size: 60%;" .fragment}</code></li>
+</ul>
+<p>Most of this document is created using columns, such that the code is specified but not run in column 1, and in column 2 the code is repeated and implemented.</p>
+</section>
+<section id="layouts" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="layouts"><span class="header-section-number">5.2</span> Layouts</h2>
+<p>Similar to columns, custom ‘layouts’ can also be used to create columns or a more complex organization of the output.</p>
+<p>To create two columns, each taking up 50% of the page, you can use either one of the following:</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[45, -10, 45]">
+<div class="quarto-layout-row">
+<div id="Method1" class="quarto-layout-cell" style="flex-basis: 45.0%;justify-content: flex-start;">
+<p>Specify number of equally-sized columns</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>:::: {layout-ncol=2}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>::: {#first-column}</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Content of column 1</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>::: {#Second-column}</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>Content of column 2</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div id="Method2" class="quarto-layout-cell" style="flex-basis: 45.0%;justify-content: flex-start;">
+<p>Manually specify proportion of each column</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>:::: {layout="[50, 50]"}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>::: {#first-column}</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Content of column 1</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>::: {#Second-column}</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>Content of column 2</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p>The id attributes (#first-column and #second-column) are optional, but aid readability.</p>
+<p>Layouts are powerful because they can create complex organizations; for example:</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="Code" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="sourceCode" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>:::: {layout="[[45, -10, 45], [100]]"}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>:::{#Output1}</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Content 1</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>:::{#Output2}</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>Content 2</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>:::{#Output3}</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>Content 2</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="Explanation" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>This example will organize the three pieces of output in the following ways:</p>
+<ul>
+<li>Output1 will show in the first row and take up 45% of the page width</li>
+<li>Output2 will show in the first row and take up 45% of the page width</li>
+<li>The <code>-10</code> defined the amount of empty space between Output1 and Output2</li>
+<li>Output3 will show in the second row, and take up 100% of the page width</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Notably, these layout options can also be integrated within the code chunk. For example:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>#| layout-ncol: 2</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>#| layout: [50, 50]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="callout-blocks" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="callout-blocks"><span class="header-section-number">5.3</span> Callout Blocks</h2>
+<p>Callouts are used to draw extra attention to certain concepts, or to more clearly indicate that certain content is supplemental or applicable to only some scenarios.</p>
+<p>Callouts start with <code>::: {.callout-note}</code>, then there’s the content, and it ends with <code>:::</code>.</p>
+<p>There are five types of callouts: <code>note</code>, <code>warning</code>, <code>important</code>, <code>tip</code>, and <code>caution</code>.</p>
+<div class="columns">
+<div class="column">
+<section id="quarto-syntax-input-1" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="quarto-syntax-input-1">Quarto Syntax (Input)</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>This is a callout block of the type "note".</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>:::{.callout-caution collapse="true"}</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>Callouts can be collapsible. </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a># My heading</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>The first heading used within the callout </span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>is used as the callout heading.</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip icon=false}</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>The icon can also be hidden, like this. </span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>:::{.callout}</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>This is a simpler callout, without </span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>specifying the "type". </span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</div><div class="column">
+<section id="formatted-output-1" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="formatted-output-1">Formatted Output</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a callout block of the type “note”.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Callouts can be collapsible.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+My heading
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The first heading used within the callout is used as the callout heading.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The icon can also be hidden, like this.</p>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This is a simpler callout, without specifying the “type”.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<p><br></p>
+<p>An alternative method of collapsing sections is presented in <a href="#sec-html_folding" class="quarto-xref">Section&nbsp;8.5.2</a> and uses HTML code.</p>
+</section>
+<section id="tabsets" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="tabsets"><span class="header-section-number">5.4</span> Tabsets</h2>
+<p>Another way to organize a report is to present information in different tabs. <br></p>
+<p>Similarly, as before, this is coded using <code>:::</code> to denote the start and end of the information to be presented in tabs.</p>
+<p>Level 3 headings (specified using <code>###</code>) are used as the tab title and denote the start of each new tab. <br></p>
+<p>Here a simple example:</p>
+<div class="columns">
+<div class="column">
+<section id="syntax-input-2" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="syntax-input-2">Syntax (Input)</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>### Panel 1 Title</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>Content of panel 1</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>### Panel 2 Title</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>Content of panel 2</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</div><div class="column">
+<section id="formatted-output-2" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="formatted-output-2">Formatted Output</h4>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Panel 1 Title</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Panel 2 Title</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Content of panel 1</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Content of panel 2</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section>
+</section>
+<section id="integrating-statistical-code" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Integrating Statistical Code</h1>
+<p>Quarto can understand and run different programming languages, such as R and Python. This introduction focuses on R.</p>
+<p>Code is specified within “code chunks”, which begin with <code>```{r}</code> and end with <code>```</code></p>
+<p>As an example, here’s a simple calculation using R; the syntax is shown along with the output automatically generated.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="in">1 + 1</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+<section id="execution-options" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="execution-options"><span class="header-section-number">6.1</span> Execution Options</h2>
+<p>There are a variety of options for how to handle the code and its output, called ‘execution options’. These options are specified at the start of the code chunk, and begin with <code>#|</code></p>
+<p>For example, to output just the code chunk, without executing the code and to ignore any warnings:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| eval: false</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| warning: false</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="in">1 + 1</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Other execution options include:</p>
+<ul>
+<li><code>eval: true</code> indicates that the code chunk should be ‘evaluated’ or ‘run’</li>
+<li><code>echo: true</code> indicates the code chunk should be ‘echoed’ or shown along in the output</li>
+<li><code>warning: false</code> indicates that any warning messags should not be shown in the output</li>
+<li><code>output: asis</code> indicates that the output is raw markdown and should not have any of Quarto’s standard enclosing markdown</li>
+<li><code>include: false</code> is a catch all, indicating neither the code chunk nor results should be shown in the output</li>
+<li><code>file: "Name of R file.R"</code> can be used to import, display, and run the code that is in a separate file called “Name of R file.R”. Useful if you have custom functinos saved in a separate R script, and want to show the function code in your final document.</li>
+<li><code>code-fold: true</code> indicates that the code chunk is shown, but presented in a collapseble format
+<ul>
+<li><code>#| code-summary: "Title of folding code"</code> indicates the name used as the heading for the folding code</li>
+</ul></li>
+</ul>
+<p>Example of a folded code:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Example of code fold</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| code-fold: true</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| code-summary: "Example of code fold"</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="in">1 + 1</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</section>
+<section id="formating-the-report-and-results" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="formating-the-report-and-results"><span class="header-section-number">6.2</span> Formating the Report and Results</h2>
+<p>Any text (outside of code chunks) is automatically formatted by Quarto. To present nicely formatted tables and figures, a variety of packages are available. This includes the <code>gt</code> and <code>gtsummary</code> packages for tables, and the <code>ggplot</code> package for figures.</p>
+<p>To present executable code inline with your text, enclose the expression in <code>`r `</code>. For example:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>The sum of 1 + 1 is equal to `r 1+1`.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The sum of 1 + 1 is equal to 2.</p>
+</section>
+<section id="example-of-analyses-and-report" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="example-of-analyses-and-report"><span class="header-section-number">6.3</span> Example of Analyses and Report</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Syntax + Output</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Output Only</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| warning: false</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="in"># Load libraries and data.</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)       # Data management</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="in">library(gt)              # Create nicely formatted tables</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="in">library(gtsummary)       # Create summary tables</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="in">library(palmerpenguins)  # Contains the dataframe called "penguins"</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="in"># Lets calculate some numbers to be used later on</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="in">n_Adelie    &lt;- filter(penguins, species=="Adelie") %&gt;% nrow()</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="in">n_Chinstrap &lt;- filter(penguins, species=="Chinstrap") %&gt;% nrow()</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="in">n_Gentoo    &lt;- filter(penguins, species=="Gentoo") %&gt;% nrow()</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>Our data is comprised of `r nrow(penguins)` peguins; specifically comprised of the</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>species Adelie (n=`r n_Adelie`), Chinstrap (n=`r n_Chinstrap`), and Gentoo </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>(n=`r n_Chinstrap`). Penguin charactersitics are presented in @tbl-demographics.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Our data is comprised of 344 peguins; specifically comprised of the species Adelie (n=152), Chinstrap (n=68), and Gentoo (n=68). Penguin charactersitics are presented in <a href="#tbl-demographics" class="quarto-xref">Table&nbsp;1</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: tbl-demographics</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| tbl-cap: Penguin charactertics</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="in">penguins %&gt;% </span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="in">  select(species, sex, flipper_length_mm, body_mass_g) %&gt;%</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="in">  tbl_summary(</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="in">      by=species,</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="in">      missing = "no",</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="in">      statistic = list(all_continuous() ~ "{mean} ({sd})",</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="in">                       all_categorical() ~ "{n} ({p}%)"))</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-demographics" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-demographics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Penguin charactertics
+</figcaption>
+<div aria-describedby="tbl-demographics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="oxkdvrcehz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#oxkdvrcehz table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#oxkdvrcehz thead, #oxkdvrcehz tbody, #oxkdvrcehz tfoot, #oxkdvrcehz tr, #oxkdvrcehz td, #oxkdvrcehz th {
+  border-style: none;
+}
+
+#oxkdvrcehz p {
+  margin: 0;
+  padding: 0;
+}
+
+#oxkdvrcehz .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#oxkdvrcehz .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#oxkdvrcehz .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#oxkdvrcehz .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#oxkdvrcehz .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#oxkdvrcehz .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#oxkdvrcehz .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#oxkdvrcehz .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#oxkdvrcehz .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#oxkdvrcehz .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#oxkdvrcehz .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#oxkdvrcehz .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#oxkdvrcehz .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#oxkdvrcehz .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#oxkdvrcehz .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oxkdvrcehz .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#oxkdvrcehz .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#oxkdvrcehz .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#oxkdvrcehz .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oxkdvrcehz .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#oxkdvrcehz .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oxkdvrcehz .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#oxkdvrcehz .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oxkdvrcehz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oxkdvrcehz .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oxkdvrcehz .gt_left {
+  text-align: left;
+}
+
+#oxkdvrcehz .gt_center {
+  text-align: center;
+}
+
+#oxkdvrcehz .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#oxkdvrcehz .gt_font_normal {
+  font-weight: normal;
+}
+
+#oxkdvrcehz .gt_font_bold {
+  font-weight: bold;
+}
+
+#oxkdvrcehz .gt_font_italic {
+  font-style: italic;
+}
+
+#oxkdvrcehz .gt_super {
+  font-size: 65%;
+}
+
+#oxkdvrcehz .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#oxkdvrcehz .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#oxkdvrcehz .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#oxkdvrcehz .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#oxkdvrcehz .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#oxkdvrcehz .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#oxkdvrcehz .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#oxkdvrcehz .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#oxkdvrcehz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Adelie</strong><br> N = 152<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Chinstrap</strong><br> N = 68<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Gentoo</strong><br> N = 124<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">sex</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;female</td>
+<td class="gt_row gt_center" headers="stat_1">73 (50%)</td>
+<td class="gt_row gt_center" headers="stat_2">34 (50%)</td>
+<td class="gt_row gt_center" headers="stat_3">58 (49%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;male</td>
+<td class="gt_row gt_center" headers="stat_1">73 (50%)</td>
+<td class="gt_row gt_center" headers="stat_2">34 (50%)</td>
+<td class="gt_row gt_center" headers="stat_3">61 (51%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">flipper_length_mm</td>
+<td class="gt_row gt_center" headers="stat_1">190 (7)</td>
+<td class="gt_row gt_center" headers="stat_2">196 (7)</td>
+<td class="gt_row gt_center" headers="stat_3">217 (6)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">body_mass_g</td>
+<td class="gt_row gt_center" headers="stat_1">3,701 (459)</td>
+<td class="gt_row gt_center" headers="stat_2">3,733 (384)</td>
+<td class="gt_row gt_center" headers="stat_3">5,076 (504)</td>
+</tr>
+</tbody><tfoot class="gt_footnotes">
+<tr class="even">
+<td colspan="4" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> n (%); Mean (SD)</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Our analyses show that flipper length and body mass are related, see @fig-scatter.  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Our analyses show that flipper length and body mass are related, see <a href="#fig-scatter" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-scatter</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-cap: Flipper length by body mass</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-height: 4</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(data = penguins, </span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="in">                       aes(x = flipper_length_mm,</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="in">                           y = body_mass_g)) +</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point(aes(color = species, </span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="in">                 shape = species),</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="in">             size = 3,</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="in">             alpha = 0.8) +</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="in">  scale_color_manual(values = c("darkorange","purple","cyan4")) +</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="in">  labs(x = "Flipper length (mm)",</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="in">       y = "Body mass (g)",</span></span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a><span class="in">       color = "Penguin species",</span></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a><span class="in">       shape = "Penguin species") +</span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a><span class="in">  theme_minimal() + </span></span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a><span class="in">  theme(legend.position = c(0.2, 0.7),</span></span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a><span class="in">        plot.title.position = "plot",</span></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a><span class="in">        plot.caption = element_text(hjust = 0, face= "italic"),</span></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a><span class="in">        plot.caption.position = "plot")</span></span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: A numeric `legend.position` argument in `theme()` was deprecated in ggplot2
+3.5.0.
+ℹ Please use the `legend.position.inside` argument of `theme()` instead.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-scatter" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="quarto_intro_files/figure-html/fig-scatter-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Flipper length by body mass
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Our data is comprised of 344 peguins; specifically comprised of the species Adelie (n=152), Chinstrap (n=68), and Gentoo (n=68). Penguin charactersitics are presented in <a href="#tbl-demographics" class="quarto-xref">Table&nbsp;1</a>.</p>
+<div class="cell">
+<div id="tbl-demographics." class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-demographics.-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Penguin charactertics
+</figcaption>
+<div aria-describedby="tbl-demographics.-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="syfzydakfn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#syfzydakfn table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#syfzydakfn thead, #syfzydakfn tbody, #syfzydakfn tfoot, #syfzydakfn tr, #syfzydakfn td, #syfzydakfn th {
+  border-style: none;
+}
+
+#syfzydakfn p {
+  margin: 0;
+  padding: 0;
+}
+
+#syfzydakfn .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#syfzydakfn .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#syfzydakfn .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#syfzydakfn .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#syfzydakfn .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#syfzydakfn .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#syfzydakfn .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#syfzydakfn .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#syfzydakfn .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#syfzydakfn .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#syfzydakfn .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#syfzydakfn .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#syfzydakfn .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#syfzydakfn .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#syfzydakfn .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#syfzydakfn .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#syfzydakfn .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#syfzydakfn .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#syfzydakfn .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#syfzydakfn .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#syfzydakfn .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#syfzydakfn .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#syfzydakfn .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#syfzydakfn .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#syfzydakfn .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#syfzydakfn .gt_left {
+  text-align: left;
+}
+
+#syfzydakfn .gt_center {
+  text-align: center;
+}
+
+#syfzydakfn .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#syfzydakfn .gt_font_normal {
+  font-weight: normal;
+}
+
+#syfzydakfn .gt_font_bold {
+  font-weight: bold;
+}
+
+#syfzydakfn .gt_font_italic {
+  font-style: italic;
+}
+
+#syfzydakfn .gt_super {
+  font-size: 65%;
+}
+
+#syfzydakfn .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#syfzydakfn .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#syfzydakfn .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#syfzydakfn .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#syfzydakfn .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#syfzydakfn .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#syfzydakfn .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#syfzydakfn .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#syfzydakfn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Adelie</strong><br> N = 152<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Chinstrap</strong><br> N = 68<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Gentoo</strong><br> N = 124<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">sex</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;female</td>
+<td class="gt_row gt_center" headers="stat_1">73 (50%)</td>
+<td class="gt_row gt_center" headers="stat_2">34 (50%)</td>
+<td class="gt_row gt_center" headers="stat_3">58 (49%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;male</td>
+<td class="gt_row gt_center" headers="stat_1">73 (50%)</td>
+<td class="gt_row gt_center" headers="stat_2">34 (50%)</td>
+<td class="gt_row gt_center" headers="stat_3">61 (51%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">flipper_length_mm</td>
+<td class="gt_row gt_center" headers="stat_1">190 (7)</td>
+<td class="gt_row gt_center" headers="stat_2">196 (7)</td>
+<td class="gt_row gt_center" headers="stat_3">217 (6)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">body_mass_g</td>
+<td class="gt_row gt_center" headers="stat_1">3,701 (459)</td>
+<td class="gt_row gt_center" headers="stat_2">3,733 (384)</td>
+<td class="gt_row gt_center" headers="stat_3">5,076 (504)</td>
+</tr>
+</tbody><tfoot class="gt_footnotes">
+<tr class="even">
+<td colspan="4" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> n (%); Mean (SD)</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Our analyses show that flipper length and body mass are related, see <a href="#fig-scatter" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-scatter." class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scatter.-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="quarto_intro_files/figure-html/fig-scatter.-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter.-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Flipper length by body mass
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="parameterized-reports" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Parameterized Reports</h1>
+<p>Multiple versions of a document, using different settings or data subsets, can also be created with Quarto (and R Markdown) without duplicating the entire document. These are parameterized reports.</p>
+<p>To begin, you need to define the parameters you want to use in the YAML using the <b>params</b> keyword. For example, let’s define a parameter called species with a default value of “Adelie”:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>title: Parameterized report</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>format: html</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>params:</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  species: Adelie</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Once you have defined the parameters, you can use them throughout your document to make it dynamic. Parameters can be accessed using the params object within code chunks or inline expressions.</p>
+<p>For instance, let’s say you have a code chunk that filters a dataset based on the selected species. You can use the <code>params$species</code> expression to access the value of the species parameter within the code chunk:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> params<span class="sc">$</span>species)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="co"># continue with rest of your code</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To generate a different version of the report, you can change the specicies in the YAML and re-render the report.</p>
+<p>You can also automate the process. In a separete Quarto file, you can code the following to 1) select the quarto file that contains your report, 2) change the paratemeters, and 3) save a separate report for each value of the parameter:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>install.packages("quarto")</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>library(quarto)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>my_function &lt;- function(penguin){</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  quarto_render(input = "Your_Quarto_file.qmd",</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>                execute_params = list(specifies=penguin),</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>                output_file = glue::glue("{penguin}-report.html"))</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>distinct(penguins, as.character(species)) %&gt;% </span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>  pull () %&gt;%</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>  purr:walk(my_function)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For more details on this approach and example, <a href="https://github.com/jthomasmock/penguin-project/tree/master" target="_blank">click here</a>.</p>
+</section>
+<section id="html-theming" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> HTML Theming</h1>
+<section id="html-basics" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="html-basics"><span class="header-section-number">8.1</span> HTML Basics</h2>
+<p>Quarto also support HTML, allowing for greater flexibility in formatting the final document. To use HTML, use triangle brackets: <code>&lt;</code> and <code>&gt;</code>; the formatting specified will be applied to the rest of the document, or until the code is ‘turned off’ by using the <code>/</code>.</p>
+<p>Common HTML tags include:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></td>
+<td>Headings of different levels</td>
+</tr>
+<tr class="even">
+<td><code>&lt;br&gt;</code></td>
+<td>Line break</td>
+</tr>
+<tr class="odd">
+<td><code>&lt;b&gt;</code></td>
+<td>Bold text</td>
+</tr>
+<tr class="even">
+<td><code>&lt;i&gt;</code></td>
+<td>Italic text</td>
+</tr>
+<tr class="odd">
+<td><code>&lt;div&gt;</code></td>
+<td>Section or container</td>
+</tr>
+<tr class="even">
+<td><code>&lt;span&gt;</code></td>
+<td>Inline styling or grouping of elements</td>
+</tr>
+<tr class="odd">
+<td><code>&lt;a&gt;</code></td>
+<td>Hyperlink</td>
+</tr>
+<tr class="even">
+<td><code>&lt;form&gt;</code></td>
+<td>Form container</td>
+</tr>
+<tr class="odd">
+<td><code>&lt;style&gt;</code></td>
+<td>CSS style declaration</td>
+</tr>
+<tr class="even">
+<td><code>&lt;script&gt;</code></td>
+<td>JavaScript code</td>
+</tr>
+</tbody>
+</table>
+<p><br> For example:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>This is how you &lt;b&gt;bold&lt;/b&gt; or &lt;i&gt;italicize&lt;/i&gt; words.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This is how you <b>bold</b> or <i>italicize</i> words.</p>
+<p><br> Similarly, you can use HTML’s <code>&lt;div&gt;</code> tag to create custom sections or containers with specific styles:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>&lt;div class="my_custom-section"&gt;</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>This is a custom section with a specific style (specified below).</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>This section defaults back to the original formatting. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="my_custom-section">
+<p>This is a custom section with a specific style (specified below).</p>
+</div>
+<p>This section defaults back to the original formatting.</p>
+</section>
+<section id="css-basics" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="css-basics"><span class="header-section-number">8.2</span> CSS Basics</h2>
+<p>HTML becomes even more powerful when you combine it with CSS (Cascading Style Sheets). CSS allows you to define styles and apply them to HTML elements, giving you full control over the document’s visual presentation. You can include CSS styles within your Quarto document using HTML’s <code>&lt;style&gt;</code> tag:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>&lt;style&gt;</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    .my_custom-section {</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>        background-color: #e32424;</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>        color: white;</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>        padding: 10px;</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>&lt;/style&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<style>
+    .my_custom-section {
+        background-color: #e32424;
+        color: white;
+        padding: 10px;
+    }
+</style>
+<p>In this example, we define a CSS style for the <strong>.my_custom-section class</strong>, specifying a background color, font color, and padding. This style will be applied to any <code>&lt;div&gt;</code> element with the <strong>my_custom-section class</strong> in your document.</p>
+<p>By combining HTML and CSS, you can achieve a highly customized and visually appealing document layout.</p>
+</section>
+<section id="pre-set-themes" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="pre-set-themes"><span class="header-section-number">8.3</span> Pre-set Themes</h2>
+<p>There are a number of pre-specified themes available, and can be specified in the YAML.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>title: My Report</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>format:</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    theme: cerulean</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Quarto uses Bootstrap themes, with details available <a href="https://bootswatch.com/" target="_blank">here</a>. There you can also examine the preset formatting of various types of objects and utilize it in your Quarto document.</p>
+<p>For example:</p>
+<p><img src="files/quarto_intro/Bootswatch example.jpg" class="img-fluid"></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>&lt;div class="alert alert-warning"&gt;</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  &lt;h4 class="alert-heading"&gt;Heading&lt;/h4&gt;</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  Your text here.</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="alert alert-warning">
+<h4 class="alert-heading anchored">
+Heading
+</h4>
+<p>Your text here.</p>
+</div>
+</section>
+<section id="custom-themes" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="custom-themes"><span class="header-section-number">8.4</span> Custom Themes</h2>
+<p>To create a custom theme or modify an existing, you will need to create a text file with an ending of “.scss”; this file will list your specifications.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+SASS: Syntactically Awesome Style Sheets
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>SASS files have the “.scss” extension. These files extend the functionality of CSS by allowing for a more organized and modular stylesheets, making it easier to manage and maintain your styles.</p>
+</div>
+</div>
+<p>Create the ‘.scss’ file by creating a new text file while still in RStudio; here we name it ‘mytheme.scss’:</p>
+<p><img src="files/quarto_intro/newfile.jpg" class="img-fluid" style="width:70.0%"></p>
+<p>Reference the file created in the YAML of your Quarto document; multiple theme files can be used:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>title: My Report</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>format:</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>    theme: </span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>      - cerulean</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>      - mytheme.scss</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To specify your theme, open the SASS file and list the specifications. Importantly, the file should begin with <code>/*-- scss:defaults --*/</code>. Here’s an example:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>/*-- scss:defaults --*/</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>$blue: #1F3169;</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>.my_custom-section2 {</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    background-color: $blue;</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>    color: white;</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>    padding: 10px;</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The advantage of SASS over CSS is that we can define colors or settings, to be used later. In the example above, we have assigned hex color <code>#1F3169</code> the variable label of <code>blue</code>; this label can then be referred to in other sections of the code. In this example, we are using CSS to create a new class (like we did earlier), but here we specify the color as <code>blue</code>.</p>
+<p>This becomes more powerful when combined with the pre-specified themes and settings of Quarto. Quarto has predefined SASS variables that can be changed and modified to adjust the appearance of your report. The available variables can be found <a href="https://quarto.org/docs/output-formats/html-themes.html#sass-variables" target="_blank">here</a>. If the variables listed there are not enough, the complete list can be found <a href="https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss" target="_blank">here</a>; use the search function to identify variables that seem like they may change the feature you are interested in.</p>
+<p>Once you have idenfied the variable, you can specify the value; the general form is: <code>$variable_name: value;</code>. Comments begin with a <code>//</code>.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>/*-- scss:defaults --*/</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>// Color of the text in the body of the document.</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>$body-color: #000000;</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>// Page background color.</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>$body-bg: #fff;</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>// Font size (reference is 1rem).</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>$font-size-base: 1.2rem;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="other-formatting-examples" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="other-formatting-examples"><span class="header-section-number">8.5</span> Other Formatting Examples</h2>
+<section id="watermmark" class="level3" data-number="8.5.1">
+<h3 data-number="8.5.1" class="anchored" data-anchor-id="watermmark"><span class="header-section-number">8.5.1</span> Watermmark</h3>
+<p>To add a watermark to a HTML document, you can use CSS code, like so:</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>&lt;style&gt;</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>.draft-watermark {</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>    position: fixed; top: 50%; left: 50%;</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>    transform: translate(-50%, -50%) rotate(-45deg);</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>    font-size: 100px; font-weight: bold; color: #ccc; opacity: 0.5; }</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>&lt;/style&gt;</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>&lt;div class="draft-watermark"&gt;Draft&lt;/div&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The first part, enclosed within the <code>&lt;style&gt;</code> and <code>&lt;/style&gt;</code> lists the details of the watermark.</p>
+<p>The second part, enclosed within the <code>&lt;div&gt;</code> and <code>&lt;/div&gt;</code> applies the settings specified.</p>
+</section>
+<section id="sec-html_folding" class="level3" data-number="8.5.2">
+<h3 data-number="8.5.2" class="anchored" data-anchor-id="sec-html_folding"><span class="header-section-number">8.5.2</span> Collapsible Sections</h3>
+<p>Although you can use ‘callouts’ to highlight or collapse sections, if you do not want the formatting that is associated with callouts, you can use HTML code.</p>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb36"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>&lt;details&gt;</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>&lt;summary&gt; Title here&lt;/summary&gt;</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>Details go here. This will be collapsed. </span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>&lt;/details&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<details>
+<summary>
+Title here
+</summary>
+Details go here. This will be collapsed.
+</details>
+</div>
+</div>
+</section>
+</section>
+<section id="troubleshooting" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">8.6</span> Troubleshooting</h2>
+<p>If something is not working but it should, you may just need to ensure that there is an empty line before/after the HTML tag.</p>
+</section>
+</section>
+<section id="additional-resources" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Additional Resources</h1>
+<p>Quarto’s comprehensive guidance documentation: <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+<p>Introduction to Quarto: <a href="https://www.youtube.com/watch?v=_f3latmOhew&amp;ab_channel=PositPBC" class="uri">https://www.youtube.com/watch?v=_f3latmOhew&amp;ab_channel=PositPBC</a></p>
+<p>Quarto for academics: <a href="https://www.youtube.com/watch?v=EbAAmrB0luA&amp;t=669s&amp;ab_channel=PositPBC" class="uri">https://www.youtube.com/watch?v=EbAAmrB0luA&amp;t=669s&amp;ab_channel=PositPBC</a></p>
+<p>HTML and CSS formatting: <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide" class="uri">https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide</a></p>
+<p>Quarto blogs: <a href="https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html" class="uri">https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html</a></p>
+<p>Quarto website: <a href="https://ucsb-meds.github.io/creating-quarto-websites/" class="uri">https://ucsb-meds.github.io/creating-quarto-websites/</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/kpuka\.ca");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Copyright 2023, Klajdi Puka
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
