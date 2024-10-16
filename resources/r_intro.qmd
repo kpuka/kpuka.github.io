@@ -121,6 +121,7 @@ Will be using publicly available data from the 2018 US National Health Interview
 #| echo: false
 #| code-summary: Codebook
 #| code-fold: true
+install.packages("rlang")
 install.packages("kableExtra")
 library(knitr)
 library(kableExtra)
