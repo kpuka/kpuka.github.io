@@ -17,7 +17,7 @@ For each project, you should use "R Projects", a self-contained directory that h
 ![](files/r_intro/RStudio1.png)
 
 :::{.callout-important}
-Upon creating an 'R Project', a folder will be created in the location that was specified; this folder should contain all of the files needed for your analyses (e.g., the data and R scripts/code). 
+Upon creating an 'R Project', a folder will be created in the location that was specified; this folder should contain all of the files needed for your analyses (e.g., the data and R code files). 
 
 In that folder, a ".Rproj" file will also be created (in this example, called "MyProject.Rproj"); this is the file you should open in the future when you want to work with your data in R. 
 :::
