@@ -27,11 +27,6 @@ jobs:
         with:
           cache-version: 1
 
-      - name: Preserve CNAME
-        run: |
-          echo "kpuka.github.io" > _publish/CNAME  
-
-
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
