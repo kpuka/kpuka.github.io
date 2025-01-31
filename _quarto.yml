@@ -31,7 +31,8 @@ website:
       - "Copyright 2023, Klajdi Puka"
   google-analytics: "G-QN2NZN1QS3"
 
-
+  resources:
+    - CNAME
 
   sidebar: 
     - title: "Resources"
