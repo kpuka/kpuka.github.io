@@ -67,7 +67,7 @@ For an RCT the research question is (or should be): for patients with the same p
 
 1.  Compare the change score between the groups.
 
-2.  Use a repeated-measures design utilizing data from both time points (e.g. repeated measures analysis of variance (ANOVA)).
+2.  Use a repeated-measures design utilizing data from both time points (e.g. [multilevel model](/resources/regression_multilevel.qmd), or repeated measures analysis of variance (ANOVA)).
 
 3.  Use a regression where the outcome is the post-score, and the pre-score is used as a covariate. **This option is recommended.**
 
