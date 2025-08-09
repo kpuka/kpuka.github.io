@@ -63,13 +63,13 @@ Covariates should be measured at baseline. Any variable measured at/after the in
 
 # Analyses of Pre-Post Data 
 
-For an RCT the research question is (or should be): for patients with the same pre-score, will those given the intervention have a better scores at follow-up? The researcher has several options to analyze data collected before and after an intervention:
+There are different ways to approach the analyses of data collected before and after an intervention:
 
 1.  Compare the change score between the groups.
 
 2.  Use a repeated-measures design utilizing data from both time points (e.g. [multilevel model](/resources/regression_multilevel.qmd), or repeated measures analysis of variance (ANOVA)).
 
-3.  Use a regression where the outcome is the post-score, and the pre-score is used as a covariate. **This option is recommended.**
+3.  Use a regression where the outcome is the post-score, and the pre-score is used as a covariate. **This option is recommended**, because it will directly address the typicaly reseach question of an RCT, which is (or should be): *for patients with the same pre-score, will those given the intervention have a better scores at follow-up?*.
 
 The third option should be used because it reduces the error variance and eliminates systematic bias, e.g. takes into account regression toward the mean. This method also directly answers the research question. Alternatively, one may use the change score (instead of post-score) as the outcome variable and the pre-score as a covariate, and this would yield the same result, though the interpretation is different. You would get an estimate of the mean change score expected with the intervention vs control, which is not necessarily the question of interest in an RCT.
 
