@@ -450,11 +450,11 @@ gtag('config', 'G-QN2NZN1QS3', { 'anonymize_ip': true});
 </section>
 <section id="analyses-of-pre-post-data" class="level1">
 <h1>Analyses of Pre-Post Data</h1>
-<p>For an RCT the research question is (or should be): for patients with the same pre-score, will those given the intervention have a better scores at follow-up? The researcher has several options to analyze data collected before and after an intervention:</p>
+<p>There are different ways to approach the analyses of data collected before and after an intervention:</p>
 <ol type="1">
 <li><p>Compare the change score between the groups.</p></li>
 <li><p>Use a repeated-measures design utilizing data from both time points (e.g.&nbsp;<a href="../resources/regression_multilevel.html">multilevel model</a>, or repeated measures analysis of variance (ANOVA)).</p></li>
-<li><p>Use a regression where the outcome is the post-score, and the pre-score is used as a covariate. <strong>This option is recommended.</strong></p></li>
+<li><p>Use a regression where the outcome is the post-score, and the pre-score is used as a covariate. <strong>This option is recommended</strong>, because it will directly address the typicaly reseach question of an RCT, which is (or should be): <em>for patients with the same pre-score, will those given the intervention have a better scores at follow-up?</em>.</p></li>
 </ol>
 <p>The third option should be used because it reduces the error variance and eliminates systematic bias, e.g.&nbsp;takes into account regression toward the mean. This method also directly answers the research question. Alternatively, one may use the change score (instead of post-score) as the outcome variable and the pre-score as a covariate, and this would yield the same result, though the interpretation is different. You would get an estimate of the mean change score expected with the intervention vs control, which is not necessarily the question of interest in an RCT.</p>
 <p>If missing data is an issue, more sophisticated methods such as repeated measures linear mixed models (described below) may be the preferable choice to utilize all available data.</p>
