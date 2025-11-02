@@ -2,34 +2,30 @@
 title:  CV/Resume
 ---
 
-
-# Education
-**PhD**, Epidemiology and Biostatistics, Western University\
-**HBSc**, Psychology and Biology, University of Toronto
-
-
 # Work Experience and Appointments
 
 **Government of Canada, Privy Council Office**<br>
-**_Senior Behavioural Scientist_** (2024/01 - Present)<br>
-*Behavioural Science Fellow* (2022/11 - 2024/01) <br>
+  + **_Senior Behavioural Scientist_** (2024/01 - Present)<br>
+  + *Behavioural Science Fellow* (2022/11 - 2024/01) <br>
 
 **Western University, Epidemiology and Biostatistics**<br>
-**_Adjunct Research Professor_** (2022/05 - Present) <br>
-*Doctoral Researcher* (2016/09 - 2021/04) <br>
+  + **_Adjunct Research Professor_** (2022/05 - Present) <br>
+  + *Doctoral Researcher* (2016/09 - 2021/04) <br>
 
 **Centre for Addiction and Mental Health, Institute for Mental Health Policy Research**<br>
-**_Project Scientist_** (2021/03 - 2022/11) <br>
+  + **_Project Scientist_** (2021/03 - 2022/11) <br>
 
 **Western University, Department of Medicine**<br>
-**_Statistician_** (2018/07 - 2021/08) <br>
+  + **_Statistician_** (2018/07 - 2021/08) <br>
+
+**Hospital for Sick Children, Department of Psychology**<br>
+  + **_Clinical Research Project Coordinator_** (2012/05 - 2016/08) <br>
 
 
+# Education
+**PhD**, Epidemiology and Biostatistics, Western University, 2021\
+**HBSc**, Psychology and Biology, University of Toronto, 2013
 
-
-# Complete Resume:
-
-To download a PDF version of my resume <a href="/files/Klajdi_Puka_Resume.pdf" target="_blank"> please click here</a>. 
 
 
 # Complete CV:
