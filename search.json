@@ -841,7 +841,7 @@
     "href": "resources/r_intro.html#import-data-into-r",
     "title": "Introduction to R",
     "section": "Import Data into R",
-    "text": "Import Data into R\n\nPlace the data file in the same folder as the “.Rproj” file (the file that was created when you created an R Project)\nIn R, use read.csv() opens CSV files; specify the file location/name\n\n\nnhis2018 &lt;- read.csv(\"nhis2018_SampleAdult.csv\")\n\n  # read.csv() reads the file\n  # \"&lt;-\" is used to assign/save the data to an object named 'nhis2018'\n\n\nFiles located in other folders\nIf the data file is located in a different folder, the location needs to be specified. Because we created an R Project, R will start by looking at the folder that contains the “.Rproj” file (the file that was created when you created an R Project).\n\nIf the data was in a folder called ‘data’ within the folder containing “.Rproj”, the code is: nhis2018 &lt;- read.csv(\"data/nhis2018_SampleAdult.csv\")\nIf the data was in a folder that is ‘a level above’ the folder containing “.Rproj”, the code is: nhis2018 &lt;- read.csv(\"../nhis2018_SampleAdult.csv\")\n\n\n\nLoad other file types\n\nR: nhis2018 &lt;- readRDS(\"data_name.R\")\nExcel: nhis2018 &lt;- read_excel(\"data_name.xlsx\") (readxl package)",
+    "text": "Import Data into R\n\nPlace the data file in the same folder as the “.Rproj” file (the file that was created when you created an R Project)\nIn R, use read.csv() opens CSV files; specify the file location/name\n\n\nnhis2018 &lt;- read.csv(\"nhis2018_SampleAdult.csv\")\n\n  # read.csv() reads the file\n  # \"&lt;-\" is used to assign/save the data to an object named 'nhis2018'\n\n\nFiles located in other folders\nIf the data file is located in a different folder, the location needs to be specified. Because we created an R Project, R will start by looking at the folder that contains the “.Rproj” file (the file that was created when you created an R Project).\n\nIf the data was in a folder called ‘data’ within the folder containing “.Rproj”, the code is: nhis2018 &lt;- read.csv(\"data/nhis2018_SampleAdult.csv\")\nIf the data was in a folder that is ‘a level above’ the folder containing “.Rproj”, the code is: nhis2018 &lt;- read.csv(\"../nhis2018_SampleAdult.csv\")\n\n\n\nLoad other file types\n\nR: nhis2018 &lt;- readRDS(\"data_name.rds\")\nExcel: nhis2018 &lt;- read_excel(\"data_name.xlsx\") (readxl package)",
     "crumbs": [
       "R",
       "Introduction to R"
@@ -852,7 +852,7 @@
     "href": "resources/r_intro.html#exporting-data-from-r",
     "title": "Introduction to R",
     "section": "Exporting Data from R",
-    "text": "Exporting Data from R\nUse saveRDS() to save as an R object\n\nSpecify the object to save, then the location and name of the file to be saved\n\n\nsaveRDS(nhis2018, \"updated_nhis2018.R\")\n\n\nUse write.csv() to save as a CSV file\n\nwrite.csv(nhis2018, \"updated_nhis2018.csv\")",
+    "text": "Exporting Data from R\nUse saveRDS() to save as an R object\n\nSpecify the object to save, then the location and name of the file to be saved\n\n\nsaveRDS(nhis2018, \"updated_nhis2018.rds\")\n\n\nUse write.csv() to save as a CSV file\n\nwrite.csv(nhis2018, \"updated_nhis2018.csv\")",
     "crumbs": [
       "R",
       "Introduction to R"
