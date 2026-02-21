@@ -175,7 +175,7 @@ If the data file is located in a different folder, the location needs to be spec
 
 #### Load other file types
 
--   R: `nhis2018 <- readRDS("data_name.R")`
+-   R: `nhis2018 <- readRDS("data_name.rds")`
 -   Excel: `nhis2018 <- read_excel("data_name.xlsx")` (*readxl* package)
 
 
@@ -192,7 +192,7 @@ Use `saveRDS()` to save as an R object
 
 ```{r}
 #| eval: false
-saveRDS(nhis2018, "updated_nhis2018.R")
+saveRDS(nhis2018, "updated_nhis2018.rds")
 
 ```
 
