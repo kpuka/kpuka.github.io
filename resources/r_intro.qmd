@@ -6,6 +6,8 @@ Topic: Introduction to data wrangling and data management with R.
 
 R is a powerful programming language and software environment widely used for statistical computing, data analysis, and graphical visualization. 
 
+
+
 # Getting Started
 
 To get started, you will need to install R and RStudio; to do so <a href="https://posit.co/download/rstudio-desktop/" target="_blank">click here</a>. 
@@ -39,6 +41,8 @@ All of the R code provided below in this tutorial should be entered into the 'Sc
 
 To run/execute the code, highlight the portion of code you would like to execute and press "Run" (located in the top right corner of the script editor). On Windows, you can also use the shortcut "Ctrl + Enter".
 :::
+
+
 
 
 # R Basics
@@ -477,6 +481,9 @@ names(nhis2018)
 
 Use `filter()` to specify the *rows* (aka observations) to **_keep_**
 
+Use `filter_out()` to specify the *rows* (aka observations) to **_remove_**
+
+
 Specify the data frame, followed by the conditions you want to keep:
 
 ::: columns
@@ -533,7 +540,9 @@ count(nhis2018, region)|>
 |`filter(marital %in% c(1,3))`           | marital is equal to 1 or 3 | 
 |`filter(is.na(marital))`                | marital is missing | 
 |`filter(marital != 3)`                  | marital does not equal 3 | 
+|`filter_out(marital = 3)`               | marital does not equal 3 | 
 |`filter(!is.na(marital))`               | marital is not missing | 
+|`filter_out(is.na(marital))`            | marital is not missing | 
 
 
 
@@ -707,33 +716,51 @@ Use `cut()` to categorize continuous variables
 -   Subsequently, specify the labels for each category
 
 
-Use `case_match()` to manually recode any variable
+Use `recode_values()` to manually recode any variable, to assign old values to new values
 
--   **_Important_**: The order of statement matters for `case_match()` - the new variable will have the value associated with the first condition that is met 
+-   **_Important_**: The order of statement matters for `recode_values()` - the new variable will have the value associated with the first condition that is met. To avoid unexpected results, ensure that your conditions (or value mappings) are mutually exclusive and not duplicated.
+
+
 
 
 ::: columns
-::: {.column width="73%; font-size: 90%;"}
+::: {.column width="60%; font-size: 90%;"}
 ```{r}
 #| output: false
 
 nhis2018 <- nhis2018 |>
- mutate(bmi_category = cut(bmi, 
-                           breaks=c(-Inf, 18.5, 25, 30, Inf), 
-                           labels=c("Underweight", 
-                                    "Healthy weight", 
-                                    "Overweight", 
-                                    "Obese")),
-        
-        bmi_binary = case_match(bmi_category, 
-                          c("Underweight", "Healthy weight") ~ "Low",
-                          "Overweight" ~ "High",
-                          "Obese" ~ "High"))  
+ mutate(
+   # Create categorical variable from continuous variable
+   bmi_category = cut(bmi, 
+                     breaks=c(-Inf, 18.5, 25, 30, Inf), 
+                     labels=c("Underweight", 
+                              "Healthy weight", 
+                              "Overweight", 
+                              "Obese")),
+   
+   # Create new categorical variable from a categorical variable variable
+   bmi_binary = recode_values(bmi_category, 
+                 # old_values ~ new_values
+                 c("Underweight", "Healthy weight") ~ "Low",
+                 "Overweight" ~ "High",
+                 "Obese" ~ "High"),
+   
+   
+   # Create categorical variable from a continuous variable
+    smoking_label = recode_values(smoking,
+                      # old_values ~ new_values
+                      1 ~ "Current every day smoker",
+                      2 ~ "Current some day smoker",
+                      3 ~ "Former smoker", 
+                      4 ~ "Never smoker",
+                      5 ~ "Smoker - current status unknown",
+                      9 ~ "Unknown if ever smoked"))
+    
 
 # Check
 nhis2018 |>
-  select (id, bmi, bmi_category, bmi_binary) |>
-  head(12) # The number indicates how many rows/observations to print
+  select (id, bmi, bmi_category, bmi_binary, smoking, smoking_label) |>
+  head(13) # The number indicates how many rows/observations to print
 
 # To check, you can alternatively, click on the name of the data set 
 # in the 'Environment' window to see the entire data set
@@ -741,13 +768,14 @@ nhis2018 |>
 ```
 :::
 
-::: {.column width="27%; font-size: 55%;"}
+::: {.column width="40%; font-size: 10%;"}
+
 ```{r}
 #| echo: false
 
 nhis2018 |>
-  select (id, bmi, bmi_category, bmi_binary) |>
-  head (12) |> 
+  select (id, bmi, bmi_category, bmi_binary, smoking, smoking_label) |>
+  head (13) |> 
   gt() |> tab_header(title="Result:")
 
 ```
@@ -1107,6 +1135,9 @@ new_data <- bind_rows (data_1, data_2)
 <br>
 <br>
 
+
+
+
 # Suggested Work Flow & Organization
 
 Use separate R Projects for each project, as described at the start of this tutorial. The folder created should contain the following:
@@ -1194,4 +1225,155 @@ write.csv(marital.tab, "output/Marital - frequency table.csv")
 ...
 
 ```
+
+
+
+# Common Mistakes and Troubleshooting
+
+### Common Mistakes
+
+**1. Misspelling object or variable names**
+
+R is case-sensitive, so `Age`, `age`, and `AGE` are different objects.
+
+`mean(data$Age)` is not the same as `mean(data$age)`
+
+If you see `object 'age' not found` check spelling and capitalization carefully.
+
+---
+
+**2. Forgetting quotation marks around text**
+
+Text values should be enclosed in quotation marks.
+
+Use `filter(data, sex == "Female")` rather than `filter(data, sex == Female)`
+
+---
+
+**3. Using `=` instead of `==` when making comparisons**
+
+Use `sex == "Female"` to test whether something is equal to a value.
+
+Use `new_variable = valuw` when assigning a value.
+
+---
+
+**4. Forgetting to load required packages**
+
+If you receive an error such as:
+
+```r
+could not find function "filter"
+```
+
+you may need to load the package first: 
+
+```r
+library(dplyr)
+```
+
+Packages generally only need to be installed once, but they must be loaded each time you start a new R session.
+
+---
+
+**5. Running code line-by-line without running previous code**
+
+Many errors occur because an object has not yet been created.
+
+For example, if you try:
+
+```r
+summary(clean_data)
+```
+
+before creating `clean_data`, R will return an error.
+
+When working through scripts, ensure that earlier sections have been run first.
+
+---
+
+**6. Working in the wrong project or folder**
+
+Many file import errors occur because R is looking in a different folder than expected.
+
+Using R Projects (as described above) helps prevent these issues by keeping all files and scripts organized within a single working directory.
+
+
+### Troubleshooting Steps
+
+If code that previously worked suddenly stops working, try the following:
+
+#### Step 1: Restart R
+
+Sometimes objects from previous sessions remain in memory and can interfere with your current work.
+
+The easiest solution is often to completely restart R: close and reopen RStudio.
+
+This ensures you are starting with a clean environment.
+
+---
+
+#### Step 2: Reinstall or Update Packages
+
+If package-related errors occur, make sure you have the latest versions installed.
+
+To update all installed packages:
+
+```r
+update.packages(ask = FALSE)
+```
+
+To reinstall a specific package:
+
+```r
+install.packages("dplyr")
+```
+
+After installation, load the package again:
+
+```r
+library(dplyr)
+```
+
+---
+
+#### Step 3: Check Your R Version
+
+Older versions of R can sometimes cause compatibility issues with newer packages.
+
+To see your current version:
+
+```r
+R.version.string
+```
+
+You can download the latest version of R from:
+
+https://cran.r-project.org/
+
+After updating R, you may need to reinstall or update your packages.
+
+---
+
+#### Step 4: Read the Error Message Carefully
+
+Error messages often tell you exactly what went wrong.
+
+For example:
+
+```r
+object 'data' not found
+```
+
+usually means that an object has not been created or has been misspelled.
+
+```r
+could not find function "filter"
+```
+
+usually means that a package has not been loaded.
+
+Reading the full error message is often the fastest path to a solution.
+
+If you're still stuck, copy the exact error message and search online, such as through Google or ChatGPT.
 
